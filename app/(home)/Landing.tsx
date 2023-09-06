@@ -6,7 +6,7 @@ export default function Landing() {
   return (
     <section className="relative z-10 flex w-full items-center justify-center overflow-hidden py-44">
       <Image
-        className="absolute inset-0 object-cover blur-[5px]"
+        className="absolute inset-0"
         src={"/assets/landing3.png"}
         layout="fill"
         alt=""
