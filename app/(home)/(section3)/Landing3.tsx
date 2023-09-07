@@ -7,16 +7,14 @@ export default function Landing3() {
   return (
     <section className="flex flex-col items-center px-5 pb-20 pt-10 sm:px-10 md:pt-40">
       <div className="flex w-full max-w-6xl flex-col items-center gap-5">
-        <div className="space-y-1">
-          <p className="inline-flex flex-col items-center font-basement text-3xl uppercase text-white md:text-5xl">
-            harness the immense potential <br />
-            <span className="font-basement text-xl uppercase text-white md:text-3xl">
-              within your mind and create lasting change
-            </span>
-          </p>
-        </div>
+        <p className="inline-flex flex-col items-center gap-1 font-basement text-3xl uppercase text-white md:text-5xl">
+          <span>harness the immense potential</span>
+          <span className="font-basement text-xl uppercase text-white md:text-3xl">
+            within you mind and create lasting change
+          </span>
+        </p>
         <h3 className="text-left font-light text-amber-500 md:text-2xl">
-          {"It's time for your to become the superhero of your life."}
+          {"It's time for you to become the superhero of your life."}
         </h3>
       </div>
       <Image

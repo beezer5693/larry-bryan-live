@@ -21,7 +21,7 @@ export default function Header() {
       className={cn(
         "fixed left-0 right-0 top-0 z-50 flex justify-center px-5 lg:px-14",
         {
-          "bg-black": topOfPage,
+          "bg-black/70 backdrop-blur-lg": topOfPage,
           "bg-transparent": !topOfPage,
         },
       )}
@@ -35,12 +35,16 @@ export default function Header() {
           },
         )}
       >
-        <p className="bg-gradient-to-r from-sky-300/60 via-sky-500/60 to-sky-300/60 bg-clip-text font-basement text-2xl tracking-tighter text-transparent">
+        <p className="font-basement text-2xl tracking-tighter text-white">
           L | B
         </p>
         <Navbar />
         <div className="group">
-          <Button className="hidden px-5 font-semibold uppercase transition-transform duration-300 ease-in-out group-hover:-translate-y-0.5 group-hover:bg-gradient-to-b group-hover:from-white group-hover:to-white group-hover:text-blue group-hover:opacity-100 lg:inline-flex">
+          <Button
+            className={cn(
+              "hidden px-5 font-semibold uppercase transition-transform duration-300 ease-in-out group-hover:-translate-y-0.5 group-hover:bg-gradient-to-b group-hover:from-white group-hover:to-white group-hover:text-blue group-hover:opacity-100 lg:inline-flex",
+            )}
+          >
             Book Larry
           </Button>
         </div>
