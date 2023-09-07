@@ -4,7 +4,7 @@ import VillainCards from "./VillainCards";
 
 export default function Landing2() {
   return (
-    <section className="relative flex items-center justify-center overflow-hidden px-2 py-20 sm:px-10 md:mt-10">
+    <section className="relative flex items-center justify-center overflow-hidden px-2 pb-20 sm:px-10">
       <Image
         className="absolute -left-14 -top-10 rotate-[70deg] object-cover"
         src={"/assets/landing2.png"}
