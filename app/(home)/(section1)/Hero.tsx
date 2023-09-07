@@ -3,7 +3,7 @@ import { IoTriangleOutline, IoTriangle } from "react-icons/io5";
 
 export default function Hero() {
   return (
-    <div className="relative flex w-full flex-col items-center gap-6 px-5 md:gap-12 lg:px-0">
+    <div className="relative flex w-full flex-col items-center gap-6 md:gap-12 lg:px-0">
       <div className="flex flex-col gap-3 md:gap-8">
         <div className="relative flex">
           <p className="rounded-xl border border-blue/30 px-2 font-basement text-[3.75rem] text-white shadow-md shadow-black ring-1 ring-black/40 backdrop-blur-sm md:px-7 md:text-8xl">

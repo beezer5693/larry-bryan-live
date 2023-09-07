@@ -6,9 +6,9 @@ export default function Landing() {
   return (
     <section className="relative z-10 flex w-full items-center justify-center overflow-hidden py-32 md:py-44">
       <Image
+        className="object-cover"
         src={"/assets/landing.png"}
         fill={true}
-        objectFit="cover"
         priority={true}
         alt=""
       />
