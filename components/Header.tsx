@@ -35,7 +35,7 @@ export default function Header() {
           },
         )}
       >
-        <p className="bg-gradient-to-r from-cyan-300/60 via-blue/40 to-cyan-300/60 bg-clip-text font-basement text-2xl tracking-tighter text-transparent">
+        <p className="bg-gradient-to-r from-sky-300/60 via-sky-500/60 to-sky-300/60 bg-clip-text font-basement text-2xl tracking-tighter text-transparent">
           L | B
         </p>
         <Navbar />
