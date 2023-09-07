@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const navBarItems = [
+const tabs = [
   { url: "/", name: "HOME" },
   { url: "/about", name: "ABOUT" },
   { url: "/services", name: "SERVICES" },
@@ -12,12 +12,12 @@ const navBarItems = [
 export default function Navbar() {
   return (
     <nav>
-      <ul className="flex items-center gap-10">
-        {navBarItems.map((item) => (
+      <ul className="hidden items-center gap-10 lg:flex">
+        {tabs.map((item) => (
           <li key={item.name}>
             <Link
               href={item.url}
-              className="hover:text-blue-500 font-basement text-sm text-white"
+              className="font-basement text-sm text-white/80 hover:text-white"
             >
               {item.name}
             </Link>

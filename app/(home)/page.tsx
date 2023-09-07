@@ -1,9 +1,9 @@
 import Header from "@/components/Header";
-import Landing from "./Landing";
+import Landing from "./(section1)/Landing";
 
 export default function Home() {
   return (
-    <section className="relative">
+    <section>
       <Header />
       <Landing />
     </section>
