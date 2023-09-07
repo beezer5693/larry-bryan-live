@@ -4,9 +4,15 @@ import Hero from "./Hero";
 
 export default function Landing() {
   return (
-    <section className="relative z-10 flex w-full items-center justify-center pt-40">
-      <Image src={"/assets/landing.png"} fill={true} priority={true} alt="" />
-      <span className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-black"></span>
+    <section className="relative z-10 flex w-full items-center justify-center overflow-hidden py-32 md:py-44">
+      <Image
+        src={"/assets/landing.png"}
+        fill={true}
+        objectFit="cover"
+        priority={true}
+        alt=""
+      />
+      <span className="absolute bottom-0 left-0 right-0 h-[36rem] bg-gradient-to-b from-transparent to-black"></span>
       <Hero />
     </section>
   );
