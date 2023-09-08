@@ -19,6 +19,10 @@ module.exports = {
       fontFamily: {
         basement: ["var(--font-basement-grotesque)"],
       },
+      backgroundImage: {
+        "gradient-radial":
+          "radial-gradient(50% 50% at 50% 50%,#1344e5 0,transparent 100%)",
+      },
       colors: {
         blue: "#1344e5",
         border: "hsl(var(--border))",

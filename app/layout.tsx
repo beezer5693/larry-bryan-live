@@ -25,7 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn(Roboto.className, basementGrotesque.variable, "bg-black")}
+        className={cn(
+          `${Roboto.className} ${basementGrotesque.variable} scroll-smooth bg-black`,
+        )}
       >
         {children}
       </body>
