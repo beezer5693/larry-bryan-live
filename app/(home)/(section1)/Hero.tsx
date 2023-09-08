@@ -3,24 +3,24 @@ import { IoTriangleOutline, IoTriangle } from "react-icons/io5";
 
 export default function Hero() {
   return (
-    <div className="relative flex w-full flex-col items-center gap-6 md:gap-12 lg:px-0">
-      <div className="flex flex-col gap-1 md:gap-8">
+    <div className="relative flex w-full flex-col items-center gap-8 sm:gap-12 lg:px-0">
+      <div className="flex flex-col gap-1 sm:gap-8">
         <div className="relative flex">
-          <p className="rounded-xl border border-blue/30 px-2 font-basement text-[3.25rem] text-white shadow-md shadow-black ring-1 ring-black/40 backdrop-blur-sm md:px-7 md:text-8xl">
+          <p className="rounded-xl border border-blue/30 px-2 font-basement text-[3.25rem] text-white shadow-md shadow-black ring-1 ring-black/40 backdrop-blur-sm sm:px-7 sm:text-8xl">
             Dare
           </p>
-          <div className="absolute right-7 top-[2.75rem] z-10 h-20 w-8 border-r border-t md:right-12 md:top-12 md:h-28 md:w-14"></div>
-          <div className="absolute right-[4.5rem] top-8 flex gap-1.5 md:right-[8.5rem] md:top-8 md:gap-5">
-            <IoTriangleOutline className="h-6 w-6 rotate-90 text-white md:h-8 md:w-8" />
-            <IoTriangleOutline className="h-6 w-6 rotate-90 text-white md:h-8 md:w-8" />
-            <IoTriangleOutline className="h-6 w-6 rotate-90 text-white md:h-8 md:w-8" />
+          <div className="absolute right-7 top-[2.75rem] z-10 h-20 w-8 border-r border-t sm:right-12 sm:top-12 sm:h-28 sm:w-14"></div>
+          <div className="absolute right-[4.5rem] top-8 flex gap-1.5 sm:right-[8.5rem] sm:top-8 sm:gap-5">
+            <IoTriangleOutline className="h-6 w-6 rotate-90 text-white sm:h-8 sm:w-8" />
+            <IoTriangleOutline className="h-6 w-6 rotate-90 text-white sm:h-8 sm:w-8" />
+            <IoTriangleOutline className="h-6 w-6 rotate-90 text-white sm:h-8 sm:w-8" />
           </div>
-          <IoTriangle className="absolute right-4 top-[8.25rem] h-6 w-6 rotate-180 fill-orange-400 stroke-black shadow-sm md:right-8 md:top-[10.5rem] md:h-8 md:w-8" />
+          <IoTriangle className="absolute right-4 top-[8.25rem] h-6 w-6 rotate-180 fill-orange-400 stroke-black shadow-sm sm:right-8 sm:top-[10.5rem] sm:h-8 sm:w-8" />
         </div>
-        <p className="pr-12 text-center font-basement text-[3.5rem] text-white md:pr-0 md:text-7xl">
+        <p className="pr-12 text-center font-basement text-[3.5rem] text-white sm:pr-0 sm:text-7xl">
           to think
         </p>
-        <p className="rounded-xl border border-blue/30 px-2 font-basement text-[3.25rem] text-white shadow-md shadow-black ring-1 ring-black/40 backdrop-blur-sm md:px-7 md:pb-4 md:text-8xl">
+        <p className="rounded-xl border border-blue/30 px-2 font-basement text-[3.25rem] text-white shadow-md shadow-black ring-1 ring-black/40 backdrop-blur-sm sm:px-7 sm:pb-4 sm:text-8xl">
           Differently
         </p>
       </div>

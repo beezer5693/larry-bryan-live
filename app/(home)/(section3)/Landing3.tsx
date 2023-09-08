@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import brain from "../../../public/assets/brain.png";
 
 export default function Landing3() {
   return (
@@ -17,13 +18,7 @@ export default function Landing3() {
           {"It's time for you to become the superhero of your life."}
         </h3>
       </div>
-      <Image
-        className="mt-10"
-        src={"/assets/brain.png"}
-        width={1500}
-        height={1000}
-        alt=""
-      />
+      <Image className="mt-10" src={brain} alt="" />
       <div className="mt-10 flex w-full justify-center gap-5 md:gap-10 md:pt-8">
         <div className="group">
           <Button className="w-full border bg-gradient-to-r from-transparent to-transparent px-5 text-xs uppercase transition-transform duration-300 ease-in-out group-hover:-translate-y-1 group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white group-hover:text-black group-hover:opacity-100 md:h-16 md:px-10 md:text-xl">

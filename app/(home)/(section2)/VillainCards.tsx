@@ -16,7 +16,7 @@ export default function VillainCards() {
       {cardText.map((text, index) => (
         <div
           key={index}
-          className="relative col-span-1 flex items-center rounded-[1.75rem] border border-white px-10 py-3"
+          className="relative col-span-1 flex items-center rounded-xl border px-10 py-3"
         >
           <Image
             className="absolute -left-5 -top-5"
