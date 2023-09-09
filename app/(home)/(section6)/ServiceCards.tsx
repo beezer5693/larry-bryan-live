@@ -18,7 +18,7 @@ type ServiceCardProps = {
   };
 };
 
-const serviceCards = [
+const serviceCards: ServiceCardProps[] = [
   {
     title: "Opening Keynote",
     number: 1,
@@ -63,7 +63,7 @@ export default function ServiceCards() {
       {serviceCards.map((card: ServiceCardProps, i: number) => (
         <div
           key={i}
-          className="group col-span-1 cursor-pointer space-y-7 rounded-2xl border border-[#1b1b1b] bg-gradient-to-b from-[#222222] to-[#151515] p-8 shadow-2xl shadow-black/50 backdrop-blur-lg transition-all duration-300 ease-in hover:border-neutral-700/50 hover:bg-gradient-to-b hover:from-[#262626] hover:to-[#262626]"
+          className="group col-span-1 cursor-pointer space-y-7 rounded-2xl border border-[#1b1b1b] bg-gradient-to-b from-[#262626] to-[#151515] p-8 shadow-2xl shadow-black/50 backdrop-blur-lg transition-all duration-300 ease-in hover:border-neutral-500/50 hover:bg-gradient-to-b hover:from-[#2e2e2e] hover:to-[#2e2e2e]"
         >
           <div
             className={`relative rounded-lg bg-gradient-to-r from-45% to-transparent p-[1px] ${
@@ -83,9 +83,10 @@ export default function ServiceCards() {
           </div>
           <div className="relative h-[300px] w-full overflow-hidden rounded-xl">
             <Image
-              className="object-cover transition-all duration-500 ease-out group-hover:scale-110"
+              className="object-cover transition duration-300 ease-in group-hover:scale-110"
               src={card.image.src}
               fill
+              sizes="(min-width: 1320px) 494px, (min-width: 1040px) 36.92vw, (min-width: 780px) calc(50vw - 96px), calc(100vw - 106px)"
               alt={card.image.alt}
             />
           </div>
