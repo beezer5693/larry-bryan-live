@@ -85,20 +85,23 @@ const characteristicCards: CharacteristicCardProps[] = [
 
 export default function Landing4() {
   return (
-    <section className="relative flex flex-col items-center overflow-hidden px-5 py-20 lg:px-10">
+    <section className="relative flex flex-col items-center overflow-hidden px-5 pb-36 pt-20 lg:px-10">
       <Image
-        className="absolute right-0 top-16 -z-10"
+        className="absolute right-0 top-16"
         src={orangeShapeRight}
         alt=""
       />
       <Image
-        className="absolute bottom-0 left-0 -z-10"
+        className="absolute bottom-0 left-0"
         src={orangeShapeLeft}
         alt=""
       />
       <div className="relative flex w-full max-w-6xl flex-col items-center gap-14">
         <h1 className="font-basement text-[2rem] uppercase text-white sm:text-[2.5rem]">
-          5 key characteristics of a superhero
+          5 key characteristics of a{" "}
+          <span className="bg-gradient-to-r from-amber-400 to-amber-700 bg-clip-text pr-2.5 italic text-transparent">
+            superhero
+          </span>
         </h1>
         <CharacteristicCards characteristicCards={characteristicCards} />
       </div>

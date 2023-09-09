@@ -10,7 +10,7 @@ const basementGrotesque = localFont({
   variable: "--font-basement-grotesque",
 });
 
-const Roboto = Roboto_Mono({ subsets: ["latin"] });
+const roboto = Roboto_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          `${Roboto.className} ${basementGrotesque.variable} scroll-smooth bg-black`,
+          `${roboto.className} ${basementGrotesque.variable} scroll-smooth bg-black`,
         )}
       >
         {children}

@@ -5,7 +5,7 @@ import blueShape from "../../../public/assets/landing2.png";
 
 export default function Landing2() {
   return (
-    <section className="relative flex items-center justify-center overflow-hidden px-5 pb-20 sm:px-10">
+    <section className="relative flex items-center justify-center overflow-hidden px-5 pb-20 lg:px-10">
       <Image
         className="absolute -left-14 -top-10 rotate-[70deg] object-cover"
         src={blueShape}

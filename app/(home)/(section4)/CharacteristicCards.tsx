@@ -18,16 +18,15 @@ export default function CharacteristicCards({
   characteristicCards: CharacteristicCardProps[];
 }) {
   return (
-    <div className="relative grid w-full grid-cols-2 gap-5">
-      <span className="bg-gradient-radial absolute -right-40 -top-40 -z-20 h-[40rem] w-[50rem]"></span>
-      <span className="bg-gradient-radial absolute -bottom-40 -left-52 -z-20 h-[40rem] w-[50rem]"></span>
+    <div className="relative grid w-full grid-cols-2 gap-5 shadow-lg">
+      <div className="bg-gradient-radial absolute -left-40 -top-40 -z-20 h-[50rem] w-[60rem]"></div>
       {characteristicCards.map((card: CharacteristicCardProps, i: number) => (
         <div
           key={i}
           className={
             i === 0
-              ? "col-span-2 flex h-[450px] flex-col overflow-hidden rounded-2xl md:flex-row"
-              : "col-span-2 flex h-[450px] flex-col overflow-hidden rounded-2xl sm:col-span-1 sm:h-[500px] md:h-[550px]"
+              ? "col-span-2 flex h-[400px] flex-col overflow-hidden rounded-2xl shadow-2xl shadow-black/70 md:flex-row"
+              : "col-span-2 flex h-[400px] flex-col overflow-hidden rounded-2xl shadow-2xl shadow-black/70 sm:col-span-1 sm:h-[500px] md:h-[550px]"
           }
         >
           <div
@@ -54,7 +53,7 @@ export default function CharacteristicCards({
                 : "h-1/2 basis-1/2 bg-gradient-to-br from-[#333333] to-[#0b0b0b] px-7 py-5 lg:px-12"
             }
           >
-            <div className="flex h-full w-full flex-col justify-center gap-5 md:gap-10">
+            <div className="flex h-full w-full flex-col justify-center gap-2 md:gap-10">
               <div className="flex items-center justify-between">
                 <h3 className="font-basement uppercase text-white sm:text-lg lg:text-xl">
                   {card.title}
