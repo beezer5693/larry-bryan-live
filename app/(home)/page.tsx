@@ -8,6 +8,7 @@ import Landing3 from "./(section3)/Landing3";
 import Landing4 from "./(section4)/Landing4";
 import Landing5 from "./(section5)/Landing5";
 import Landing6 from "./(section6)/Landing6";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const services = useRef<HTMLElement>(null);
@@ -28,6 +29,7 @@ export default function Home() {
       <Landing4 />
       <Landing5 />
       <Landing6 services={services} />
+      <Footer />
     </section>
   );
 }

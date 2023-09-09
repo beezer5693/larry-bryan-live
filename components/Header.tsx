@@ -1,14 +1,15 @@
 "use client";
 
-import React, { use } from "react";
-import { useState, useEffect } from "react";
+import { cn } from "@/lib/utils";
+import { Squash as Hamburger } from "hamburger-react";
+import { useEffect, useState } from "react";
 import Navbar from "./NavBar";
 import { Button } from "./ui/button";
-import { Squash as Hamburger } from "hamburger-react";
-import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export default function Header() {
   const [topOfPage, setTopOfPage] = useState(false);
+  const [activeTab, setActiveTab] = useState("home");
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -28,17 +29,15 @@ export default function Header() {
     >
       <div
         className={cn(
-          "flex w-full max-w-screen-2xl items-center justify-between",
-          {
-            "py-2": topOfPage,
-            "py-5": !topOfPage,
-          },
+          "flex w-full max-w-screen-2xl items-center justify-between py-4",
         )}
       >
-        <p className="font-basement text-2xl tracking-tighter text-white">
-          L | B
-        </p>
-        <Navbar />
+        <Link href="/">
+          <p className="font-basement text-2xl tracking-tighter text-white">
+            L | B
+          </p>
+        </Link>
+        <Navbar activeTab={activeTab} handleTabChange={setActiveTab} />
         <div className="group">
           <Button
             className={cn(

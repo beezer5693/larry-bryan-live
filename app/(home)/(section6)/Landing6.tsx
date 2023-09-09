@@ -12,6 +12,7 @@ type Props = {
 export default function Landing6({ services }: Props) {
   return (
     <section
+      id="services"
       className="relative flex flex-col items-center overflow-hidden px-5 lg:px-10 lg:py-10"
       ref={services}
     >
