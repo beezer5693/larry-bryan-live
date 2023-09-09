@@ -1,30 +1,28 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import brain from "../../../public/assets/brain.png";
+import { Button } from "@/components/ui/Button";
 
 type Props = {
   section: React.RefObject<HTMLElement>;
   scrollDown: (ref: React.RefObject<HTMLElement>) => void;
 };
 
-export default function Landing3({ section, scrollDown }: Props) {
+export default function Section3({ section, scrollDown }: Props) {
   return (
-    <section className="flex flex-col items-center pb-10 pt-10 sm:px-10 md:py-20">
+    <section className="relative flex flex-col items-center sm:px-10">
+      <div className="absolute -bottom-20 left-0 right-0 h-[15rem] bg-gradient-to-t from-black to-transparent"></div>
       <div className="flex w-full max-w-6xl flex-col items-center gap-5 px-5 sm:px-0">
-        <p className="inline-flex flex-col items-center gap-1 font-basement text-3xl uppercase text-white md:text-5xl">
+        <p className="inline-flex max-w-[18ch] flex-col items-center gap-1 text-center font-basement text-4xl uppercase text-white sm:max-w-[100ch] md:text-left md:text-5xl">
           <span>harness the immense potential</span>
-          <span className="font-basement text-xl uppercase text-white md:text-3xl">
+          <span className="font-basement text-2xl uppercase text-white md:text-3xl">
             within your mind and create lasting change
           </span>
         </p>
-        <h3 className="font-light text-amber-500 md:text-2xl">
+        <h3 className="max-w-[30ch] text-center text-lg font-light text-amber-500 sm:max-w-[100ch] md:text-2xl">
           {"It's time for you to become the superhero of your life."}
         </h3>
       </div>
-      <Image height={1500} width={1500} src={brain} alt="" />
-      <div className="mt-10 flex w-full justify-center gap-5 md:gap-10 md:pt-8">
+      <div className="relative flex w-full justify-center gap-5 pt-8 md:gap-10">
         <div className="group">
           <Button
             className="w-full border bg-gradient-to-r from-transparent to-transparent px-5 text-xs uppercase transition-transform duration-300 ease-in-out group-hover:-translate-y-1 group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white group-hover:text-black group-hover:opacity-100 md:h-16 md:px-10 md:text-xl"

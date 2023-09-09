@@ -13,7 +13,7 @@ const tabs = [
   { id: "podcast", label: "PODCAST", url: "/podcast" },
 ];
 
-export default function Navbar({ activeTab, handleTabChange }: Props) {
+export default function NavTabs({ activeTab, handleTabChange }: Props) {
   return (
     <nav>
       <div className="hidden items-center gap-10 lg:flex">

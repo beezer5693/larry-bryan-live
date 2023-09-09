@@ -7,7 +7,7 @@ import awareness from "../../../public/assets/characteristics/awareness.png";
 import leadership from "../../../public/assets/characteristics/leadership.png";
 import orangeShapeRight from "../../../public/assets/orangeshape.png";
 import orangeShapeLeft from "../../../public/assets/orangeshapeleft.png";
-import CharacteristicCards from "./CharacteristicCards";
+import CharacteristicCards from "./components/CharacteristicCards";
 
 type CharacteristicCardProps = {
   title: string;
@@ -83,9 +83,9 @@ const characteristicCards: CharacteristicCardProps[] = [
   },
 ];
 
-export default function Landing4() {
+export default function Section4() {
   return (
-    <section className="relative flex flex-col items-center overflow-hidden px-5 pb-36 pt-20 lg:px-10">
+    <section className="relative flex flex-col items-center overflow-hidden px-5 lg:px-10">
       <Image
         className="absolute right-0 top-16"
         src={orangeShapeRight}

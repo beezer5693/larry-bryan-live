@@ -3,8 +3,8 @@
 import { cn } from "@/lib/utils";
 import { Squash as Hamburger } from "hamburger-react";
 import { useEffect, useState } from "react";
-import Navbar from "./NavBar";
-import { Button } from "./ui/button";
+import NavTabs from "./NavTabs";
+import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 
 export default function Header() {
@@ -37,7 +37,7 @@ export default function Header() {
             L | B
           </p>
         </Link>
-        <Navbar activeTab={activeTab} handleTabChange={setActiveTab} />
+        <NavTabs activeTab={activeTab} handleTabChange={setActiveTab} />
         <div className="group">
           <Button
             className={cn(

@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Landing5() {
+export default function Section5() {
   return (
-    <section className="relative flex justify-center bg-black to-100% px-5 py-20 lg:px-10 lg:py-32">
+    <section className="relative flex justify-center bg-black to-100% px-5 lg:px-10">
       <div className="relative flex w-full max-w-6xl flex-col items-center gap-12">
         <p className="font-basement text-xl text-white md:text-2xl md:leading-8 lg:text-3xl lg:leading-10">
           Come join me as we discover together how to turn your inner villains

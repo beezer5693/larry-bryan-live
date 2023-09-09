@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import Hero from "./Hero";
+import Hero from "./components/Hero";
 import mainBackground from "../../../public/assets/landing.png";
 
-export default function Landing() {
+export default function Section1() {
   return (
-    <section className="relative z-10 flex w-full items-center justify-center overflow-hidden pb-16 pt-32 sm:py-32 lg:py-44">
+    <section className="relative z-10 flex w-full items-center justify-center overflow-hidden pt-32 lg:pt-44">
       <Image
         style={{ objectFit: "cover" }}
         src={mainBackground}

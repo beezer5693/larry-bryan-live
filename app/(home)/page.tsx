@@ -1,14 +1,14 @@
 "use client";
 
 import { useRef } from "react";
-import Header from "@/components/Header";
-import Landing from "./(section1)/Landing";
-import Landing2 from "./(section2)/Landing2";
-import Landing3 from "./(section3)/Landing3";
-import Landing4 from "./(section4)/Landing4";
-import Landing5 from "./(section5)/Landing5";
-import Landing6 from "./(section6)/Landing6";
-import Footer from "@/components/Footer";
+import Header from "@/components/shared/header/Header";
+import Section1 from "../modules/homepage/Section1";
+import Section2 from "../modules/homepage/Section2";
+import Section3 from "../modules/homepage/Section3";
+import Section4 from "../modules/homepage/Section4";
+import Section5 from "../modules/homepage/Section5";
+import Section6 from "../modules/homepage/Section6";
+import Footer from "@/components/shared/footer/Footer";
 
 export default function Home() {
   const services = useRef<HTMLElement>(null);
@@ -23,13 +23,15 @@ export default function Home() {
   return (
     <section>
       <Header />
-      <Landing />
-      <Landing2 />
-      <Landing3 section={services} scrollDown={scrollDown} />
-      <Landing4 />
-      <Landing5 />
-      <Landing6 services={services} />
-      <Footer />
+      <div className="space-y-32 lg:space-y-44">
+        <Section1 />
+        <Section2 />
+        <Section3 section={services} scrollDown={scrollDown} />
+        <Section4 />
+        <Section5 />
+        <Section6 services={services} />
+        <Footer />
+      </div>
     </section>
   );
 }

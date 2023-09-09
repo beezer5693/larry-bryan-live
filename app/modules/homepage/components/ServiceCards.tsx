@@ -2,10 +2,10 @@ import React from "react";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 import { ArrowRight } from "lucide-react";
-import keynote1 from "../../../public/assets/services/keynote1.png";
-import keynote2 from "../../../public/assets/services/keynote2.png";
-import breakout1 from "../../../public/assets/services/breakout1.png";
-import breakout2 from "../../../public/assets/services/breakout2.png";
+import keynote1 from "../../../../public/assets/services/keynote1.png";
+import keynote2 from "../../../../public/assets/services/keynote2.png";
+import breakout1 from "../../../../public/assets/services/breakout1.png";
+import breakout2 from "../../../../public/assets/services/breakout2.png";
 
 type ServiceCardProps = {
   title: string;
@@ -81,7 +81,7 @@ export default function ServiceCards() {
               <p className="font-basement text-xl text-white">{card.title}</p>
             </div>
           </div>
-          <div className="relative h-[300px] w-full overflow-hidden rounded-xl">
+          <div className="relative h-[300px] w-full overflow-hidden rounded-xl group-hover:shadow-xl group-hover:shadow-neutral-900/80">
             <Image
               className="object-cover transition duration-300 ease-in group-hover:scale-110"
               src={card.image.src}
