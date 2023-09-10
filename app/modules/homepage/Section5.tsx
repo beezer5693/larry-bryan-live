@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Section5() {
   return (
-    <section className="relative flex justify-center to-100% px-5 lg:px-10">
+    <section className="relative flex justify-center to-100% px-5 py-14 md:py-24 lg:px-10">
       <div className="relative flex w-full max-w-6xl flex-col items-center gap-12">
         <p className="font-basement text-xl text-white md:text-2xl md:leading-8 lg:text-3xl lg:leading-10">
           Come join me as we discover together how to turn your inner villains

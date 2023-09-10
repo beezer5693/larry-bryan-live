@@ -9,11 +9,11 @@ export default function Section6({ services }: Props) {
   return (
     <section
       id="services"
-      className="relative flex flex-col items-center overflow-hidden px-5 lg:px-10"
+      className="relative flex flex-col items-center overflow-hidden px-5 py-14 md:py-24 lg:px-10"
       ref={services}
     >
       <div className="relative w-full max-w-6xl space-y-5 text-white lg:space-y-8">
-        <div className="flex w-full flex-col items-center gap-3 rounded-2xl bg-[#1b1b1b] bg-gradient-to-br from-[#0b2583] to-[#03081c] p-6 shadow-2xl shadow-black/50">
+        <div className="flex w-full flex-col items-center gap-3 rounded-2xl bg-[#1b1b1b] bg-gradient-to-br from-[#0b2583] to-[#040b25] p-6 shadow-2xl shadow-black/50">
           <h1 className="font-basement text-6xl sm:text-7xl md:text-8xl">
             Services
           </h1>

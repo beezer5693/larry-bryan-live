@@ -6,6 +6,7 @@ import keynote1 from "../../../../public/assets/services/keynote1.png";
 import keynote2 from "../../../../public/assets/services/keynote2.png";
 import breakout1 from "../../../../public/assets/services/breakout1.png";
 import breakout2 from "../../../../public/assets/services/breakout2.png";
+import { cn } from "@/lib/utils";
 
 type ImageProps = {
   src: StaticImageData;
@@ -69,11 +70,19 @@ const serviceCards: ServiceCardProps[] = [
 
 export default function ServiceCards() {
   return (
-    <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:gap-8">
+    <div className="grid grid-cols-1 gap-5 pb-10 md:grid-cols-2 lg:gap-8">
       {serviceCards.map((card: ServiceCardProps, i: number) => (
         <div
           key={i}
-          className="group col-span-1 cursor-pointer space-y-7 rounded-2xl border border-[#1b1b1b] bg-gradient-to-br from-[#0b2583] to-[#03081c] p-8 shadow-2xl shadow-black/50 backdrop-blur-lg transition-all duration-300 ease-in hover:border-neutral-500/50 hover:bg-gradient-to-b hover:from-[#2e2e2e] hover:to-[#2e2e2e]"
+          className={cn(
+            "group col-span-1 cursor-pointer space-y-7 rounded-2xl border bg-gradient-to-br p-8 backdrop-blur-lg transition-all duration-300 ease-in-out hover:bg-gradient-to-b",
+            {
+              "border-[#1b1b1b] from-[#0b2583] to-[#040b25] hover:border-neutral-500/50 hover:from-[#0b206e] hover:to-[#0b206e]":
+                i < 2,
+              "border-amber-950 from-amber-700 to-amber-950 hover:border-amber-600 hover:from-amber-800 hover:to-amber-800":
+                i >= 2,
+            },
+          )}
         >
           <div
             className={`relative rounded-lg bg-gradient-to-r from-45% to-transparent p-[1px] ${
@@ -91,7 +100,7 @@ export default function ServiceCards() {
               <p className="font-basement text-xl text-white">{card.title}</p>
             </div>
           </div>
-          <div className="relative h-[300px] w-full overflow-hidden rounded-xl group-hover:shadow-xl group-hover:shadow-neutral-900/80">
+          <div className="relative h-[300px] w-full overflow-hidden rounded-xl transition duration-300 ease-in-out">
             <Image
               className="object-cover transition duration-300 ease-in group-hover:scale-110"
               src={card.image.src}

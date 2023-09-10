@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button";
 
 export default function Header() {
   const [topOfPage, setTopOfPage] = useState(false);
-  const [activeTab, setActiveTab] = useState("home");
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -20,9 +19,9 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "fixed left-0 right-0 top-0 z-50 flex justify-center px-5 lg:px-14",
+        "fixed left-0 right-0 top-0 z-[100] flex justify-center px-5 lg:px-14",
         {
-          "bg-black/70 backdrop-blur-lg": topOfPage,
+          "bg-[#03081c]/80 backdrop-blur-lg": topOfPage,
           "bg-transparent": !topOfPage,
         },
       )}
