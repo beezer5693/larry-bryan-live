@@ -21,18 +21,18 @@ export default function Footer() {
           "-bottom-[50rem] -right-96 -z-20 rotate-[-20deg] h-[55rem] w-[100rem]"
         }
       />
-      <div className="flex w-full max-w-6xl items-center justify-center gap-44 px-5 pb-20">
+      <div className="flex w-full max-w-6xl flex-col items-center justify-center gap-44 px-5 pb-20 sm:flex-row">
         <div className="space-y-14">
-          <div className="space-y-4">
+          <div className="space-y-4 text-center">
             <h1 className="font-basement capitalize">larry bryan live</h1>
             <p className="inline-flex flex-col text-xs">
               <span>151 N. Nob Hill Road Suite 350</span>
               <span>Plantation, FL 33324</span>
             </p>
           </div>
-          <div className="space-y-5">
+          <div className="space-y-5 text-center">
             <p className="text-sm uppercase">connect with larry</p>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center gap-3">
               <Link className="group" href="https://www.facebook.com/">
                 <FaFacebookF className="fill-neutral-200/90 group-hover:fill-white" />
               </Link>
@@ -48,10 +48,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="self-start">hello</div>
       </div>
-      <div className="w-full border-t border-neutral-800/50 px-14 py-3">
-        <p className="text-[.65rem] text-neutral-400">
+      <div className="w-full border-t border-neutral-800/50 px-5 py-3">
+        <p className="text-center text-[.65rem] text-neutral-400">
           <span className="text-sm">©</span> 2023 Larry Bryan Live, LLC. All
           rights reserved.
         </p>

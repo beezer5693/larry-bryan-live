@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <Header />
-      <main className="pb-40">
+      <main className="pb-20 sm:pb-32">
         <Section1 />
         <Section2 />
         <Section3 section={services} scrollTo={scrollTo} />

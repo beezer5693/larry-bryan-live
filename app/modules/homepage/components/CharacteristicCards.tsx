@@ -24,12 +24,12 @@ export default function CharacteristicCards({
     <div className="relative grid w-full grid-cols-2 gap-5 shadow-lg">
       <RadialGradient
         className2={
-          "-left-[15rem] rotate-[30deg] -top-[10rem] -z-20 h-[50rem] w-[60rem]"
+          "-left-[10rem] rotate-[7deg] -top-[7rem] -z-20 h-[40rem] w-[50rem]"
         }
       />
       <RadialGradient
         className2={
-          "-right-[13rem] rotate-[-50deg] top-[50rem] -z-20 h-[50rem] w-[60rem]"
+          "-right-[10rem] rotate-[50deg] top-[60rem] -z-20 h-[40rem] w-[50rem]"
         }
       />
       {characteristicCards.map((card: CharacteristicCardProps, i: number) => (
@@ -37,8 +37,8 @@ export default function CharacteristicCards({
           key={i}
           className={
             i === 0
-              ? "shadow-blue/200 relative z-50 col-span-2 flex h-[400px] flex-col overflow-hidden rounded-2xl border border-blue/10 shadow-2xl md:flex-row"
-              : "shadow-blue/200 relative z-50 col-span-2 flex h-[400px] flex-col overflow-hidden rounded-2xl border border-blue/10 shadow-2xl sm:col-span-1 sm:h-[500px] md:h-[550px]"
+              ? "shadow-blue/200 relative z-50 col-span-2 flex h-[400px] flex-col overflow-hidden rounded-2xl shadow-xl md:flex-row"
+              : "shadow-blue/200 shadow-xxl relative z-50 col-span-2 flex h-[400px] flex-col overflow-hidden rounded-2xl sm:col-span-1 sm:h-[500px] md:h-[550px]"
           }
         >
           <div
@@ -61,8 +61,8 @@ export default function CharacteristicCards({
           <div
             className={
               i === 0
-                ? "h-1/2 basis-1/2 bg-gradient-to-br from-[#0e1648] to-[#0e1648]/20 px-7 sm:px-10 md:h-full"
-                : "h-1/2 basis-1/2 bg-gradient-to-br from-[#0e1648] to-[#0e1648]/20 px-7 py-5 lg:px-12"
+                ? "h-1/2 basis-1/2 bg-gradient-to-br from-[#0e1b73] to-[#060c27] px-7 sm:px-10 md:h-full"
+                : "h-1/2 basis-1/2 bg-gradient-to-br from-[#0e1b73] to-[#060c27] px-7 py-5 lg:px-12"
             }
           >
             <div className="flex h-full w-full flex-col justify-center gap-2 md:gap-10">

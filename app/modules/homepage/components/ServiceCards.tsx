@@ -75,32 +75,41 @@ export default function ServiceCards() {
         <div
           key={i}
           className={cn(
-            "group col-span-1 cursor-pointer space-y-7 rounded-2xl border bg-gradient-to-br p-8 backdrop-blur-lg transition-all duration-300 ease-in-out hover:bg-gradient-to-b",
+            "group col-span-1 cursor-pointer space-y-7 rounded-2xl bg-gradient-to-br p-6 backdrop-blur-lg transition-all duration-300 ease-in-out hover:bg-gradient-to-b md:p-8",
             {
-              "border-[#1b1b1b] from-[#0b2583] to-[#040b25] hover:border-neutral-500/50 hover:from-[#0b206e] hover:to-[#0b206e]":
+              "from-[#0e1b73] to-[#060c27] hover:border-neutral-500/50 hover:from-[#0b206e] hover:to-[#0b206e]":
                 i < 2,
-              "border-amber-950 from-amber-700 to-amber-950 hover:border-amber-600 hover:from-amber-800 hover:to-amber-800":
+              " from-amber-700 to-amber-950 hover:border-amber-600 hover:from-amber-700 hover:to-amber-700":
                 i >= 2,
             },
           )}
         >
           <div
-            className={`relative rounded-lg bg-gradient-to-r from-45% to-transparent p-[1px] ${
+            className={`relative rounded-lg bg-gradient-to-r from-40% to-transparent p-[1px] ${
               i < 2 ? "from-blue" : "from-amber-600"
             }`}
           >
             <div
-              className={`absolute right-0 top-1/2 -translate-y-1/2 rounded-lg border bg-[#1b1b1b] px-7 py-4 ${
-                i < 2 ? "border-blue" : "border-amber-600"
-              }`}
+              className={cn(
+                "absolute right-0 top-1/2 -translate-y-1/2 rounded-lg border px-7 py-4",
+                {
+                  "border-blue bg-[#03081c]": i < 2,
+                  "border-amber-600 bg-amber-950": i >= 2,
+                },
+              )}
             >
               <p className="font-basement text-xl">{card.number}</p>
             </div>
-            <div className="rounded-lg bg-[#1b1b1b] py-3 pl-4">
+            <div
+              className={cn("rounded-lg bg-[#03081c] py-3 pl-4", {
+                "bg-[#03081c]": i < 2,
+                "bg-amber-950": i >= 2,
+              })}
+            >
               <p className="font-basement text-xl text-white">{card.title}</p>
             </div>
           </div>
-          <div className="relative h-[300px] w-full overflow-hidden rounded-xl transition duration-300 ease-in-out">
+          <div className="relative h-[200px] w-full overflow-hidden rounded-xl transition duration-300 ease-in-out sm:h-[300px]">
             <Image
               className="object-cover transition duration-300 ease-in group-hover:scale-110"
               src={card.image.src}

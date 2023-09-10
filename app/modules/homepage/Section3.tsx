@@ -17,7 +17,7 @@ export default function Section3({ section, scrollTo }: Props) {
             within your mind and create lasting change
           </span>
         </p>
-        <h3 className="max-w-[30ch] text-center text-lg font-light text-amber-500 sm:max-w-[100ch] md:text-2xl">
+        <h3 className="max-w-[30ch] text-center text-lg italic text-amber-500 sm:max-w-[100ch] md:text-2xl">
           {"It's time for you to become the superhero of your life."}
         </h3>
       </div>

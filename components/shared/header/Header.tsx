@@ -28,7 +28,7 @@ export default function Header() {
     >
       <div
         className={cn(
-          "flex w-full max-w-screen-2xl items-center justify-between py-4",
+          "flex w-full max-w-screen-2xl items-center justify-between py-2 lg:py-4",
         )}
       >
         <Link href="/">
