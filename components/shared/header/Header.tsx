@@ -5,7 +5,7 @@ import NavTabs from "./NavTabs";
 import Link from "next/link";
 import { Squeeze as Hamburger } from "hamburger-react";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 
 export default function Header() {
   const [topOfPage, setTopOfPage] = useState(false);
