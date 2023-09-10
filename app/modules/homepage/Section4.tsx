@@ -1,23 +1,24 @@
-import React from "react";
 import Image, { StaticImageData } from "next/image";
-import mindset from "../../../public/assets/characteristics/mindset.png";
-import grit from "../../../public/assets/characteristics/grit.png";
-import courage from "../../../public/assets/characteristics/courage.png";
 import awareness from "../../../public/assets/characteristics/awareness.png";
+import courage from "../../../public/assets/characteristics/courage.png";
+import grit from "../../../public/assets/characteristics/grit.png";
 import leadership from "../../../public/assets/characteristics/leadership.png";
+import mindset from "../../../public/assets/characteristics/mindset.png";
 import orangeShapeRight from "../../../public/assets/orangeshape.png";
 import orangeShapeLeft from "../../../public/assets/orangeshapeleft.png";
 import CharacteristicCards from "./components/CharacteristicCards";
+
+type ImageProps = {
+  src: StaticImageData;
+  alt: string;
+  sizes?: string;
+};
 
 type CharacteristicCardProps = {
   title: string;
   phonetic: string;
   description: string;
-  image: {
-    src: StaticImageData;
-    alt: string;
-    sizes?: string;
-  };
+  image: ImageProps;
 };
 
 const characteristicCards: CharacteristicCardProps[] = [
@@ -86,12 +87,7 @@ const characteristicCards: CharacteristicCardProps[] = [
 export default function Section4() {
   return (
     <section className="relative flex flex-col items-center px-5 lg:px-10">
-      <Image className="absolute right-0 top-5" src={orangeShapeRight} alt="" />
-      <Image
-        className="absolute -bottom-10 left-0"
-        src={orangeShapeLeft}
-        alt=""
-      />
+      <div className="absolute -top-20 left-0 right-0 h-[15rem] bg-gradient-to-b from-black to-transparent"></div>
       <div className="relative flex w-full max-w-6xl flex-col items-center gap-14">
         <h1 className="font-basement text-[2rem] uppercase text-white sm:text-[2.5rem]">
           5 key characteristics of a{" "}

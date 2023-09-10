@@ -73,7 +73,7 @@ export default function ServiceCards() {
       {serviceCards.map((card: ServiceCardProps, i: number) => (
         <div
           key={i}
-          className="group col-span-1 cursor-pointer space-y-7 rounded-2xl border border-[#1b1b1b] bg-gradient-to-b from-[#262626] to-[#151515] p-8 shadow-2xl shadow-black/50 backdrop-blur-lg transition-all duration-300 ease-in hover:border-neutral-500/50 hover:bg-gradient-to-b hover:from-[#2e2e2e] hover:to-[#2e2e2e]"
+          className="group col-span-1 cursor-pointer space-y-7 rounded-2xl border border-[#1b1b1b] bg-gradient-to-br from-[#0b2583] to-[#03081c] p-8 shadow-2xl shadow-black/50 backdrop-blur-lg transition-all duration-300 ease-in hover:border-neutral-500/50 hover:bg-gradient-to-b hover:from-[#2e2e2e] hover:to-[#2e2e2e]"
         >
           <div
             className={`relative rounded-lg bg-gradient-to-r from-45% to-transparent p-[1px] ${

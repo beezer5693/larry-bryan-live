@@ -23,22 +23,29 @@ export default function CharacteristicCards({
   return (
     <div className="relative grid w-full grid-cols-2 gap-5 shadow-lg">
       <RadialGradient
-        className2={"-left-52 -top-44 -z-20 h-[50rem] w-[60rem]"}
+        className2={
+          "-left-[15rem] rotate-[30deg] -top-[15rem] z-10 h-[50rem] w-[60rem]"
+        }
+      />
+      <RadialGradient
+        className2={
+          "-right-[13rem] rotate-[-50deg] top-[45rem] -z-20 h-[50rem] w-[60rem]"
+        }
       />
       {characteristicCards.map((card: CharacteristicCardProps, i: number) => (
         <div
           key={i}
           className={
             i === 0
-              ? "col-span-2 flex h-[400px] flex-col overflow-hidden rounded-2xl shadow-2xl shadow-black/70 md:flex-row"
-              : "col-span-2 flex h-[400px] flex-col overflow-hidden rounded-2xl shadow-2xl shadow-black/70 sm:col-span-1 sm:h-[500px] md:h-[550px]"
+              ? "shadow-blue/200 relative z-20 col-span-2 flex h-[400px] flex-col overflow-hidden rounded-2xl shadow-2xl md:flex-row"
+              : "shadow-blue/200 relative z-20 col-span-2 flex h-[400px] flex-col overflow-hidden rounded-2xl shadow-2xl sm:col-span-1 sm:h-[500px] md:h-[550px]"
           }
         >
           <div
             className={
               i === 0
-                ? "relative h-1/2 w-full basis-1/2 bg-neutral-800 md:h-full"
-                : "relative h-1/2 w-full basis-1/2 bg-neutral-800"
+                ? "relative h-1/2 w-full basis-1/2 md:h-full"
+                : "relative h-1/2 w-full basis-1/2"
             }
           >
             <Image
@@ -54,8 +61,8 @@ export default function CharacteristicCards({
           <div
             className={
               i === 0
-                ? "h-1/2 basis-1/2 bg-gradient-to-br from-[#333333] to-[#0b0b0b] px-7 sm:px-10 md:h-full"
-                : "h-1/2 basis-1/2 bg-gradient-to-br from-[#333333] to-[#0b0b0b] px-7 py-5 lg:px-12"
+                ? "h-1/2 basis-1/2 bg-gradient-to-br from-[#0b2583] to-[#03081c] px-7 sm:px-10 md:h-full"
+                : "h-1/2 basis-1/2 bg-gradient-to-br from-[#0b2583] to-[#03081c] px-7 py-5 lg:px-12"
             }
           >
             <div className="flex h-full w-full flex-col justify-center gap-2 md:gap-10">

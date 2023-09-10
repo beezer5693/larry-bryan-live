@@ -14,7 +14,7 @@ export default function Section1() {
         fill
         alt=""
       />
-      <div className="absolute bottom-0 left-0 right-0 h-[36rem] bg-gradient-to-b from-transparent to-black"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-[36rem] bg-gradient-to-b from-transparent to-[#03081c]"></div>
       <Hero />
     </section>
   );

@@ -9,10 +9,10 @@ import Section4 from "../modules/homepage/Section4";
 import Section5 from "../modules/homepage/Section5";
 import Section6 from "../modules/homepage/Section6";
 import Footer from "@/components/shared/footer/Footer";
+import Section7 from "../modules/homepage/Section7";
 
 export default function Home() {
   const services = useRef<HTMLElement>(null);
-  const home = useRef<HTMLElement>(null);
 
   function scrollTo(ref: React.RefObject<HTMLElement>) {
     window.scrollTo({
@@ -31,6 +31,7 @@ export default function Home() {
         <Section4 />
         <Section5 />
         <Section6 services={services} />
+        <Section7 />
       </main>
       <Footer />
     </div>
