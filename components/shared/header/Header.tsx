@@ -37,7 +37,7 @@ export default function Header() {
             L | B
           </p>
         </Link>
-        <NavTabs activeTab={activeTab} handleTabChange={setActiveTab} />
+        <NavTabs />
         <div className="group">
           <Button
             className={cn(
