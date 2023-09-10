@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 
 type Props = {
   section: React.RefObject<HTMLElement>;
-  scrollDown: (ref: React.RefObject<HTMLElement>) => void;
+  scrollTo: (ref: React.RefObject<HTMLElement>) => void;
 };
 
-export default function Section3({ section, scrollDown }: Props) {
+export default function Section3({ section, scrollTo }: Props) {
   return (
     <section className="relative flex flex-col items-center sm:px-10">
       <div className="absolute -bottom-20 left-0 right-0 h-[15rem] bg-gradient-to-t from-black to-transparent"></div>
@@ -26,7 +26,7 @@ export default function Section3({ section, scrollDown }: Props) {
         <div className="group">
           <Button
             className="w-full border bg-gradient-to-r from-transparent to-transparent px-5 text-xs uppercase transition-transform duration-300 ease-in-out group-hover:-translate-y-1 group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white group-hover:text-black group-hover:opacity-100 md:h-16 md:px-10 md:text-xl"
-            onClick={() => scrollDown(section)}
+            onClick={() => scrollTo(section)}
           >
             my services
           </Button>

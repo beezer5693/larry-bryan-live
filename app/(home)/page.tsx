@@ -12,8 +12,9 @@ import Footer from "@/components/shared/footer/Footer";
 
 export default function Home() {
   const services = useRef<HTMLElement>(null);
+  const home = useRef<HTMLElement>(null);
 
-  function scrollDown(ref: React.RefObject<HTMLElement>) {
+  function scrollTo(ref: React.RefObject<HTMLElement>) {
     window.scrollTo({
       top: ref.current?.offsetTop,
       behavior: "smooth",
@@ -26,7 +27,7 @@ export default function Home() {
       <main className="space-y-32 pb-40 lg:space-y-40">
         <Section1 />
         <Section2 />
-        <Section3 section={services} scrollDown={scrollDown} />
+        <Section3 section={services} scrollTo={scrollTo} />
         <Section4 />
         <Section5 />
         <Section6 services={services} />
