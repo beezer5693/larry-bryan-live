@@ -1,11 +1,11 @@
 "use client";
 
-import { cn } from "@/lib/utils";
-import { Squash as Hamburger } from "hamburger-react";
 import { useEffect, useState } from "react";
 import NavTabs from "./NavTabs";
-import { Button } from "@/components/ui/Button";
 import Link from "next/link";
+import { Squeeze as Hamburger } from "hamburger-react";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/Button";
 
 export default function Header() {
   const [topOfPage, setTopOfPage] = useState(false);
@@ -48,7 +48,7 @@ export default function Header() {
           </Button>
         </div>
         <div className="lg:hidden">
-          <Hamburger size={24} color="#ffffff" />
+          <Hamburger size={28} color="#ffffff" />
         </div>
       </div>
     </header>

@@ -85,14 +85,10 @@ const characteristicCards: CharacteristicCardProps[] = [
 
 export default function Section4() {
   return (
-    <section className="relative flex flex-col items-center overflow-hidden px-5 lg:px-10">
+    <section className="relative flex flex-col items-center px-5 lg:px-10">
+      <Image className="absolute right-0 top-5" src={orangeShapeRight} alt="" />
       <Image
-        className="absolute right-0 top-16"
-        src={orangeShapeRight}
-        alt=""
-      />
-      <Image
-        className="absolute bottom-0 left-0"
+        className="absolute -bottom-10 left-0"
         src={orangeShapeLeft}
         alt=""
       />

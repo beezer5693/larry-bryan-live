@@ -7,15 +7,17 @@ import keynote2 from "../../../../public/assets/services/keynote2.png";
 import breakout1 from "../../../../public/assets/services/breakout1.png";
 import breakout2 from "../../../../public/assets/services/breakout2.png";
 
+type ImageProps = {
+  src: StaticImageData;
+  alt: string;
+  sizes?: string;
+};
+
 type ServiceCardProps = {
   title: string;
   number: number;
   description: string;
-  image: {
-    src: StaticImageData;
-    alt: string;
-    sizes?: string;
-  };
+  image: ImageProps;
 };
 
 const serviceCards: ServiceCardProps[] = [
@@ -26,6 +28,8 @@ const serviceCards: ServiceCardProps[] = [
     image: {
       src: keynote1,
       alt: "keynote 1",
+      sizes:
+        "(min-width: 1320px) 494px, (min-width: 1040px) 36.92vw, (min-width: 780px) calc(50vw - 96px), calc(100vw - 106px)",
     },
   },
   {
@@ -35,6 +39,8 @@ const serviceCards: ServiceCardProps[] = [
     image: {
       src: keynote2,
       alt: "keynote 1",
+      sizes:
+        "(min-width: 1320px) 494px, (min-width: 1040px) 36.92vw, (min-width: 780px) calc(50vw - 96px), calc(100vw - 106px)",
     },
   },
   {
@@ -44,6 +50,8 @@ const serviceCards: ServiceCardProps[] = [
     image: {
       src: breakout1,
       alt: "keynote 1",
+      sizes:
+        "(min-width: 1320px) 494px, (min-width: 1040px) 36.92vw, (min-width: 780px) calc(50vw - 96px), calc(100vw - 106px)",
     },
   },
   {
@@ -53,6 +61,8 @@ const serviceCards: ServiceCardProps[] = [
     image: {
       src: breakout2,
       alt: "keynote 1",
+      sizes:
+        "(min-width: 1320px) 494px, (min-width: 1040px) 36.92vw, (min-width: 780px) calc(50vw - 96px), calc(100vw - 106px)",
     },
   },
 ];
@@ -86,7 +96,7 @@ export default function ServiceCards() {
               className="object-cover transition duration-300 ease-in group-hover:scale-110"
               src={card.image.src}
               fill
-              sizes="(min-width: 1320px) 494px, (min-width: 1040px) 36.92vw, (min-width: 780px) calc(50vw - 96px), calc(100vw - 106px)"
+              sizes={card.image.sizes}
               alt={card.image.alt}
             />
           </div>

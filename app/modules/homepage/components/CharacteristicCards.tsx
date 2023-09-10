@@ -1,15 +1,18 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
+import RadialGradient from "@/components/shared/gradient/RadialGradient";
+
+type ImageProps = {
+  src: StaticImageData;
+  alt: string;
+  sizes?: string;
+};
 
 type CharacteristicCardProps = {
   title: string;
   phonetic: string;
   description: string;
-  image: {
-    src: StaticImageData;
-    alt: string;
-    sizes?: string;
-  };
+  image: ImageProps;
 };
 
 export default function CharacteristicCards({
@@ -19,7 +22,9 @@ export default function CharacteristicCards({
 }) {
   return (
     <div className="relative grid w-full grid-cols-2 gap-5 shadow-lg">
-      <div className="bg-gradient-radial absolute -left-40 -top-40 -z-20 h-[50rem] w-[60rem]"></div>
+      <RadialGradient
+        className2={"-left-52 -top-44 -z-20 h-[50rem] w-[60rem]"}
+      />
       {characteristicCards.map((card: CharacteristicCardProps, i: number) => (
         <div
           key={i}

@@ -17,7 +17,7 @@ export default function Section6({ services }: Props) {
           <h1 className="font-basement text-6xl sm:text-7xl md:text-8xl">
             Services
           </h1>
-          <h2 className="text-lg font-light italic text-amber-500 md:text-xl lg:text-2xl">
+          <h2 className="font-basement text-lg italic md:text-xl lg:text-2xl">
             {"Let's see how I can best serve your next event."}
           </h2>
         </div>

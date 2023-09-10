@@ -30,7 +30,7 @@ export default function NavTabs({ activeTab, handleTabChange }: Props) {
               className="relative"
               href={
                 tab.id === "services"
-                  ? "#services"
+                  ? "/#services"
                   : tab.id === "home"
                   ? "/"
                   : tab.url

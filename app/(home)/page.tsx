@@ -21,17 +21,17 @@ export default function Home() {
   }
 
   return (
-    <section>
+    <div className="overflow-hidden">
       <Header />
-      <div className="space-y-32 lg:space-y-44">
+      <main className="space-y-32 pb-40 lg:space-y-40">
         <Section1 />
         <Section2 />
         <Section3 section={services} scrollDown={scrollDown} />
         <Section4 />
         <Section5 />
         <Section6 services={services} />
-        <Footer />
-      </div>
-    </section>
+      </main>
+      <Footer />
+    </div>
   );
 }

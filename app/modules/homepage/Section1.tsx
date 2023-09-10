@@ -7,7 +7,7 @@ export default function Section1() {
   return (
     <section className="relative z-10 flex w-full items-center justify-center overflow-hidden pt-32 lg:pt-44">
       <Image
-        style={{ objectFit: "cover" }}
+        style={{ objectFit: "cover", objectPosition: "top" }}
         src={mainBackground}
         sizes="100vw"
         quality={100}
