@@ -9,7 +9,7 @@ type Props = {
 
 export default function Section3({ section, scrollTo }: Props) {
   return (
-    <section className="relative flex flex-col items-center py-14 sm:px-10 md:py-24">
+    <section className="relative flex flex-col items-center py-14 sm:px-10 sm:py-20">
       <div className="relative flex w-full max-w-6xl flex-col items-center gap-5 px-5 sm:px-0">
         <p className="inline-flex max-w-[18ch] flex-col items-center gap-1 text-center font-basement text-4xl uppercase text-white sm:max-w-[100ch] md:text-left md:text-5xl">
           <span>harness the immense potential</span>

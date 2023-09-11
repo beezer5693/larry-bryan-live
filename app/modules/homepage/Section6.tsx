@@ -9,7 +9,7 @@ export default function Section6({ services }: Props) {
   return (
     <section
       id="services"
-      className="md:py-22 relative flex flex-col items-center overflow-hidden px-5 py-14 lg:px-10"
+      className="relative flex flex-col items-center overflow-hidden px-5 py-14 lg:px-10"
       ref={services}
     >
       <div className="relative w-full max-w-6xl space-y-7 text-white lg:space-y-16">

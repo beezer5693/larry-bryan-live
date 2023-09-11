@@ -24,12 +24,12 @@ export default function CharacteristicCards({
     <div className="relative grid w-full grid-cols-2 gap-5 shadow-lg">
       <RadialGradient
         className2={
-          "-left-[10rem] rotate-[7deg] -top-[7rem] -z-20 h-[40rem] w-[50rem]"
+          "-left-[10rem] blur-[200px] rotate-[7deg] -top-[7rem] -z-20 h-[40rem] w-[50rem]"
         }
       />
       <RadialGradient
         className2={
-          "-right-[10rem] rotate-[50deg] top-[60rem] -z-20 h-[40rem] w-[50rem]"
+          "-right-[10rem] blur-[200px] rotate-[50deg] top-[60rem] -z-20 h-[40rem] w-[50rem]"
         }
       />
       {characteristicCards.map((card: CharacteristicCardProps, i: number) => (

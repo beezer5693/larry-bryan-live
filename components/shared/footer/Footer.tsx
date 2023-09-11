@@ -13,12 +13,12 @@ export default function Footer() {
     <footer className="relative flex flex-col items-center border-t border-neutral-800/50 pt-20 text-white">
       <RadialGradient
         className2={
-          "-bottom-[47rem] -left-96 -z-20 rotate-[10deg] h-[58rem] w-[90rem]"
+          "-bottom-[55rem] blur-[200px] -left-96 -z-20 rotate-[10deg] h-[58rem] w-[90rem]"
         }
       />
       <RadialGradient
         className2={
-          "-bottom-[50rem] -right-96 -z-20 rotate-[-20deg] h-[55rem] w-[100rem]"
+          "-bottom-[53rem] blur-[200px] -right-96 -z-20 rotate-[-20deg] h-[55rem] w-[100rem]"
         }
       />
       <div className="flex w-full max-w-6xl flex-col items-center justify-center gap-44 px-5 pb-20 sm:flex-row">

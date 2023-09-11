@@ -5,7 +5,7 @@ import mainBackground from "../../../public/assets/landing.png";
 
 export default function Section1() {
   return (
-    <section className="relative z-10 flex w-full items-center justify-center overflow-hidden pt-32 lg:pt-44">
+    <section className="sm: relative z-10 flex w-full items-center justify-center overflow-hidden pb-24 pt-32 md:pt-52">
       <Image
         style={{ objectFit: "cover", objectPosition: "top" }}
         src={mainBackground}
