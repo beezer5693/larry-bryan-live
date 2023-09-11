@@ -21,7 +21,7 @@ export default function CharacteristicCards({
   characteristicCards: CharacteristicCardProps[];
 }) {
   return (
-    <div className="relative grid w-full grid-cols-2 gap-5 shadow-lg">
+    <div className="relative grid w-full grid-cols-2 gap-5">
       <RadialGradient
         className2={
           "-left-[10rem] blur-[200px] rotate-[7deg] -top-[7rem] -z-20 h-[40rem] w-[50rem]"
@@ -37,8 +37,8 @@ export default function CharacteristicCards({
           key={i}
           className={
             i === 0
-              ? "shadow-blue/200 relative z-50 col-span-2 flex h-[400px] flex-col overflow-hidden rounded-2xl shadow-xl md:flex-row"
-              : "shadow-blue/200 shadow-xxl relative z-50 col-span-2 flex h-[400px] flex-col overflow-hidden rounded-2xl sm:col-span-1 sm:h-[500px] md:h-[550px]"
+              ? "relative z-50 col-span-2 flex h-[400px] flex-col overflow-hidden rounded-2xl shadow-2xl shadow-blue/20 md:flex-row"
+              : "relative z-50 col-span-2 flex h-[400px] flex-col overflow-hidden rounded-2xl shadow-2xl shadow-blue/20 sm:col-span-1 sm:h-[500px] md:h-[550px]"
           }
         >
           <div
@@ -50,7 +50,7 @@ export default function CharacteristicCards({
           >
             <Image
               className={`h-full w-full object-cover ${
-                i === 2 ? "object-[0px_-60px]" : "object-center"
+                i === 2 ? "md:object-[0px_-60px]" : "object-center"
               }`}
               src={card.image.src}
               sizes={card.image.sizes}
@@ -61,13 +61,13 @@ export default function CharacteristicCards({
           <div
             className={
               i === 0
-                ? "h-1/2 basis-1/2 bg-gradient-to-br from-[#0e1b73] to-[#060c27] px-7 sm:px-10 md:h-full"
-                : "h-1/2 basis-1/2 bg-gradient-to-br from-[#0e1b73] to-[#060c27] px-7 py-5 lg:px-12"
+                ? "h-1/2 basis-1/2 bg-gradient-to-br from-[#0b1452] to-[#060c27] px-7 sm:px-10 md:h-full"
+                : "h-1/2 basis-1/2 bg-gradient-to-br from-[#0b1452] to-[#060c27] px-7 py-5 lg:px-12"
             }
           >
             <div className="flex h-full w-full flex-col justify-center gap-2 md:gap-10">
               <div className="flex items-center justify-between">
-                <h3 className="font-basement uppercase text-white sm:text-lg lg:text-xl">
+                <h3 className="font-basement uppercase text-white sm:text-lg md:text-xl lg:text-2xl">
                   {card.title}
                 </h3>
                 <p className="text-lg text-white md:text-sm lg:text-xl">

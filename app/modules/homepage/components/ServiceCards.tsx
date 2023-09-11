@@ -77,9 +77,9 @@ export default function ServiceCards() {
           className={cn(
             "group col-span-1 cursor-pointer space-y-7 rounded-2xl bg-gradient-to-br p-6 backdrop-blur-lg transition-all duration-300 ease-in-out hover:bg-gradient-to-b md:p-8",
             {
-              "from-[#0e1b73] to-[#060c27] hover:border-neutral-500/50 hover:from-[#0b206e] hover:to-[#0b206e]":
+              "from-[#0b1452] to-[#060c27] hover:border-neutral-500/50 hover:from-[#0b206e] hover:to-[#0b206e]":
                 i < 2,
-              " from-amber-700 to-amber-950 hover:border-amber-600 hover:from-amber-700 hover:to-amber-700":
+              " from-amber-900 to-amber-950 hover:border-amber-600 hover:from-amber-700 hover:to-amber-700":
                 i >= 2,
             },
           )}
