@@ -25,7 +25,7 @@ export default function VillainCards() {
             width={45}
             alt=""
           />
-          <p className="max-w-[50ch] text-sm text-white">{text}</p>
+          <p className="text-sm text-white">{text}</p>
         </div>
       ))}
     </>

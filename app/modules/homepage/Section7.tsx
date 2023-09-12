@@ -4,7 +4,7 @@ import React from "react";
 export default function Section7() {
   return (
     <section className="flex w-full justify-center px-5 pb-28 sm:pb-36 sm:pt-10 lg:px-10">
-      <div className="flex w-full max-w-6xl flex-col items-center justify-center space-y-7 sm:space-y-10">
+      <div className="flex w-full max-w-screen-2xl flex-col items-center justify-center space-y-7 sm:space-y-10">
         <p className="text-center font-basement text-2xl text-white sm:text-5xl">
           {
             "It's time to make an everlasting positive change in your life, come join me and I'll show you how."

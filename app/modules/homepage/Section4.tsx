@@ -87,7 +87,7 @@ const characteristicCards: CharacteristicCardProps[] = [
 export default function Section4() {
   return (
     <section className="relative flex flex-col items-center px-5 py-14 sm:py-20 lg:px-10">
-      <div className="relative flex w-full max-w-6xl flex-col items-center gap-7 md:gap-14">
+      <div className="relative flex w-full max-w-screen-2xl flex-col items-center gap-7 md:gap-14">
         <h1 className="font-basement text-[1.8rem] uppercase text-white sm:text-[2.5rem]">
           5 key characteristics of a{" "}
           <span className="bg-gradient-to-r from-amber-400 to-amber-700 bg-clip-text pr-2.5 italic text-transparent">

@@ -5,7 +5,7 @@ import mainBackground from "../../../public/assets/landing.png";
 
 export default function Section1() {
   return (
-    <section className="sm: relative z-10 flex w-full items-center justify-center overflow-hidden pb-24 pt-32 md:pt-52">
+    <section className="relative flex w-full items-center justify-center overflow-hidden px-5 pb-24 pt-32 md:px-10 md:pt-52">
       <Image
         className="object-cover object-top blur-[50px]"
         style={{ objectFit: "cover", objectPosition: "top" }}

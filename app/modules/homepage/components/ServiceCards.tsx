@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Triangle } from "lucide-react";
+import { BsFillTriangleFill } from "react-icons/bs";
 import keynote1 from "../../../../public/assets/services/keynote1.png";
 import keynote2 from "../../../../public/assets/services/keynote2.png";
 import breakout1 from "../../../../public/assets/services/breakout1.png";
@@ -120,8 +121,11 @@ export default function ServiceCards() {
           </div>
           <div className="flex items-center justify-between gap-5">
             <p>{card.description}</p>
-            <div className="rounded-full border p-2">
-              <ArrowRight size={20} />
+            <div className="rounded-full border p-3">
+              <BsFillTriangleFill
+                size={20}
+                className="translate-x-0.5 rotate-90 fill-white"
+              />
             </div>
           </div>
         </div>
