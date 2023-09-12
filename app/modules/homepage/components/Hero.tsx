@@ -77,37 +77,69 @@ export default function Hero() {
           <IoTriangle className="h-6 w-6 rotate-180 fill-amber-500 stroke-black sm:h-10 sm:w-10 md:block lg:h-12 lg:w-12" />
         </motion.div>
         <motion.p
-          key={"dare"}
-          variants={animateDivVariants}
-          initial="initial"
-          animate="visible"
-          className="divx-2 self-start rounded-xl border border-blue/30 font-basement text-[3.25rem] text-white shadow-md shadow-black ring-1 ring-black/40 backdrop-blur-sm sm:px-7 sm:text-8xl lg:text-9xl"
+          initial={{
+            opacity: 0,
+            y: 100,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              delay: 0.25,
+              duration: 0.75,
+            },
+          }}
+          className="self-start rounded-xl border border-blue/30 px-2 font-basement text-[3.25rem] text-white shadow-md shadow-black ring-1 ring-black/40 backdrop-blur-sm sm:px-7 sm:text-8xl lg:text-9xl"
         >
           Dare
         </motion.p>
         <motion.p
-          key={"to think"}
-          variants={animateDivVariants}
-          initial="initial"
-          animate="visible"
+          initial={{
+            opacity: 0,
+            y: 100,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              delay: 0.35,
+              duration: 0.75,
+            },
+          }}
           className="self-start rounded-xl border border-blue/30 px-4 text-center font-basement text-[3.5rem] text-white shadow-md shadow-black ring-1 ring-black/40 backdrop-blur-sm sm:text-7xl md:ml-[11rem] lg:text-8xl"
         >
           to think
         </motion.p>
         <motion.p
-          key={"differently"}
-          variants={animateDivVariants}
-          initial="initial"
-          animate="visible"
+          initial={{
+            opacity: 0,
+            y: 100,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              delay: 0.45,
+              duration: 0.75,
+            },
+          }}
           className="self-start rounded-xl border border-blue/30 px-2 font-basement text-[3.25rem] text-white shadow-md shadow-black ring-1 ring-black/40 backdrop-blur-sm sm:px-7 sm:pb-4 sm:text-8xl lg:text-9xl"
         >
           Differently
         </motion.p>
         <motion.p
-          key={"turning"}
-          variants={animateDivVariants}
-          initial="initial"
-          animate="visible"
+          initial={{
+            opacity: 0,
+            y: 100,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              delay: 0.55,
+              duration: 0.75,
+            },
+          }}
           className="max-w-[40ch] self-start text-lg font-light leading-6 tracking-wider text-amber-500 sm:text-3xl sm:leading-8 md:pl-10 md:text-3xl md:leading-10"
         >
           Turning your inner villains into your own{" "}
