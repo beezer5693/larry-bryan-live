@@ -1,13 +1,14 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { Squeeze as Hamburger } from "hamburger-react";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import NavTabs from "./NavTabs";
-import Link from "next/link";
-import { Squeeze as Hamburger } from "hamburger-react";
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { BsTriangle } from "react-icons/bs";
-import { ArrowRight } from "lucide-react";
+import logo from "../../../public/assets/logo.png";
 
 export default function Header() {
   const [topOfPage, setTopOfPage] = useState(false);
@@ -30,13 +31,15 @@ export default function Header() {
     >
       <div
         className={cn(
-          "flex w-full max-w-screen-2xl items-center justify-between py-2 lg:py-4",
+          "flex w-full max-w-screen-2xl items-center justify-between py-2",
         )}
       >
-        <Link href="/">
-          <p className="font-basement text-2xl tracking-tighter text-white">
-            L | B
-          </p>
+        <Link
+          className="rounded-full px-4 py-3 font-basement text-xl text-white"
+          href="/"
+        >
+          Larry Bryan
+          {/* <Image src={logo} alt="logo" height={100} width={150} /> */}
         </Link>
         <NavTabs />
         <Button

@@ -5,7 +5,7 @@ import mainBackground from "../../../public/assets/landing.png";
 
 export default function Section1() {
   return (
-    <section className="relative flex w-full items-center justify-center overflow-hidden px-5 lg:px-10">
+    <section className="relative flex w-full items-center justify-center px-5 lg:px-10">
       <Image
         className="object-cover object-top blur-[50px]"
         src={mainBackground}

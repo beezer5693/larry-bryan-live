@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="relative flex flex-col items-center border-t border-neutral-800/50 pt-20 text-white">
+    <footer className="relative flex flex-col items-center overflow-hidden border-t border-neutral-800/50 pt-20 text-white">
       <RadialGradient
         className2={
           "-bottom-[55rem] blur-[200px] -left-96 -z-20 rotate-[10deg] h-[58rem] w-[90rem]"
