@@ -38,7 +38,7 @@ export default function Header() {
           className="rounded-full px-4 py-3 font-basement text-xl text-white"
           href="/"
         >
-          Larry Bryan
+          L|B
           {/* <Image src={logo} alt="logo" height={100} width={150} /> */}
         </Link>
         <NavTabs />
