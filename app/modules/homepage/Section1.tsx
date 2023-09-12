@@ -5,17 +5,17 @@ import mainBackground from "../../../public/assets/landing.png";
 
 export default function Section1() {
   return (
-    <section className="relative flex w-full items-center justify-center overflow-hidden px-5 pb-24 pt-32 md:px-10 md:pt-52">
+    <section className="relative flex w-full items-center justify-center overflow-hidden px-5 lg:px-10">
       <Image
         className="object-cover object-top blur-[50px]"
-        style={{ objectFit: "cover", objectPosition: "top" }}
         src={mainBackground}
         sizes="100vw"
         quality={100}
         fill
+        priority
         alt=""
       />
-      <div className="absolute bottom-0 left-0 right-0 h-[36rem] bg-gradient-to-b from-transparent to-[#03081c]"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-[36rem] bg-gradient-to-b from-transparent to-black"></div>
       <Hero />
     </section>
   );

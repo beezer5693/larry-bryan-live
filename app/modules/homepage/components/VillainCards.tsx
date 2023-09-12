@@ -2,30 +2,59 @@ import React from "react";
 import Image from "next/image";
 
 const cardText = [
-  "My fear sometimes holds me back from doing so many things and I don’t know how to overcome that way of thinking and feeling.",
-  "I am accomplishing things in life but I could accomplish so much more if I didn’t have to listen to all that negative self-talk.",
-  "I believe the world is always watching and judging and this causes me to never fully go for it.",
-  "I know I am capable of so much more and I want to reach my full potential but I just can’t get started.",
-  "I am embarrassed to try new things and I am afraid I will fail so I end up doing nothing.",
-  "My decision choices don’t always bring me my desired outcomes and results.",
+  {
+    label: "Fear",
+    description:
+      "My fear sometimes holds me back from doing so many things and I don’t know how to overcome that way of thinking and feeling.",
+  },
+  {
+    label: "Negative Self-Talk",
+    description:
+      "I am accomplishing things in life but I could accomplish so much more if I didn’t have to listen to all that negative self-talk.",
+  },
+  {
+    label: "Judgment",
+    description:
+      "I believe the world is always watching and judging and this causes me to never fully go for it.",
+  },
+  {
+    label: "Lost",
+    description:
+      "I know I am capable of so much more and I want to reach my full potential but I just can’t get started.",
+  },
+  {
+    label: "Embarrassment",
+    description:
+      "I am embarrassed to try new things and I am afraid I will fail so I end up doing nothing.",
+  },
+  {
+    label: "Poor Decisions",
+    description:
+      "My decision choices don’t always bring me my desired outcomes and results.",
+  },
 ];
 
 export default function VillainCards() {
   return (
     <>
-      {cardText.map((text, index) => (
+      {cardText.map((card, index) => (
         <div
           key={index}
-          className="relative col-span-1 flex items-center rounded-xl border border-blue/10 bg-gradient-to-br from-[#0e1648] to-[#0e1648]/20 px-10 py-3"
+          className="relative col-span-1 flex flex-col gap-5 rounded-[3rem] border border-neutral-800/50 bg-gradient-to-br from-neutral-800 to-neutral-950 p-14 md:p-16 xl:gap-10 xl:p-20"
         >
-          <Image
+          {/* <Image
             className="absolute -left-5 -top-5"
             src={"/assets/chat-icon.png"}
-            height={45}
-            width={45}
+            height={60}
+            width={60}
             alt=""
-          />
-          <p className="text-sm text-white">{text}</p>
+          /> */}
+          <p className="font-basement text-2xl text-white xl:text-3xl">
+            {card.label}
+          </p>
+          <p className="text-sm text-white md:text-base xl:text-lg">
+            {card.description}
+          </p>
         </div>
       ))}
     </>

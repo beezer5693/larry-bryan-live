@@ -22,30 +22,35 @@ export default function Footer() {
         }
       />
       <div className="flex w-full max-w-6xl flex-col items-center justify-center gap-44 px-5 pb-20 sm:flex-row">
-        <div className="space-y-14">
-          <div className="space-y-4 text-center">
-            <h1 className="font-basement capitalize">larry bryan live</h1>
-            <p className="inline-flex flex-col text-xs">
+        <div className="space-y-6">
+          <div className="space-y-6 text-center">
+            <h1 className="font-basement text-5xl capitalize">larry bryan</h1>
+            <p className="inline-flex flex-col text-lg">
               <span>151 N. Nob Hill Road Suite 350</span>
               <span>Plantation, FL 33324</span>
             </p>
           </div>
           <div className="space-y-5 text-center">
-            <p className="text-sm uppercase">connect with larry</p>
+            <p className="text-xl uppercase">connect with larry</p>
             <div className="flex items-center justify-center gap-3">
               <Link className="group" href="https://www.facebook.com/">
-                <FaFacebookF className="fill-neutral-200/90 group-hover:fill-white" />
+                <FaFacebookF className="h-7 w-7 fill-neutral-200/90 group-hover:fill-white" />
               </Link>
               <Link className="group" href="https://www.instagram.com/">
-                <FaInstagram className="fill-neutral-200/90 text-lg group-hover:fill-white" />
+                <FaInstagram className="h-7 w-7 fill-neutral-200/90 text-lg group-hover:fill-white" />
               </Link>
               <Link className="group" href="https://www.linkedin.com/">
-                <FaLinkedinIn className="fill-neutral-200/90 text-lg group-hover:fill-white" />
+                <FaLinkedinIn className="h-7 w-7 fill-neutral-200/90 text-lg group-hover:fill-white" />
               </Link>
               <Link className="group" href="https://www.youtube.com/">
-                <FaYoutube className="fill-neutral-200/90 text-lg group-hover:fill-white" />
+                <FaYoutube className="h-7 w-7 fill-neutral-200/90 text-lg group-hover:fill-white" />
               </Link>
             </div>
+          </div>
+          <div className="flex w-full justify-center text-center">
+            <p className="max-w-[20ch] text-center text-lg">
+              website & marketing by Wisdom Studios
+            </p>
           </div>
         </div>
       </div>

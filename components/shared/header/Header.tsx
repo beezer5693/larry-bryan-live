@@ -6,6 +6,8 @@ import Link from "next/link";
 import { Squeeze as Hamburger } from "hamburger-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { BsTriangle } from "react-icons/bs";
+import { ArrowRight } from "lucide-react";
 
 export default function Header() {
   const [topOfPage, setTopOfPage] = useState(false);
@@ -37,15 +39,16 @@ export default function Header() {
           </p>
         </Link>
         <NavTabs />
-        <div className="group">
-          <Button
-            className={cn(
-              "hidden px-5 font-semibold uppercase transition-transform duration-300 ease-in-out group-hover:-translate-y-0.5 group-hover:bg-gradient-to-b group-hover:from-white group-hover:to-white group-hover:text-blue group-hover:opacity-100 lg:inline-flex",
-            )}
-          >
-            Book Larry
-          </Button>
-        </div>
+        <Button
+          className={cn(
+            "group hidden h-14 justify-between pl-5 pr-2 font-semibold uppercase transition-transform duration-500 ease-in-out lg:inline-flex",
+          )}
+        >
+          <span className="mr-4">Book Larry</span>
+          <span className="rounded-full border p-2 transition duration-500 ease-in-out group-hover:-rotate-45">
+            <ArrowRight className="h-6 w-6 text-white" />
+          </span>
+        </Button>
         <div className="lg:hidden">
           <Hamburger size={28} color="#ffffff" />
         </div>

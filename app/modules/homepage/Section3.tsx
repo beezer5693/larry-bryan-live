@@ -1,6 +1,9 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import brain from "../../../public/assets/brain.png";
+import { ArrowRight } from "lucide-react";
 
 type Props = {
   section: React.RefObject<HTMLElement>;
@@ -9,32 +12,32 @@ type Props = {
 
 export default function Section3({ section, scrollTo }: Props) {
   return (
-    <section className="relative flex flex-col items-center py-14 sm:px-10 sm:py-20">
-      <div className="relative flex w-full max-w-screen-2xl flex-col items-center gap-5 px-5 sm:px-0">
-        <p className="inline-flex max-w-[18ch] flex-col items-center gap-1 text-center font-basement text-4xl uppercase text-white sm:max-w-[100ch] md:text-left md:text-5xl">
+    <section className="relative flex flex-col items-center sm:px-10">
+      <div className="relative flex w-full max-w-screen-2xl flex-col gap-5 px-5 sm:px-0 lg:items-center">
+        <p className="inline-flex max-w-[18ch] flex-col items-center gap-1 text-left font-basement text-3xl uppercase text-white sm:max-w-[100ch] md:text-4xl lg:text-center lg:text-5xl">
           <span>harness the immense potential</span>
           <span className="font-basement text-2xl uppercase text-white md:text-3xl">
             within your mind and create lasting change
           </span>
         </p>
-        <h3 className="max-w-[30ch] text-center text-lg italic text-amber-500 sm:max-w-[100ch] md:text-2xl">
-          {"It's time for you to become the superhero of your life."}
+        <h3 className="w-full max-w-[30ch] text-left text-lg italic text-amber-500 sm:max-w-[100ch] md:text-2xl lg:text-center">
+          {"It's time for you to become the superhero of your own life."}
         </h3>
       </div>
-      <div className="relative flex w-full justify-center gap-5 pt-8 md:gap-10">
-        <div className="group">
-          <Button
-            className="w-full border bg-gradient-to-r from-transparent to-transparent px-5 text-xs uppercase transition-transform duration-300 ease-in-out group-hover:-translate-y-1 group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white group-hover:text-black group-hover:opacity-100 md:h-16 md:px-10 md:text-xl"
-            onClick={() => scrollTo(section)}
-          >
-            my services
-          </Button>
-        </div>
-        <div className="group">
-          <Button className="w-full px-5 text-xs uppercase transition-transform duration-300 ease-in-out group-hover:-translate-y-1 group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white group-hover:text-blue group-hover:opacity-100 md:h-16 md:px-10 md:text-xl">
-            book larry
-          </Button>
-        </div>
+      <Image className="mt-6 lg:mt-10" src={brain} alt="" />
+      <div className="relative flex w-full justify-center gap-5 pt-14 md:gap-10 lg:pt-20">
+        <Button
+          className="h-12 border bg-gradient-to-r from-transparent to-transparent px-5 text-xs uppercase transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-white hover:to-white hover:text-black hover:opacity-100 md:h-16 md:px-10 md:text-xl"
+          onClick={() => scrollTo(section)}
+        >
+          my services
+        </Button>
+        <Button className="group h-12 pl-5 pr-2 text-xs uppercase transition-transform duration-300 ease-in-out md:h-16 md:pr-2.5 md:text-xl">
+          <span className="mr-3 md:mr-4">Book Larry</span>
+          <span className="rounded-full border p-2 transition duration-500 ease-in-out group-hover:-rotate-45">
+            <ArrowRight className="h-5 w-5 text-white md:h-7 md:w-7" />
+          </span>
+        </Button>
       </div>
     </section>
   );

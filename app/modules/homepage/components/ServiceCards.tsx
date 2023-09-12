@@ -76,11 +76,10 @@ export default function ServiceCards() {
         <div
           key={i}
           className={cn(
-            "group col-span-1 cursor-pointer space-y-7 rounded-2xl bg-gradient-to-br p-6 backdrop-blur-lg transition-all duration-300 ease-in-out hover:bg-gradient-to-b md:p-8",
+            "group col-span-1 cursor-pointer space-y-7 rounded-[3rem] border border-neutral-800/50 bg-gradient-to-br from-neutral-800 to-neutral-950 p-6 shadow-2xl shadow-black/50 backdrop-blur-lg transition-all duration-300 ease-in-out hover:border-neutral-500/50 hover:bg-gradient-to-b md:p-8",
             {
-              "from-[#0b1452] to-[#060c27] hover:border-neutral-500/50 hover:from-[#0b206e] hover:to-[#0b206e]":
-                i < 2,
-              " from-amber-900 to-amber-950 hover:border-amber-600 hover:from-amber-700 hover:to-amber-700":
+              "hover:from-[#0b206e] hover:to-[#0b206e]": i < 2,
+              "hover:border-amber-600 hover:from-amber-700 hover:to-amber-700":
                 i >= 2,
             },
           )}
@@ -94,23 +93,18 @@ export default function ServiceCards() {
               className={cn(
                 "absolute right-0 top-1/2 -translate-y-1/2 rounded-lg border px-7 py-4",
                 {
-                  "border-blue bg-[#03081c]": i < 2,
-                  "border-amber-600 bg-amber-950": i >= 2,
+                  "border-blue bg-neutral-950": i < 2,
+                  "border-amber-600 bg-neutral-950": i >= 2,
                 },
               )}
             >
               <p className="font-basement text-xl">{card.number}</p>
             </div>
-            <div
-              className={cn("rounded-lg bg-[#03081c] py-3 pl-4", {
-                "bg-[#03081c]": i < 2,
-                "bg-amber-950": i >= 2,
-              })}
-            >
+            <div className={cn("rounded-lg bg-neutral-950 py-3 pl-4")}>
               <p className="font-basement text-xl text-white">{card.title}</p>
             </div>
           </div>
-          <div className="relative h-[200px] w-full overflow-hidden rounded-xl transition duration-300 ease-in-out sm:h-[300px]">
+          <div className="relative h-[200px] w-full overflow-hidden rounded-xl transition duration-300 ease-in-out md:h-[250px] lg:h-[350px]">
             <Image
               className="object-cover transition duration-300 ease-in group-hover:scale-110"
               src={card.image.src}
@@ -122,10 +116,7 @@ export default function ServiceCards() {
           <div className="flex items-center justify-between gap-5">
             <p>{card.description}</p>
             <div className="rounded-full border p-3">
-              <BsFillTriangleFill
-                size={20}
-                className="translate-x-0.5 rotate-90 fill-white"
-              />
+              <ArrowRight size={24} />
             </div>
           </div>
         </div>

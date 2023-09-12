@@ -37,8 +37,8 @@ export default function CharacteristicCards({
           key={i}
           className={
             i === 0
-              ? "relative z-50 col-span-2 flex h-[400px] flex-col overflow-hidden rounded-2xl shadow-2xl shadow-blue/20 md:flex-row"
-              : "relative z-50 col-span-2 flex h-[400px] flex-col overflow-hidden rounded-2xl shadow-2xl shadow-blue/20 sm:col-span-1 sm:h-[500px] md:h-[550px]"
+              ? "relative z-50 col-span-2 flex h-[400px] flex-col overflow-hidden rounded-[3rem] border border-neutral-800/50 shadow-2xl shadow-black/50 md:flex-row lg:h-[450px] xl:h-[550px]"
+              : "relative z-50 col-span-2 flex h-[400px] flex-col overflow-hidden rounded-[3rem] border border-neutral-800/50 shadow-2xl shadow-black/50 sm:col-span-1 md:h-[500px] xl:h-[600px]"
           }
         >
           <div
@@ -61,20 +61,20 @@ export default function CharacteristicCards({
           <div
             className={
               i === 0
-                ? "h-1/2 basis-1/2 bg-gradient-to-br from-[#0b1452] to-[#060c27] px-7 sm:px-10 md:h-full"
-                : "h-1/2 basis-1/2 bg-gradient-to-br from-[#0b1452] to-[#060c27] px-7 py-5 lg:px-12"
+                ? "h-1/2 basis-1/2 bg-gradient-to-br from-neutral-800 to-neutral-950  px-7 sm:px-10 md:h-full"
+                : "h-1/2 basis-1/2 bg-gradient-to-br from-neutral-800 to-neutral-950  px-7 py-5 lg:px-12"
             }
           >
             <div className="flex h-full w-full flex-col justify-center gap-2 md:gap-10">
               <div className="flex items-center justify-between">
-                <h3 className="font-basement uppercase text-white sm:text-lg md:text-xl lg:text-2xl">
+                <h3 className="font-basement uppercase text-white sm:text-lg md:text-xl xl:text-3xl">
                   {card.title}
                 </h3>
-                <p className="text-lg text-white md:text-sm lg:text-xl">
+                <p className="text-sm text-white md:text-lg xl:text-2xl">
                   {card.phonetic}
                 </p>
               </div>
-              <p className="font-light text-white lg:text-xl">
+              <p className="text-sm font-light text-white md:text-base lg:text-lg xl:text-2xl">
                 {card.description}
               </p>
             </div>

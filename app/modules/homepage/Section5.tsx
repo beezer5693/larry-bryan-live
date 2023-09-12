@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Section5() {
   return (
-    <section className="relative flex justify-center to-100% px-5 py-14 sm:py-20 lg:px-10">
-      <div className="relative flex w-full max-w-screen-2xl flex-col items-center gap-12">
-        <p className="font-basement text-xl text-white md:text-2xl md:leading-8 lg:text-3xl lg:leading-10">
+    <section className="relative flex justify-center to-100% px-5 lg:px-10">
+      <div className="relative flex w-full max-w-screen-2xl flex-col items-center gap-8 lg:gap-12">
+        <p className="font-basement text-xl text-white md:text-center md:text-2xl xl:text-4xl">
           Come join me as we discover together how to turn your inner villains
           into{" "}
           <span className="bg-gradient-to-r from-amber-400 to-amber-700 bg-clip-text pr-2 italic text-transparent">
@@ -14,7 +14,7 @@ export default function Section5() {
           mindset and negative inner dialogue of your own villains and see how
           they are affecting your life.
         </p>
-        <p className="font-basement text-xl text-white md:text-2xl md:leading-8 lg:text-3xl lg:leading-10">
+        <p className="font-basement text-xl text-white md:text-center md:text-2xl lg:text-4xl">
           Embark on an exhilarating and laugh filled journey as we explore the
           five key characteristics of an inner superhero. You will understand
           the individual components of each trait and learn how they synergize
@@ -23,7 +23,7 @@ export default function Section5() {
             create a powerhouse within you.
           </span>
         </p>
-        <p className="font-basement text-xl text-white md:text-2xl md:leading-8 lg:text-3xl lg:leading-10">
+        <p className="font-basement text-xl text-white md:text-center md:text-2xl lg:text-4xl">
           Armed with this knowledge, you will be braced and ready for your{" "}
           <span className="bg-gradient-to-r from-amber-400 to-amber-700 bg-clip-text italic text-transparent">
             ultimate transformation.
@@ -32,7 +32,7 @@ export default function Section5() {
           new inner superhero who will be ready to unleash the potential within
           you that {"you've"} always possessed.
         </p>
-        <p className="font-basement text-xl text-white md:text-2xl md:leading-8 lg:text-3xl lg:leading-10">
+        <p className="font-basement text-xl text-white md:text-center md:text-2xl lg:text-4xl">
           With your new superhero identity and mindset, you will begin to soar
           to{" "}
           <span className="bg-gradient-to-r from-amber-400 to-amber-700 bg-clip-text italic text-transparent">
