@@ -9,6 +9,19 @@ body,
   box-sizing: border-box;
 }
 
+.is-sticky {
+  animation: slideDown 350ms ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
