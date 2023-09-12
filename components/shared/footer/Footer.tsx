@@ -37,24 +37,35 @@ export default function Footer() {
               <Link
                 className="group"
                 href="https://www.facebook.com/larrybryanlive/"
+                target="_blank"
               >
                 <FaFacebookF className="h-6 w-6 fill-neutral-200/90 group-hover:fill-white" />
-              </Link>
-              <Link className="group" href="https://www.instagram.com/">
-                <FaInstagram className="h-7 w-7 fill-neutral-200/90 text-lg group-hover:fill-white" />
               </Link>
               <Link
                 className="group"
                 href="https://www.instagram.com/larrybryanlive/"
+                target="_blank"
+              >
+                <FaInstagram className="h-7 w-7 fill-neutral-200/90 text-lg group-hover:fill-white" />
+              </Link>
+              <Link
+                className="group"
+                href="https://www.linkedin.com/in/larry-bryan-0618a986/"
+                target="_blank"
               >
                 <FaLinkedinIn className="h-7 w-7 fill-neutral-200/90 text-lg group-hover:fill-white" />
               </Link>
-              <Link className="group" href="https://twitter.com/larrybryanlive">
+              <Link
+                className="group"
+                href="https://twitter.com/larrybryanlive"
+                target="_blank"
+              >
                 <FaXTwitter className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-white" />
               </Link>
               <Link
                 className="group"
                 href="https://www.youtube.com/@larrybryanlive/videos"
+                target="_blank"
               >
                 <FaYoutube className="h-7 w-7 fill-neutral-200/90 text-lg group-hover:fill-white" />
               </Link>
