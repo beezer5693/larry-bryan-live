@@ -5,7 +5,8 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaYoutube,
-} from "react-icons/fa";
+  FaXTwitter,
+} from "react-icons/fa6";
 import Link from "next/link";
 
 export default function Footer() {
@@ -22,7 +23,7 @@ export default function Footer() {
         }
       />
       <div className="flex w-full max-w-6xl flex-col items-center justify-center gap-44 px-5 pb-20 sm:flex-row">
-        <div className="space-y-6">
+        <div className="space-y-10">
           <div className="space-y-6 text-center">
             <h1 className="font-basement text-5xl capitalize">larry bryan</h1>
             <p className="inline-flex flex-col text-lg">
@@ -33,16 +34,28 @@ export default function Footer() {
           <div className="space-y-5 text-center">
             <p className="text-xl uppercase">connect with larry</p>
             <div className="flex items-center justify-center gap-3">
-              <Link className="group" href="https://www.facebook.com/">
-                <FaFacebookF className="h-7 w-7 fill-neutral-200/90 group-hover:fill-white" />
+              <Link
+                className="group"
+                href="https://www.facebook.com/larrybryanlive/"
+              >
+                <FaFacebookF className="h-6 w-6 fill-neutral-200/90 group-hover:fill-white" />
               </Link>
               <Link className="group" href="https://www.instagram.com/">
                 <FaInstagram className="h-7 w-7 fill-neutral-200/90 text-lg group-hover:fill-white" />
               </Link>
-              <Link className="group" href="https://www.linkedin.com/">
+              <Link
+                className="group"
+                href="https://www.instagram.com/larrybryanlive/"
+              >
                 <FaLinkedinIn className="h-7 w-7 fill-neutral-200/90 text-lg group-hover:fill-white" />
               </Link>
-              <Link className="group" href="https://www.youtube.com/">
+              <Link className="group" href="https://twitter.com/larrybryanlive">
+                <FaXTwitter className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-white" />
+              </Link>
+              <Link
+                className="group"
+                href="https://www.youtube.com/@larrybryanlive/videos"
+              >
                 <FaYoutube className="h-7 w-7 fill-neutral-200/90 text-lg group-hover:fill-white" />
               </Link>
             </div>
