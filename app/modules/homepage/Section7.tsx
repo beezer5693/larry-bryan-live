@@ -5,7 +5,7 @@ import React from "react";
 export default function Section7() {
   return (
     <section className="mb-20 mt-5 flex w-full justify-center px-5 md:mb-40 lg:mb-52 lg:mt-16 lg:px-10">
-      <div className="flex w-full max-w-screen-2xl flex-col items-center justify-center space-y-5 md:space-y-8 lg:space-y-12">
+      <div className="flex w-full max-w-[1250px] flex-col items-center justify-center space-y-5 md:space-y-8 lg:space-y-12">
         <p className="max-w-[30ch] bg-gradient-to-r from-amber-400 to-amber-700 bg-clip-text text-center font-basement text-2xl text-transparent md:text-4xl lg:leading-[3rem] xl:text-5xl">
           Will you keep the villains or choose to become the superhero of your
           own life? {"Come join me and I'll show you how."}

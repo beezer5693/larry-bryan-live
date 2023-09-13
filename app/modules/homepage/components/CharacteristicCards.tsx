@@ -37,8 +37,8 @@ export default function CharacteristicCards({
           key={i}
           className={
             i === 0
-              ? "relative z-50 col-span-2 flex h-[400px] flex-col overflow-hidden rounded-[3rem] border border-neutral-800/50 shadow-2xl shadow-black/50 md:flex-row lg:h-[450px] xl:h-[550px]"
-              : "relative z-50 col-span-2 flex h-[400px] flex-col overflow-hidden rounded-[3rem] border border-neutral-800/50 shadow-2xl shadow-black/50 sm:col-span-1 md:h-[500px] xl:h-[600px]"
+              ? "relative z-50 col-span-2 flex h-[400px] flex-col overflow-hidden rounded-[3rem] border border-neutral-800/50 shadow-2xl shadow-black/50 md:flex-row"
+              : "relative z-50 col-span-2 flex h-[450px] flex-col overflow-hidden rounded-[3rem] border border-neutral-800/50 shadow-2xl shadow-black/50 sm:col-span-1"
           }
         >
           <div
@@ -61,20 +61,20 @@ export default function CharacteristicCards({
           <div
             className={
               i === 0
-                ? "h-1/2 basis-1/2 bg-gradient-to-br from-neutral-800 to-neutral-950  px-7 sm:px-10 md:h-full"
-                : "h-1/2 basis-1/2 bg-gradient-to-br from-neutral-800 to-neutral-950  px-7 py-5 lg:px-12"
+                ? "h-1/2 basis-1/2 bg-gradient-to-br from-neutral-800 to-neutral-950 px-7 sm:px-10 md:h-full"
+                : "h-1/2 basis-1/2 bg-gradient-to-br from-neutral-800 to-neutral-950 px-7 py-5 lg:px-12"
             }
           >
-            <div className="flex h-full w-full flex-col justify-center gap-2 md:gap-10">
+            <div className="flex h-full w-full flex-col justify-center gap-8">
               <div className="flex items-center justify-between">
-                <h3 className="font-basement uppercase text-white sm:text-lg md:text-xl xl:text-3xl">
+                <h3 className="font-basement uppercase text-white sm:text-lg md:text-xl xl:text-xl">
                   {card.title}
                 </h3>
-                <p className="text-sm text-white md:text-lg xl:text-2xl">
+                <p className="text-sm text-white md:text-base lg:text-lg xl:text-xl">
                   {card.phonetic}
                 </p>
               </div>
-              <p className="text-sm font-light text-white md:text-base lg:text-lg xl:text-2xl">
+              <p className="text-sm font-light text-white md:text-base lg:text-lg xl:text-xl">
                 {card.description}
               </p>
             </div>

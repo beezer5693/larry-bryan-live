@@ -1,14 +1,12 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import NavTabs from "./NavTabs";
+import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 import { Squeeze as Hamburger } from "hamburger-react";
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import NavTabs from "./NavTabs";
-import logo from "../../../public/assets/logo.png";
 
 export default function Header() {
   const [topOfPage, setTopOfPage] = useState(false);
@@ -39,17 +37,16 @@ export default function Header() {
           href="/"
         >
           L|B
-          {/* <Image src={logo} alt="logo" height={100} width={150} /> */}
         </Link>
         <NavTabs />
         <Button
           className={cn(
-            "group hidden h-14 justify-between pl-5 pr-2 font-semibold uppercase transition-transform duration-500 ease-in-out lg:inline-flex",
+            "group hidden h-12 justify-between pl-3.5 pr-2 text-xs font-semibold uppercase transition-transform duration-500 ease-in-out lg:inline-flex",
           )}
         >
-          <span className="mr-4">Book Larry</span>
-          <span className="rounded-full border p-2 transition duration-500 ease-in-out group-hover:-rotate-45">
-            <ArrowRight className="h-6 w-6 text-white" />
+          <span className="mr-2.5">Book Larry</span>
+          <span className="rounded-full border p-1.5 transition duration-500 ease-in-out group-hover:-rotate-45">
+            <ArrowRight className="h-5 w-5 text-white" />
           </span>
         </Button>
         <div className="lg:hidden">

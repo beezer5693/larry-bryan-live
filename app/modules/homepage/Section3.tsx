@@ -13,7 +13,7 @@ type Props = {
 export default function Section3({ section, scrollTo }: Props) {
   return (
     <section className="relative flex flex-col items-center sm:px-10">
-      <div className="relative flex w-full max-w-screen-2xl flex-col gap-5 px-5 sm:px-0 lg:items-center">
+      <div className="relative flex w-full max-w-screen-xl flex-col gap-5 px-5 sm:px-0 lg:items-center">
         <p className="inline-flex max-w-[18ch] flex-col items-center gap-1 text-left font-basement text-3xl uppercase text-white sm:max-w-[100ch] md:text-4xl lg:text-center lg:text-6xl">
           <span>harness the immense potential</span>
           <span className="font-basement text-2xl uppercase text-white md:text-3xl lg:text-4xl">

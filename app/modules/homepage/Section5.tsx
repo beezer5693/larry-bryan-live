@@ -3,8 +3,8 @@ import React from "react";
 export default function Section5() {
   return (
     <section className="relative flex justify-center to-100% px-5 lg:px-10">
-      <div className="relative flex w-full max-w-screen-2xl flex-col items-center gap-8 lg:gap-12">
-        <p className="font-basement text-xl text-white md:text-center md:text-2xl xl:text-4xl">
+      <div className="relative flex w-full max-w-[1250px] flex-col items-center gap-8 lg:gap-12">
+        <p className="font-basement text-xl text-white md:text-center md:text-2xl lg:text-4xl">
           Come join me as we discover together how to turn your inner villains
           into{" "}
           <span className="bg-gradient-to-r from-amber-400 to-amber-700 bg-clip-text pr-2 italic text-transparent">

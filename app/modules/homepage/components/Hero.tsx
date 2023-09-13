@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { IoTriangle, IoTriangleOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
+import figure from "public/figure.png";
 
 export default function Hero() {
   const animateDivVariants = {
@@ -19,10 +20,10 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative flex w-full max-w-screen-2xl flex-col justify-between gap-8 pb-20 pt-32 sm:gap-12 md:py-32 xl:pt-60">
+    <div className="relative flex w-full max-w-[1250px] flex-col justify-between gap-8 pb-20 pt-32 sm:gap-12 md:py-32 xl:pt-60">
       <Image
-        className="absolute hidden self-end md:block lg:right-0 lg:top-[2.5rem]"
-        src={"/figure.png"}
+        className="absolute hidden self-end lg:right-0 lg:top-[2.5rem] lg:block"
+        src={figure}
         height={900}
         width={700}
         alt=""

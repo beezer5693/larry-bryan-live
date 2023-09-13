@@ -12,7 +12,7 @@ export default function Section6({ services }: Props) {
       className="relative flex flex-col px-5 sm:items-center lg:px-10"
       ref={services}
     >
-      <div className="relative w-full max-w-screen-2xl space-y-7 text-white lg:space-y-16">
+      <div className="relative w-full max-w-[1250px] space-y-7 text-white lg:space-y-16">
         <div className="flex w-full flex-col gap-3 sm:items-center">
           <h1 className="font-basement text-6xl sm:text-7xl md:text-8xl">
             Services

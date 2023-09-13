@@ -104,7 +104,7 @@ export default function ServiceCards() {
               <p className="font-basement text-xl text-white">{card.title}</p>
             </div>
           </div>
-          <div className="relative h-[200px] w-full overflow-hidden rounded-xl transition duration-300 ease-in-out md:h-[250px] lg:h-[350px]">
+          <div className="relative h-[225px] w-full overflow-hidden rounded-xl transition duration-300 ease-in-out lg:h-[350px]">
             <Image
               className="object-cover transition duration-300 ease-in group-hover:scale-110"
               src={card.image.src}
