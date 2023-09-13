@@ -40,7 +40,7 @@ export default function VillainCards() {
       {cardText.map((card, index) => (
         <div
           key={index}
-          className="relative col-span-1 flex flex-col gap-5 rounded-[3rem] border border-neutral-800/50 bg-gradient-to-br from-neutral-800 to-neutral-950 p-14 md:p-16 xl:gap-10 xl:p-20"
+          className="relative col-span-1 flex flex-col gap-5 rounded-2xl border border-neutral-800/50 bg-gradient-to-br from-neutral-800 to-neutral-950 p-5 transition duration-300 ease-out hover:scale-125 xl:gap-10"
         >
           {/* <Image
             className="absolute -left-5 -top-5"
@@ -49,12 +49,8 @@ export default function VillainCards() {
             width={60}
             alt=""
           /> */}
-          <p className="font-basement text-2xl text-white xl:text-3xl">
-            {card.label}
-          </p>
-          <p className="text-sm text-white md:text-base xl:text-lg">
-            {card.description}
-          </p>
+          <p className="font-basement text-white">{card.label}</p>
+          <p className="text-xs text-white">{card.description}</p>
         </div>
       ))}
     </>

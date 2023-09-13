@@ -16,7 +16,7 @@ export default function Section2() {
         </p>
       </div>
       <div className=" flex w-full max-w-[1250px] flex-col items-center justify-center backdrop-blur-sm">
-        <div className="relative grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
+        <div className="relative grid grid-cols-6 gap-4 md:gap-8">
           <RadialGradient
             className2={
               "-left-[15rem] blur-[250px] rotate-[7deg] -top-[15rem] -z-20 h-[50rem] w-[60rem]"
