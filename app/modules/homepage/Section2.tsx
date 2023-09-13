@@ -3,7 +3,7 @@ import VillainCards from "./components/VillainCards";
 
 export default function Section2() {
   return (
-    <section className="relative flex flex-col items-center justify-center gap-8 px-5 pt-10 md:gap-14 md:pt-32 lg:px-10 lg:pt-40 xl:gap-20">
+    <section className="relative flex flex-col items-center justify-center gap-8 px-5 pt-10 md:gap-14 md:pt-20 lg:px-10  xl:gap-20">
       <div className="absolute left-0 right-0 top-0 z-10 h-[20rem] bg-gradient-to-b from-black to-transparent"></div>
       <div className="flex flex-col items-center gap-5">
         <h1 className="relative z-20 max-w-[1250px] font-basement text-3xl text-white md:text-4xl xl:text-5xl">
