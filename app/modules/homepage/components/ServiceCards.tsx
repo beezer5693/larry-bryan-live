@@ -1,13 +1,11 @@
-import React from "react";
-import Image from "next/image";
-import { StaticImageData } from "next/image";
-import { ArrowRight, Triangle } from "lucide-react";
-import { BsFillTriangleFill } from "react-icons/bs";
-import keynote1 from "../../../../public/assets/services/keynote1.png";
-import keynote2 from "../../../../public/assets/services/keynote2.png";
+import { cn } from "@/lib/utils";
+import { ArrowRight } from "lucide-react";
+import Image, { StaticImageData } from "next/image";
+import { motion } from "framer-motion";
 import breakout1 from "../../../../public/assets/services/breakout1.png";
 import breakout2 from "../../../../public/assets/services/breakout2.png";
-import { cn } from "@/lib/utils";
+import keynote1 from "../../../../public/assets/services/keynote1.png";
+import keynote2 from "../../../../public/assets/services/keynote2.png";
 
 type ImageProps = {
   src: StaticImageData;
@@ -71,10 +69,20 @@ const serviceCards: ServiceCardProps[] = [
 
 export default function ServiceCards() {
   return (
-    <div className="grid grid-cols-1 gap-5 pb-10 md:grid-cols-2 lg:gap-8">
+    <div className="relative grid grid-cols-1 gap-5 md:grid-cols-2 lg:gap-8">
       {serviceCards.map((card: ServiceCardProps, i: number) => (
-        <div
+        <motion.div
           key={i}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{
+            once: true,
+          }}
+          transition={{ duration: 1, delay: i * 0.1 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 0 },
+          }}
           className={cn(
             "group col-span-1 cursor-pointer space-y-7 rounded-[3rem] border border-neutral-800/50 bg-gradient-to-br from-neutral-800 to-neutral-950 p-6 shadow-2xl shadow-black/50 backdrop-blur-lg transition-all duration-300 ease-in-out hover:border-neutral-500/50 hover:bg-gradient-to-b md:p-8",
             {
@@ -119,7 +127,7 @@ export default function ServiceCards() {
               <ArrowRight size={24} />
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );

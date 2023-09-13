@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import { motion } from "framer-motion";
 
 const cardText = [
   {
@@ -38,24 +38,28 @@ export default function VillainCards() {
   return (
     <>
       {cardText.map((card, index) => (
-        <div
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{
+            once: true,
+            amount: "all",
+          }}
+          transition={{ duration: 0.4, delay: index * 0.1 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 75 },
+          }}
           key={index}
           className="relative col-span-1 flex flex-col gap-5 rounded-[3rem] border border-neutral-800/50 bg-gradient-to-br from-neutral-800 to-neutral-950 p-14 md:p-16 xl:gap-10 xl:p-20"
         >
-          {/* <Image
-            className="absolute -left-5 -top-5"
-            src={"/assets/chat-icon.png"}
-            height={60}
-            width={60}
-            alt=""
-          /> */}
           <p className="font-basement text-2xl text-white xl:text-3xl">
             {card.label}
           </p>
           <p className="text-sm text-white md:text-base xl:text-lg">
             {card.description}
           </p>
-        </div>
+        </motion.div>
       ))}
     </>
   );

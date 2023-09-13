@@ -22,9 +22,9 @@ export default function Home() {
   }
 
   return (
-    <div className="">
+    <div>
       <Header />
-      <main className="">
+      <main>
         <Section1 />
         <div className="space-y-20 overflow-hidden md:space-y-40 xl:space-y-52">
           <Section2 />

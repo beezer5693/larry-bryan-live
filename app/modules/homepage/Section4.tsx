@@ -1,11 +1,10 @@
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
+import { motion } from "framer-motion";
 import awareness from "../../../public/assets/characteristics/awareness.png";
 import courage from "../../../public/assets/characteristics/courage.png";
 import grit from "../../../public/assets/characteristics/grit.png";
 import leadership from "../../../public/assets/characteristics/leadership.png";
 import mindset from "../../../public/assets/characteristics/mindset.png";
-import orangeShapeRight from "../../../public/assets/orangeshape.png";
-import orangeShapeLeft from "../../../public/assets/orangeshapeleft.png";
 import CharacteristicCards from "./components/CharacteristicCards";
 
 type ImageProps = {
@@ -89,18 +88,38 @@ export default function Section4() {
     <section className="relative flex flex-col items-center px-5 lg:px-10">
       <div className="relative flex w-full max-w-[1250px] flex-col items-center gap-7 md:gap-14">
         <div className="flex flex-col items-center gap-5">
-          <h1 className="font-basement text-3xl uppercase text-white md:text-4xl xl:text-5xl">
+          <motion.h1
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, y: 75 },
+            }}
+            className="font-basement text-3xl uppercase text-white md:text-4xl xl:text-5xl"
+          >
             5 key characteristics of a{" "}
             <span className="bg-gradient-to-r from-amber-400 to-amber-700 bg-clip-text pr-2.5 italic text-transparent">
               superhero
             </span>
-          </h1>
-          <p className="text relative z-20 max-w-[90ch] text-white md:text-lg lg:text-center xl:text-xl">
+          </motion.h1>
+          <motion.p
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.05 }}
+            variants={{
+              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, y: 75 },
+            }}
+            className="text relative z-20 max-w-[90ch] text-white md:text-lg lg:text-center xl:text-xl"
+          >
             There are 5 key characteristics that make up the superhero mindset.
             You must possess all 5 to reach your full potential. Through
             practice and self-discipline all five can be achieved and I am going
             to show you how.
-          </p>
+          </motion.p>
         </div>
         <CharacteristicCards characteristicCards={characteristicCards} />
       </div>

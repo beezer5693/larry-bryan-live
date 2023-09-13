@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import brain from "../../../public/assets/brain.png";
 import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 type Props = {
   section: React.RefObject<HTMLElement>;
@@ -14,15 +15,35 @@ export default function Section3({ section, scrollTo }: Props) {
   return (
     <section className="relative flex flex-col items-center sm:px-10">
       <div className="relative flex w-full max-w-screen-xl flex-col gap-5 px-5 sm:px-0 lg:items-center">
-        <p className="inline-flex max-w-[18ch] flex-col items-center gap-1 text-left font-basement text-3xl uppercase text-white sm:max-w-[100ch] md:text-4xl lg:text-center lg:text-5xl">
+        <motion.p
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 75 },
+          }}
+          className="inline-flex max-w-[18ch] flex-col items-center gap-1 text-left font-basement text-3xl uppercase text-white sm:max-w-[100ch] md:text-4xl lg:text-center lg:text-5xl"
+        >
           <span>harness the immense potential</span>
           <span className="font-basement text-2xl uppercase text-white md:text-3xl lg:text-4xl">
             within your mind and create lasting change
           </span>
-        </p>
-        <h3 className="w-full max-w-[30ch] text-left text-lg italic text-amber-500 sm:max-w-[100ch] md:text-2xl lg:text-center">
+        </motion.p>
+        <motion.p
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.05 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 75 },
+          }}
+          className="w-full max-w-[30ch] text-left text-lg italic text-amber-500 sm:max-w-[100ch] md:text-2xl lg:text-center"
+        >
           {"It's time for you to become the superhero of your own life."}
-        </h3>
+        </motion.p>
       </div>
       <Image className="mt-6 lg:mt-10" src={brain} alt="" />
       <div className="relative flex w-full justify-center gap-5 pt-14 md:gap-10 lg:pt-20">

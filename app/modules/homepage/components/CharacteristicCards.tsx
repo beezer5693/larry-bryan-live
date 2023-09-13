@@ -1,6 +1,7 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import RadialGradient from "@/components/shared/gradient/RadialGradient";
+import { motion } from "framer-motion";
 
 type ImageProps = {
   src: StaticImageData;
@@ -33,7 +34,18 @@ export default function CharacteristicCards({
         }
       />
       {characteristicCards.map((card: CharacteristicCardProps, i: number) => (
-        <div
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{
+            once: true,
+            amount: "all",
+          }}
+          transition={{ duration: 0.4, delay: i * 0.1 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 75 },
+          }}
           key={i}
           className={
             i === 0
@@ -79,7 +91,7 @@ export default function CharacteristicCards({
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );
