@@ -99,7 +99,7 @@ export default function Section4() {
             There are 5 key characteristics that make up the superhero mindset.
             You must possess all 5 to reach your full potential. Through
             practice and self-discipline all five can be achieved and I am going
-            to show you how
+            to show you how.
           </p>
         </div>
         <CharacteristicCards characteristicCards={characteristicCards} />

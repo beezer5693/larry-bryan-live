@@ -4,25 +4,10 @@ import { motion } from "framer-motion";
 import figure from "public/figure.png";
 
 export default function Hero() {
-  const animateDivVariants = {
-    initial: {
-      opacity: 0,
-      y: 100,
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: 0.25,
-        duration: 0.75,
-      },
-    },
-  };
-
   return (
     <div className="relative flex w-full max-w-[1250px] flex-col justify-between gap-8 pb-20 pt-32 sm:gap-12 md:py-32 xl:pt-60">
       <Image
-        className="absolute hidden self-end lg:right-0 lg:top-[2.5rem] lg:block"
+        className="absolute hidden self-end lg:-right-32 lg:top-[2.5rem] lg:block"
         src={figure}
         height={900}
         width={700}

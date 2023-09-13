@@ -29,7 +29,7 @@ export default function Header() {
     >
       <div
         className={cn(
-          "flex w-full max-w-screen-2xl items-center justify-between py-2",
+          "flex w-full max-w-[1250px] items-center justify-between py-2",
         )}
       >
         <Link
