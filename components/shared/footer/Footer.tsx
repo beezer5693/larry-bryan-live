@@ -25,54 +25,54 @@ export default function Footer() {
       <div className="flex w-full max-w-6xl flex-col items-center justify-center gap-44 px-5 pb-20 sm:flex-row">
         <div className="space-y-10">
           <div className="space-y-6 text-center">
-            <h1 className="font-basement text-5xl capitalize">larry bryan</h1>
-            <p className="inline-flex flex-col text-lg">
+            <h1 className="font-basement text-4xl capitalize">larry bryan</h1>
+            <p className="inline-flex flex-col">
               <span>151 N. Nob Hill Road Suite 350</span>
               <span>Plantation, FL 33324</span>
             </p>
           </div>
           <div className="space-y-5 text-center">
-            <p className="text-xl uppercase">connect with larry</p>
+            <p className="text-lg uppercase">connect with larry</p>
             <div className="flex items-center justify-center gap-3">
               <Link
                 className="group"
                 href="https://www.facebook.com/larrybryanlive/"
                 target="_blank"
               >
-                <FaFacebookF className="h-6 w-6 fill-neutral-200/90 group-hover:fill-white" />
+                <FaFacebookF className="h-5 w-5 fill-neutral-200/90 group-hover:fill-white" />
               </Link>
               <Link
                 className="group"
                 href="https://www.instagram.com/larrybryanlive/"
                 target="_blank"
               >
-                <FaInstagram className="h-7 w-7 fill-neutral-200/90 text-lg group-hover:fill-white" />
+                <FaInstagram className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-white" />
               </Link>
               <Link
                 className="group"
                 href="https://www.linkedin.com/in/larry-bryan-0618a986/"
                 target="_blank"
               >
-                <FaLinkedinIn className="h-7 w-7 fill-neutral-200/90 text-lg group-hover:fill-white" />
+                <FaLinkedinIn className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-white" />
               </Link>
               <Link
                 className="group"
                 href="https://twitter.com/larrybryanlive"
                 target="_blank"
               >
-                <FaXTwitter className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-white" />
+                <FaXTwitter className="h-5 w-5 fill-neutral-200/90 text-lg group-hover:fill-white" />
               </Link>
               <Link
                 className="group"
                 href="https://www.youtube.com/@larrybryanlive/videos"
                 target="_blank"
               >
-                <FaYoutube className="h-7 w-7 fill-neutral-200/90 text-lg group-hover:fill-white" />
+                <FaYoutube className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-white" />
               </Link>
             </div>
           </div>
           <div className="flex w-full justify-center text-center">
-            <p className="max-w-[20ch] text-center text-lg">
+            <p className="max-w-[20ch] text-center">
               website & marketing by Wisdom Studios
             </p>
           </div>

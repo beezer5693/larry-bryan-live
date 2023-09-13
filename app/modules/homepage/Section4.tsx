@@ -88,12 +88,20 @@ export default function Section4() {
   return (
     <section className="relative flex flex-col items-center px-5 lg:px-10">
       <div className="relative flex w-full max-w-[1250px] flex-col items-center gap-7 md:gap-14">
-        <h1 className="font-basement text-[1.8rem] uppercase text-white md:text-4xl xl:text-5xl">
-          5 key characteristics of a{" "}
-          <span className="bg-gradient-to-r from-amber-400 to-amber-700 bg-clip-text pr-2.5 italic text-transparent">
-            superhero
-          </span>
-        </h1>
+        <div className="flex flex-col items-center gap-5">
+          <h1 className="font-basement text-3xl uppercase text-white md:text-4xl xl:text-5xl">
+            5 key characteristics of a{" "}
+            <span className="bg-gradient-to-r from-amber-400 to-amber-700 bg-clip-text pr-2.5 italic text-transparent">
+              superhero
+            </span>
+          </h1>
+          <p className="text relative z-20 max-w-[90ch] text-white md:text-lg lg:text-center xl:text-xl">
+            There are 5 key characteristics that make up the superhero mindset.
+            You must possess all 5 to reach your full potential. Through
+            practice and self-discipline all five can be achieved and I am going
+            to show you how
+          </p>
+        </div>
         <CharacteristicCards characteristicCards={characteristicCards} />
       </div>
     </section>
