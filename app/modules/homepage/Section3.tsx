@@ -46,7 +46,17 @@ export default function Section3({ section, scrollTo }: Props) {
         </motion.p>
       </div>
       <Image className="mt-6 lg:mt-10" src={brain} alt="" />
-      <div className="relative flex w-full justify-center gap-5 pt-14 md:gap-10 lg:pt-20">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.05 }}
+        variants={{
+          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0, y: 75 },
+        }}
+        className="relative flex w-full justify-center gap-5 pt-14 md:gap-10 lg:pt-20"
+      >
         <Button
           className="h-12 border bg-gradient-to-r from-transparent to-transparent px-5 text-xs uppercase transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-white hover:to-white hover:text-black hover:opacity-100 md:h-16 md:px-10 md:text-base"
           onClick={() => scrollTo(section)}
@@ -59,7 +69,7 @@ export default function Section3({ section, scrollTo }: Props) {
             <ArrowRight className="h-5 w-5 text-white md:h-7 md:w-7" />
           </span>
         </Button>
-      </div>
+      </motion.div>
     </section>
   );
 }

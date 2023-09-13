@@ -77,6 +77,7 @@ export default function ServiceCards() {
           whileInView="visible"
           viewport={{
             once: true,
+            amount: 0.5,
           }}
           transition={{ duration: 1, delay: i * 0.1 }}
           variants={{
