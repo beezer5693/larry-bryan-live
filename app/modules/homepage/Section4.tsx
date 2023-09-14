@@ -25,7 +25,7 @@ const characteristicCards: CharacteristicCardProps[] = [
     title: "mindset",
     phonetic: "/’mīn(d), set/",
     description:
-      "A habitual or mental attitude that determines how you will interpret and respond to situations.",
+      "A set of behaviors and actions, through self-example will influence, inspire, and motivate others to achieve a desired result.",
     image: {
       src: mindset,
       alt: "mindset",

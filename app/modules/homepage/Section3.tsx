@@ -49,7 +49,7 @@ export default function Section3({ section, scrollTo }: Props) {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: "all" }}
         transition={{ duration: 0.5, delay: 0.05 }}
         variants={{
           visible: { opacity: 1, y: 0 },
@@ -57,15 +57,12 @@ export default function Section3({ section, scrollTo }: Props) {
         }}
         className="relative flex w-full justify-center gap-5 pt-14 md:gap-10 lg:pt-20"
       >
-        <Button
-          className="h-12 border bg-gradient-to-r from-transparent to-transparent px-5 text-xs uppercase transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-white hover:to-white hover:text-black hover:opacity-100 md:h-16 md:px-10 md:text-base"
-          onClick={() => scrollTo(section)}
-        >
+        <Button className="h-12 border bg-gradient-to-r from-transparent to-transparent text-xs uppercase transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-white hover:to-white hover:text-black hover:opacity-100 md:h-16 md:px-8 md:text-sm">
           my services
         </Button>
-        <Button className="group h-12 pl-5 pr-2 text-xs uppercase transition-transform duration-300 ease-in-out md:h-16 md:pr-2.5 md:text-base">
-          <span className="mr-3 md:mr-4">Book Larry</span>
-          <span className="rounded-full border p-2 transition duration-500 ease-in-out group-hover:-rotate-45">
+        <Button className="group h-12 pl-3.5 pr-2 text-xs uppercase transition-transform duration-300 ease-in-out md:h-16 md:pl-5 md:pr-2.5 md:text-sm">
+          <span className="mr-2.5 md:mr-3.5">Book Larry</span>
+          <span className="rounded-full border p-1.5 transition duration-500 ease-in-out group-hover:-rotate-45 md:p-2">
             <ArrowRight className="h-5 w-5 text-white md:h-7 md:w-7" />
           </span>
         </Button>

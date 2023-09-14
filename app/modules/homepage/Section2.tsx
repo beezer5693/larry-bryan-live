@@ -35,8 +35,8 @@ export default function Section2() {
           className="text relative z-20 max-w-[90ch] text-white md:text-lg lg:text-center xl:text-xl"
         >
           In life our greatest achievements are just a stones throw away, but
-          our inner villains tend to prevent us from picking up the stone in the
-          first place. Sound familiar?
+          our inner villains tend to prevent us from just picking up the stone
+          in the first place. Sound familiar?
         </motion.p>
       </div>
       <div className=" flex w-full max-w-[1250px] flex-col items-center justify-center backdrop-blur-sm">
