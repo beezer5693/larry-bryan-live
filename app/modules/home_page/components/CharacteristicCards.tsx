@@ -49,8 +49,8 @@ export default function CharacteristicCards({
           key={i}
           className={
             i === 0
-              ? "relative z-50 col-span-2 flex h-[400px] flex-col overflow-hidden rounded-[3rem] border border-neutral-800/50 shadow-2xl shadow-black/50 md:flex-row"
-              : "relative z-50 col-span-2 flex h-[450px] flex-col overflow-hidden rounded-[3rem] border border-neutral-800/50 shadow-2xl shadow-black/50 sm:col-span-1"
+              ? "relative z-50 col-span-2 flex h-[400px] flex-col overflow-hidden rounded-2xl border border-neutral-800/50 shadow-2xl shadow-black/50 md:flex-row"
+              : "relative z-50 col-span-2 flex h-[450px] flex-col overflow-hidden rounded-2xl border border-neutral-800/50 shadow-2xl shadow-black/50 sm:col-span-1"
           }
         >
           <div

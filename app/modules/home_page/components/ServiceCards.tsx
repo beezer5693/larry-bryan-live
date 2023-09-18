@@ -87,7 +87,7 @@ export default function ServiceCards() {
             hidden: { opacity: 0, y: 0 },
           }}
           className={cn(
-            "group col-span-1 cursor-pointer space-y-7 rounded-[3rem] border border-neutral-800/50 bg-gradient-to-br from-neutral-800 to-neutral-950 p-6 shadow-2xl shadow-black/50 backdrop-blur-lg transition-all duration-300 ease-in-out hover:border-neutral-500/50 hover:bg-gradient-to-b md:p-8",
+            "group col-span-1 cursor-pointer space-y-7 rounded-2xl border border-neutral-800/50 bg-gradient-to-br from-neutral-800 to-neutral-950 p-6 shadow-2xl shadow-black/50 backdrop-blur-lg transition-all duration-300 ease-in-out hover:border-neutral-500/50 hover:bg-gradient-to-b md:p-8",
             {
               "hover:from-[#0b206e] hover:to-[#060b1d]": i < 2,
               "hover:border-amber-600 hover:from-amber-700 hover:to-amber-950":

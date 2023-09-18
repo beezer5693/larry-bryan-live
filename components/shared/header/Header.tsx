@@ -22,7 +22,7 @@ export default function Header() {
       className={cn(
         "absolute left-0 right-0 top-0 z-[100] flex items-start justify-center px-5 lg:px-14",
         {
-          "is-sticky fixed bg-[#03081c]/80 backdrop-blur-lg": topOfPage,
+          "is-sticky fixed bg-black/80 backdrop-blur-lg": topOfPage,
           "bg-transparent": !topOfPage,
         },
       )}
