@@ -13,6 +13,23 @@ body,
   animation: slideDown 350ms ease-out;
 }
 
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-3160px);
+  }
+}
+
+.slide {
+  animation: slide 40s linear infinite;
+}
+
+.slide:hover {
+  animation-play-state: paused;
+}
+
 @keyframes slideDown {
   from {
     transform: translateY(-100%);
