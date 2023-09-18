@@ -2,13 +2,15 @@ import Header from "@/components/shared/header/Header";
 import React from "react";
 import Section1 from "../modules/about_page/Section1";
 import Section2 from "../modules/about_page/Section2";
+import Section3 from "../modules/about_page/Section3";
 
 export default function page() {
   return (
-    <div>
+    <div className="h-screen">
       <Header />
       <Section1 />
       <Section2 />
+      <Section3 />
     </div>
   );
 }

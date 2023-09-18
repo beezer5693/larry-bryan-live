@@ -1,12 +1,12 @@
 "use client";
 
-import Link from "next/link";
-import NavTabs from "./NavTabs";
-import { useEffect, useState } from "react";
-import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { Squeeze as Hamburger } from "hamburger-react";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import NavTabs from "./NavTabs";
 
 export default function Header() {
   const [topOfPage, setTopOfPage] = useState(false);
