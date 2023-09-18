@@ -14,7 +14,7 @@ import image9 from "../../../public/assets/carousel/carousel-9.png";
 
 export default function Section2() {
   return (
-    <section className="mt-52 overflow-x-hidden">
+    <section className="mt-20 overflow-x-hidden md:mt-32 lg:mt-44">
       <div className="slide flex items-center gap-5">
         <div className="flex items-center gap-5">
           <div className="flex flex-col justify-center">
