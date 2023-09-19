@@ -22,7 +22,7 @@ const bioParagraphs = [
 
 export default function Section3() {
   return (
-    <section className="mt-20 overflow-x-hidden px-5 pb-20 md:mt-32 lg:mt-44 lg:px-10">
+    <section className="mt-20 overflow-x-hidden px-5 md:mt-32 lg:mt-44 lg:px-10">
       <div className="flex justify-center">
         <div className="flex w-full max-w-[1250px] flex-col items-center rounded-2xl border border-neutral-800/50 bg-gradient-to-br from-neutral-800 to-neutral-950 p-5 text-white md:p-10 lg:p-20">
           <motion.h1

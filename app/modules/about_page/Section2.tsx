@@ -15,8 +15,100 @@ import image9 from "../../../public/assets/carousel/carousel-9.png";
 export default function Section2() {
   return (
     <section className="mt-20 overflow-x-hidden md:mt-32 lg:mt-44">
-      <div className="slide flex items-center gap-5">
-        <div className="flex items-center gap-5">
+      <div className="slide flex gap-5">
+        <div className="flex gap-5">
+          <div className="flex flex-col">
+            <div className="flex flex-grow gap-5">
+              <div className="space-y-5">
+                <div className="relative h-[200px] w-[300px] overflow-hidden rounded-2xl">
+                  <Image
+                    className="object-cover object-top"
+                    src={image1}
+                    fill
+                    alt="Larry with friends"
+                  />
+                </div>
+                <div className="relative h-[200px] w-[300px] overflow-hidden rounded-2xl">
+                  <Image
+                    className="object-cover object-top"
+                    src={image2}
+                    fill
+                    alt="Larry lying on table"
+                  />
+                </div>
+              </div>
+              <div className="relative h-auto w-[275px] overflow-hidden rounded-2xl">
+                <Image
+                  src={image3}
+                  className="object-cover"
+                  fill
+                  alt="Larry and Suzanne Wedding"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col justify-center">
+            <div className="flex flex-grow gap-5">
+              <div className="space-y-5">
+                <div className="relative h-[200px] w-[300px] overflow-hidden rounded-2xl">
+                  <Image
+                    className="object-cover object-center"
+                    src={image4}
+                    fill
+                    alt="Larry with friends"
+                  />
+                </div>
+                <div className="relative h-[200px] w-[300px] overflow-hidden rounded-2xl">
+                  <Image
+                    className="object-cover object-top"
+                    src={image5}
+                    fill
+                    alt="Larry lying on table"
+                  />
+                </div>
+              </div>
+              <div className="relative h-auto w-[275px] overflow-hidden rounded-2xl">
+                <Image
+                  src={image6}
+                  className="object-cover"
+                  fill
+                  alt="Larry and Suzanne Wedding"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col justify-center">
+            <div className="flex flex-grow gap-5">
+              <div className="space-y-5">
+                <div className="relative h-[200px] w-[300px] overflow-hidden rounded-2xl">
+                  <Image
+                    className="object-cover"
+                    src={image7}
+                    fill
+                    alt="Larry with friends"
+                  />
+                </div>
+                <div className="relative h-[200px] w-[300px] overflow-hidden rounded-2xl">
+                  <Image
+                    className="object-cover object-[0px_-40px]"
+                    src={image8}
+                    fill
+                    alt="Larry lying on table"
+                  />
+                </div>
+              </div>
+              <div className="relative h-auto w-[275px] overflow-hidden rounded-2xl">
+                <Image
+                  src={image9}
+                  className="object-cover"
+                  fill
+                  alt="Larry and Suzanne Wedding"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex gap-5">
           <div className="flex flex-col justify-center">
             <div className="flex flex-grow gap-5">
               <div className="space-y-5">
@@ -108,99 +200,7 @@ export default function Section2() {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-5">
-          <div className="flex flex-col justify-center">
-            <div className="flex flex-grow gap-5">
-              <div className="space-y-5">
-                <div className="relative h-[200px] w-[300px] overflow-hidden rounded-2xl">
-                  <Image
-                    className="object-cover object-top"
-                    src={image1}
-                    fill
-                    alt="Larry with friends"
-                  />
-                </div>
-                <div className="relative h-[200px] w-[300px] overflow-hidden rounded-2xl">
-                  <Image
-                    className="object-cover object-top"
-                    src={image2}
-                    fill
-                    alt="Larry lying on table"
-                  />
-                </div>
-              </div>
-              <div className="relative h-auto w-[275px] overflow-hidden rounded-2xl">
-                <Image
-                  src={image3}
-                  className="object-cover"
-                  fill
-                  alt="Larry and Suzanne Wedding"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col justify-center">
-            <div className="flex flex-grow gap-5">
-              <div className="space-y-5">
-                <div className="relative h-[200px] w-[300px] overflow-hidden rounded-2xl">
-                  <Image
-                    className="object-cover object-center"
-                    src={image4}
-                    fill
-                    alt="Larry with friends"
-                  />
-                </div>
-                <div className="relative h-[200px] w-[300px] overflow-hidden rounded-2xl">
-                  <Image
-                    className="object-cover object-top"
-                    src={image5}
-                    fill
-                    alt="Larry lying on table"
-                  />
-                </div>
-              </div>
-              <div className="relative h-auto w-[275px] overflow-hidden rounded-2xl">
-                <Image
-                  src={image6}
-                  className="object-cover"
-                  fill
-                  alt="Larry and Suzanne Wedding"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col justify-center">
-            <div className="flex flex-grow gap-5">
-              <div className="space-y-5">
-                <div className="relative h-[200px] w-[300px] overflow-hidden rounded-2xl">
-                  <Image
-                    className="object-cover"
-                    src={image7}
-                    fill
-                    alt="Larry with friends"
-                  />
-                </div>
-                <div className="relative h-[200px] w-[300px] overflow-hidden rounded-2xl">
-                  <Image
-                    className="object-cover object-[0px_-40px]"
-                    src={image8}
-                    fill
-                    alt="Larry lying on table"
-                  />
-                </div>
-              </div>
-              <div className="relative h-auto w-[275px] overflow-hidden rounded-2xl">
-                <Image
-                  src={image9}
-                  className="object-cover"
-                  fill
-                  alt="Larry and Suzanne Wedding"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="flex items-center gap-5">
+        <div className="flex gap-5">
           <div className="flex flex-col justify-center">
             <div className="flex flex-grow gap-5">
               <div className="space-y-5">
