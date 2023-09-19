@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function Section1() {
   return (
     <section className="flex justify-center px-5 pt-32 md:pt-48 lg:px-10 lg:pt-60">
-      <div className="max-w-[1250px] space-y-6 text-center md:space-y-12">
+      <div className="max-w-[1250px] space-y-6 text-center md:space-y-14">
         <motion.h1
           initial="hidden"
           whileInView="visible"
