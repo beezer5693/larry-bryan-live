@@ -16,7 +16,7 @@ import { cn } from "@/lib/utils";
 
 export default function Section2() {
   return (
-    <section className={"mt-20 overflow-x-hidden md:mt-32 lg:mt-44"}>
+    <section className={"overflow-x-hidden pt-20 md:pt-32 lg:pt-44"}>
       <div className={cn("flex gap-5", styles.slide)}>
         <div className="flex flex-col">
           <div className="flex flex-grow gap-5">

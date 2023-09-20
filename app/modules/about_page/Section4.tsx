@@ -13,7 +13,7 @@ import { cn } from "@/lib/utils";
 
 export default function Section4() {
   return (
-    <section className="mt-20 overflow-x-hidden md:mt-32 lg:mt-44">
+    <section className="overflow-x-hidden pt-20 md:pt-32 lg:pt-44">
       <div className={cn("flex gap-5", styles.slideReverse)}>
         <div className="flex gap-5">
           <div className="flex flex-col">

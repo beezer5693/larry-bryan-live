@@ -13,7 +13,7 @@ import { cn } from "@/lib/utils";
 
 export default function Section6() {
   return (
-    <section className="my-20 overflow-x-hidden md:my-32 lg:my-44">
+    <section className="overflow-x-hidden py-20 md:py-32 lg:py-44">
       <div className={cn("flex gap-5", styles.slide)}>
         <div className="flex flex-col">
           <div className="flex flex-grow gap-5">

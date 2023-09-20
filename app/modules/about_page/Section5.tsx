@@ -25,29 +25,29 @@ const storyText = [
 
 export default function Section5() {
   return (
-    <section className="mt-20 overflow-x-hidden px-5 md:mt-32 lg:mt-44 lg:px-10">
-      <div className="flex justify-center">
-        <div className="flex w-full max-w-[1250px] flex-col items-center rounded-2xl border border-neutral-800/50 bg-gradient-to-br from-neutral-800 to-neutral-950 p-5 text-white md:p-10 lg:p-20">
-          <motion.h1
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            variants={{
-              visible: { opacity: 1, y: 0 },
-              hidden: { opacity: 0, y: 75 },
-            }}
-            className="font-basement text-3xl md:text-5xl lg:text-7xl"
-          >
-            My Story
-          </motion.h1>
-          <div className="mt-10 space-y-7 text-xs md:mt-14 md:text-center md:text-base lg:mt-20 lg:text-lg">
+    <section className="overflow-x-hidden px-5 pt-20 md:pt-32 lg:px-10 lg:pt-44">
+      <div className="flex flex-col items-center justify-center gap-5 md:gap-12 lg:gap-16">
+        <motion.h1
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 60 },
+          }}
+          className="font-basement text-4xl text-white md:text-6xl lg:text-7xl"
+        >
+          My Story
+        </motion.h1>
+        <div className="flex w-full max-w-[1250px] flex-col items-center rounded-2xl border border-neutral-800/50 bg-gradient-to-br from-neutral-800 to-neutral-950 p-5 text-white md:p-14 lg:p-20">
+          <div className="space-y-7 text-xs md:text-center md:text-base lg:text-lg">
             {storyText.map((paragraph, index) => (
               <motion.p
                 key={index}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: "some" }}
                 transition={{ duration: 0.5, delay: 0.05 }}
                 variants={{
                   visible: { opacity: 1, y: 0 },
@@ -64,7 +64,7 @@ export default function Section5() {
               transition={{ duration: 0.5, delay: 0.05 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: 75 },
+                hidden: { opacity: 0, y: 60 },
               }}
               className="relative flex w-full justify-center gap-5 pt-5 md:gap-10 md:pt-10"
             >
