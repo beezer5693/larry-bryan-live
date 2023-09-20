@@ -1,0 +1,33 @@
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-3160px);
+  }
+}
+
+@keyframes slideReverse {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-3160px);
+  }
+}
+
+.slide {
+  animation: slide 40s linear infinite;
+}
+
+.slide:hover {
+  animation-play-state: paused;
+}
+
+.slideReverse {
+  animation: slideReverse 40s linear infinite reverse;
+}
+
+.slideReverse:hover {
+  animation-play-state: paused;
+}

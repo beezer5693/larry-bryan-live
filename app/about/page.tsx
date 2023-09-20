@@ -10,7 +10,7 @@ import Section6 from "../modules/about_page/Section6";
 
 export default function page() {
   return (
-    <div className="h-screen">
+    <div>
       <Header />
       <Section1 />
       <Section2 />

@@ -2,6 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const storyText = [
   {
@@ -17,7 +19,7 @@ const storyText = [
     text: `My parents couldn't have been happier to see me leave college. Not really! They handed me a reality check with a job application attached and insisted I work 16 hours a day. Within a week, I was proudly holding the title of "janitor extraordinaire," cleaning office toilets from 8 AM to 4 PM. Then, from 5 PM to midnight, I had the glamorous gig of parking cars at the Diplomat Hotel in Hollywood, Florida.`,
   },
   {
-    text: `But then, one day, it hit me like a bolt of lightning. I realized that how I spoke to myself, how I perceived things, what I thought, and how I interpreted the world around me would shape my actions and, ultimately, my destiny. Overnight, I decided to make a 180-degree turn in my life. Today, I talk about how you too can change your mindset, "literally overnight," if you have the right tools and knowledge. Don't get me wrong; I still stumble, and those stumbles have come with a hefty price tag. Think of me as the expert speaker who's on the same journey, continually working on himself. So, I say to you, let's embark on this transformation together!`,
+    text: `But then, one day, it hit me like a bolt of lightning. I realized that how I spoke to myself, how I perceived things, what I thought, and how I interpreted the world around me would shape my actions and, ultimately, my destiny. Overnight, I decided to make a 180-degree turn in my life. Today, I talk about how you too can change your mindset, "literally overnight," if you have the right tools and knowledge. Don't get me wrong; I still stumble, and those stumbles have come with a hefty price tag. Think of me as the expert speaker who's on the same journey as you, continually working on himself. So, I say to you, let's embark on this transformation together!`,
   },
 ];
 
@@ -55,6 +57,27 @@ export default function Section5() {
                 {paragraph.text}
               </motion.p>
             ))}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: "all" }}
+              transition={{ duration: 0.5, delay: 0.05 }}
+              variants={{
+                visible: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, y: 75 },
+              }}
+              className="relative flex w-full justify-center gap-5 pt-5 md:gap-10 md:pt-10"
+            >
+              <Button className="h-12 border bg-gradient-to-r from-transparent to-transparent text-xs uppercase transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-white hover:to-white hover:text-black hover:opacity-100 md:h-16 md:px-8 md:text-sm">
+                my services
+              </Button>
+              <Button className="group h-12 pl-3.5 pr-2 text-xs uppercase transition-transform duration-300 ease-in-out md:h-16 md:pl-5 md:pr-2.5 md:text-sm">
+                <span className="mr-2.5 md:mr-3.5">Book Larry</span>
+                <span className="rounded-full border p-1.5 transition duration-500 ease-in-out group-hover:-rotate-45 md:p-2">
+                  <ArrowRight className="h-5 w-5 text-white md:h-7 md:w-7" />
+                </span>
+              </Button>
+            </motion.div>
           </div>
         </div>
       </div>

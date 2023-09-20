@@ -54,8 +54,9 @@ export default function Section1() {
             For nearly three decades, my career in the life insurance and
             investment industry operated solely on a commission-generated basis,
             meaning that my income was directly tied to my sales performance.
-            This high-pressure environment instilled a sense of responsibility,
-            as my ability to provide for my family depended on my sales success.
+            This high-pressure environment instilled a sense of motivation and
+            responsibility, as my ability to provide for my family depended on
+            my sales success.
           </motion.p>
           <motion.p
             initial="hidden"

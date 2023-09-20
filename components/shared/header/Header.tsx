@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "absolute left-0 right-0 top-0 z-[100] flex items-start justify-center px-5 lg:px-14",
+        "absolute left-0 right-0 top-0 z-[100] flex items-start justify-center px-5 lg:px-10",
         {
           "is-sticky fixed bg-black/80 backdrop-blur-lg": topOfPage,
           "bg-transparent": !topOfPage,
@@ -33,10 +33,10 @@ export default function Header() {
         )}
       >
         <Link
-          className="rounded-full px-4 py-3 font-basement text-xl text-white"
+          className="rounded-full py-3 font-basement text-xl text-white"
           href="/"
         >
-          L|B
+          L | B
         </Link>
         <NavTabs />
         <Button

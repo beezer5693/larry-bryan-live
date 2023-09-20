@@ -11,11 +11,13 @@ import image6 from "../../../public/assets/carousel/carousel-6.jpeg";
 import image7 from "../../../public/assets/carousel/carousel-7.jpeg";
 import image8 from "../../../public/assets/carousel/carousel-8.png";
 import image9 from "../../../public/assets/carousel/carousel-9.png";
+import styles from "../../about/styles.module.css";
+import { cn } from "@/lib/utils";
 
 export default function Section2() {
   return (
-    <section className="mt-20 overflow-x-hidden md:mt-32 lg:mt-44">
-      <div className="slide flex gap-5">
+    <section className={"mt-20 overflow-x-hidden md:mt-32 lg:mt-44"}>
+      <div className={cn("flex gap-5", styles.slide)}>
         <div className="flex flex-col">
           <div className="flex flex-grow gap-5">
             <div className="space-y-5">
@@ -23,6 +25,7 @@ export default function Section2() {
                 <Image
                   className="scale-105 object-cover object-top transition-all duration-500 ease-in-out hover:scale-125"
                   src={image1}
+                  sizes="300px"
                   fill
                   alt="Larry with friends"
                 />
@@ -31,6 +34,7 @@ export default function Section2() {
                 <Image
                   className="object-cover object-top transition-all duration-500 ease-in-out hover:scale-125"
                   src={image2}
+                  sizes="300px"
                   fill
                   alt="Larry lying on table"
                 />
@@ -40,6 +44,7 @@ export default function Section2() {
               <Image
                 src={image3}
                 className="object-cover transition-all duration-500 ease-in-out hover:scale-125"
+                sizes="275px"
                 fill
                 alt="Larry and Suzanne Wedding"
               />
@@ -53,6 +58,7 @@ export default function Section2() {
                 <Image
                   className="object-cover object-center transition-all duration-500 ease-in-out hover:scale-125"
                   src={image4}
+                  sizes="300px"
                   fill
                   alt="Larry with friends"
                 />
@@ -61,6 +67,7 @@ export default function Section2() {
                 <Image
                   className="object-cover object-top transition-all duration-500 ease-in-out hover:scale-125"
                   src={image5}
+                  sizes="300px"
                   fill
                   alt="Larry with friends"
                 />
@@ -70,6 +77,7 @@ export default function Section2() {
               <Image
                 src={image6}
                 className="scale-[2.3] object-cover object-[5px_-38px] transition-all duration-500 ease-in-out hover:scale-[2.75]"
+                sizes="275px"
                 fill
                 alt="Larry as a child"
               />
@@ -83,6 +91,7 @@ export default function Section2() {
                 <Image
                   className="object-cover transition-all duration-500 ease-in-out hover:scale-125"
                   src={image7}
+                  sizes="300px"
                   fill
                   alt="Larry with friends"
                 />
@@ -91,6 +100,7 @@ export default function Section2() {
                 <Image
                   className="object-cover object-[0px_-40px] transition-all duration-500 ease-in-out hover:scale-125"
                   src={image8}
+                  sizes="300px"
                   fill
                   alt="Larry with mother"
                 />
@@ -100,6 +110,7 @@ export default function Section2() {
               <Image
                 src={image9}
                 className="object-cover transition-all duration-500 ease-in-out hover:scale-125"
+                sizes="275px"
                 fill
                 alt="Larry with alcoholic beverage"
               />
@@ -113,6 +124,7 @@ export default function Section2() {
                 <Image
                   className="scale-105 object-cover object-top transition-all duration-500 ease-in-out hover:scale-125"
                   src={image1}
+                  sizes="300px"
                   fill
                   alt="Larry with friends"
                 />
@@ -121,6 +133,7 @@ export default function Section2() {
                 <Image
                   className="object-cover object-top transition-all duration-500 ease-in-out hover:scale-125"
                   src={image2}
+                  sizes="300px"
                   fill
                   alt="Larry lying on table"
                 />
@@ -130,6 +143,7 @@ export default function Section2() {
               <Image
                 src={image3}
                 className="object-cover transition-all duration-500 ease-in-out hover:scale-125"
+                sizes="275px"
                 fill
                 alt="Larry and Suzanne Wedding"
               />
@@ -143,6 +157,7 @@ export default function Section2() {
                 <Image
                   className="object-cover object-center transition-all duration-500 ease-in-out hover:scale-125"
                   src={image4}
+                  sizes="300px"
                   fill
                   alt="Larry with friends"
                 />
@@ -151,6 +166,7 @@ export default function Section2() {
                 <Image
                   className="object-cover object-top transition-all duration-500 ease-in-out hover:scale-125"
                   src={image5}
+                  sizes="300px"
                   fill
                   alt="Larry with friends"
                 />
@@ -160,6 +176,7 @@ export default function Section2() {
               <Image
                 src={image6}
                 className="scale-[2.3] object-cover object-[5px_-38px] transition-all duration-500 ease-in-out hover:scale-[2.75]"
+                sizes="275px"
                 fill
                 alt="Larry as a child"
               />
@@ -173,6 +190,7 @@ export default function Section2() {
                 <Image
                   className="object-cover transition-all duration-500 ease-in-out hover:scale-125"
                   src={image7}
+                  sizes="300px"
                   fill
                   alt="Larry with friends"
                 />
@@ -181,6 +199,7 @@ export default function Section2() {
                 <Image
                   className="object-cover object-[0px_-40px] transition-all duration-500 ease-in-out hover:scale-125"
                   src={image8}
+                  sizes="300px"
                   fill
                   alt="Larry with mother"
                 />
@@ -190,6 +209,7 @@ export default function Section2() {
               <Image
                 src={image9}
                 className="object-cover transition-all duration-500 ease-in-out hover:scale-125"
+                sizes="275px"
                 fill
                 alt="Larry with alcoholic beverage"
               />
@@ -203,6 +223,7 @@ export default function Section2() {
                 <Image
                   className="scale-105 object-cover object-top transition-all duration-500 ease-in-out hover:scale-125"
                   src={image1}
+                  sizes="300px"
                   fill
                   alt="Larry with friends"
                 />
@@ -211,6 +232,7 @@ export default function Section2() {
                 <Image
                   className="object-cover object-top transition-all duration-500 ease-in-out hover:scale-125"
                   src={image2}
+                  sizes="300px"
                   fill
                   alt="Larry lying on table"
                 />
@@ -220,6 +242,7 @@ export default function Section2() {
               <Image
                 src={image3}
                 className="object-cover transition-all duration-500 ease-in-out hover:scale-125"
+                sizes="275px"
                 fill
                 alt="Larry and Suzanne Wedding"
               />
@@ -233,6 +256,7 @@ export default function Section2() {
                 <Image
                   className="object-cover object-center transition-all duration-500 ease-in-out hover:scale-125"
                   src={image4}
+                  sizes="300px"
                   fill
                   alt="Larry with friends"
                 />
@@ -241,6 +265,7 @@ export default function Section2() {
                 <Image
                   className="object-cover object-top transition-all duration-500 ease-in-out hover:scale-125"
                   src={image5}
+                  sizes="300px"
                   fill
                   alt="Larry with friends"
                 />
@@ -250,6 +275,7 @@ export default function Section2() {
               <Image
                 src={image6}
                 className="scale-[2.3] object-cover object-[5px_-38px] transition-all duration-500 ease-in-out hover:scale-[2.75]"
+                sizes="275px"
                 fill
                 alt="Larry as a child"
               />
@@ -263,6 +289,7 @@ export default function Section2() {
                 <Image
                   className="object-cover transition-all duration-500 ease-in-out hover:scale-125"
                   src={image7}
+                  sizes="300px"
                   fill
                   alt="Larry with friends"
                 />
@@ -271,6 +298,7 @@ export default function Section2() {
                 <Image
                   className="object-cover object-[0px_-40px] transition-all duration-500 ease-in-out hover:scale-125"
                   src={image8}
+                  sizes="300px"
                   fill
                   alt="Larry with mother"
                 />
@@ -280,6 +308,7 @@ export default function Section2() {
               <Image
                 src={image9}
                 className="object-cover transition-all duration-500 ease-in-out hover:scale-125"
+                sizes="275px"
                 fill
                 alt="Larry with alcoholic beverage"
               />
