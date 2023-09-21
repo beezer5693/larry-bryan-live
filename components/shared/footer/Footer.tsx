@@ -36,14 +36,14 @@ export default function Footer() {
             <div className="flex items-center justify-center gap-3">
               <Link
                 className="group"
-                href="https://www.facebook.com/larrybryanlive/"
+                href="https://www.facebook.com/larrybryanmotivates/"
                 target="_blank"
               >
                 <FaFacebookF className="h-5 w-5 fill-neutral-200/90 group-hover:fill-white" />
               </Link>
               <Link
                 className="group"
-                href="https://www.instagram.com/larrybryanlive/"
+                href="https://www.instagram.com/lblmotivates/"
                 target="_blank"
               >
                 <FaInstagram className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-white" />
@@ -57,14 +57,14 @@ export default function Footer() {
               </Link>
               <Link
                 className="group"
-                href="https://twitter.com/larrybryanlive"
+                href="https://twitter.com/larry_motivates"
                 target="_blank"
               >
                 <FaXTwitter className="h-5 w-5 fill-neutral-200/90 text-lg group-hover:fill-white" />
               </Link>
               <Link
                 className="group"
-                href="https://www.youtube.com/@larrybryanlive/videos"
+                href="https://www.youtube.com/@lblmotivates/videos"
                 target="_blank"
               >
                 <FaYoutube className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-white" />

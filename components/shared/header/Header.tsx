@@ -1,12 +1,14 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import { Squeeze as Hamburger } from "hamburger-react";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import NavTabs from "./NavTabs";
+import Image from "next/image";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { Squeeze as Hamburger } from "hamburger-react";
+import { ArrowRight } from "lucide-react";
+import logo from "@/public/assets/logo-w.png";
 
 export default function Header() {
   const [topOfPage, setTopOfPage] = useState(false);
@@ -36,7 +38,7 @@ export default function Header() {
           className="rounded-full py-3 font-basement text-xl text-white"
           href="/"
         >
-          L | B
+          <Image src={logo} alt="logo" height={100} width={150} />
         </Link>
         <NavTabs />
         <Button

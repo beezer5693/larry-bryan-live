@@ -55,8 +55,8 @@ export default function Section1() {
             investment industry operated solely on a commission-generated basis,
             meaning that my income was directly tied to my sales performance.
             This high-pressure environment instilled a sense of motivation and
-            responsibility, as my ability to provide for my family depended on
-            my sales success.
+            responsibility in me, as my ability to provide for my family
+            depended on my sales success.
           </motion.p>
           <motion.p
             initial="hidden"
