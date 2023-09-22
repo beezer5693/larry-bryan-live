@@ -56,19 +56,21 @@ export default function Header() {
           <Image src={logo} alt="logo" height={135} width={135} />
         </Link>
         <NavTabs />
-        <Button
-          className={cn(
-            "group hidden h-12 justify-between pl-3.5 pr-2 text-xs font-semibold uppercase transition-transform duration-500 ease-in-out lg:inline-flex",
-          )}
-        >
-          <span className="mr-2.5">Book Larry</span>
-          <span className="rounded-full border p-1.5 transition duration-500 ease-in-out group-hover:-rotate-45">
-            <ArrowRight className="h-5 w-5 text-white" />
-          </span>
-        </Button>
+        <Link href="/contact">
+          <Button
+            className={cn(
+              "group hidden h-12 justify-between pl-3.5 pr-2 text-xs font-semibold uppercase transition-transform duration-500 ease-in-out lg:inline-flex",
+            )}
+          >
+            <span className="mr-2.5">Book Larry</span>
+            <span className="rounded-full border p-1.5 transition duration-500 ease-in-out group-hover:-rotate-45">
+              <ArrowRight className="h-5 w-5 text-white" />
+            </span>
+          </Button>
+        </Link>
         <div
           onClick={() => setIsMenuOpen((prev) => !prev)}
-          className="lg:hidden"
+          className="-mr-3.5 lg:hidden"
         >
           <Hamburger
             hideOutline={true}

@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import brain from "../../../public/assets/brain.png";
+import Link from "next/link";
 
 export default function Section3() {
   return (
@@ -52,15 +53,19 @@ export default function Section3() {
         }}
         className="relative flex w-full justify-center gap-5 pt-14 md:gap-10 lg:pt-20"
       >
-        <Button className="h-12 border bg-gradient-to-r from-transparent to-transparent text-xs uppercase transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-white hover:to-white hover:text-black hover:opacity-100 md:h-16 md:px-8 md:text-sm">
-          my services
-        </Button>
-        <Button className="group h-12 pl-3.5 pr-2 text-xs uppercase transition-transform duration-300 ease-in-out md:h-16 md:pl-5 md:pr-2.5 md:text-sm">
-          <span className="mr-2.5 md:mr-3.5">book larry</span>
-          <span className="rounded-full border p-1.5 transition duration-500 ease-in-out group-hover:-rotate-45 md:p-2">
-            <ArrowRight className="h-5 w-5 text-white md:h-7 md:w-7" />
-          </span>
-        </Button>
+        <Link href="/services">
+          <Button className="h-12 border bg-gradient-to-r from-transparent to-transparent text-xs uppercase transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-white hover:to-white hover:text-black hover:opacity-100 md:h-16 md:px-8 md:text-sm">
+            my services
+          </Button>
+        </Link>
+        <Link href="/contact">
+          <Button className="group h-12 pl-3.5 pr-2 text-xs uppercase transition-transform duration-300 ease-in-out md:h-16 md:pl-5 md:pr-2.5 md:text-sm">
+            <span className="mr-2.5 md:mr-3.5">book larry</span>
+            <span className="rounded-full border p-1.5 transition duration-500 ease-in-out group-hover:-rotate-45 md:p-2">
+              <ArrowRight className="h-5 w-5 text-white md:h-7 md:w-7" />
+            </span>
+          </Button>
+        </Link>
       </motion.div>
     </section>
   );
