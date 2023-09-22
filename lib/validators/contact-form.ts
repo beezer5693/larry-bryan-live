@@ -1,6 +1,18 @@
-import { z } from "zod";
+import { ZodType, z } from "zod";
 
-export const contactFormSchema = z.object({
+type ContactFormSchema = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phoneNumber: string;
+  companyName?: string;
+  eventDate?: string;
+  eventLocation?: string;
+  speakerBudget?: string;
+  eventDescription?: string;
+};
+
+export const contactFormSchema: ZodType<ContactFormSchema> = z.object({
   firstName: z
     .string()
     .nonempty({
