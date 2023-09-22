@@ -12,12 +12,14 @@ export default function page() {
   return (
     <div>
       <Header />
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
+      <main className="overflow-x-hidden">
+        <Section1 />
+        <Section2 />
+        <Section3 />
+        <Section4 />
+        <Section5 />
+        <Section6 />
+      </main>
       <Footer />
     </div>
   );

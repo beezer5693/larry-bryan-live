@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function Section7() {
   return (
-    <section className="mb-20 mt-14 flex w-full justify-center px-5 md:mb-32 lg:mt-16 lg:px-10">
+    <section className="mb-20 mt-14 flex w-full justify-center px-5 md:mb-32 lg:mt-24 lg:px-10">
       <div className="flex w-full max-w-[1250px] flex-col items-center justify-center space-y-6 md:space-y-8 lg:space-y-12">
         <motion.p
           initial="hidden"

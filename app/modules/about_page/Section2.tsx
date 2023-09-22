@@ -5,7 +5,7 @@ import styles from "../../about/styles/styles.module.css";
 
 export default function Section2() {
   return (
-    <section className={"overflow-x-hidden pt-20 md:pt-32 lg:pt-44"}>
+    <section className={"pt-20 md:pt-32 lg:pt-44"}>
       <CarouselSlider slideDirection={styles.slide}>
         <CarouselLayout1 imageData={imageData.carousel1} />
         <CarouselLayout1 imageData={imageData.carousel1} />

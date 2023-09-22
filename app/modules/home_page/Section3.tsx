@@ -56,7 +56,7 @@ export default function Section3() {
           my services
         </Button>
         <Button className="group h-12 pl-3.5 pr-2 text-xs uppercase transition-transform duration-300 ease-in-out md:h-16 md:pl-5 md:pr-2.5 md:text-sm">
-          <span className="mr-2.5 md:mr-3.5">Book Larry</span>
+          <span className="mr-2.5 md:mr-3.5">book larry</span>
           <span className="rounded-full border p-1.5 transition duration-500 ease-in-out group-hover:-rotate-45 md:p-2">
             <ArrowRight className="h-5 w-5 text-white md:h-7 md:w-7" />
           </span>

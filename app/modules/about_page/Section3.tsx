@@ -23,7 +23,7 @@ const careerText = [
 export default function Section3() {
   return (
     <section className="overflow-x-hidden px-5 pt-20 md:pt-32 lg:px-10 lg:pt-44">
-      <div className="flex flex-col items-center justify-center gap-5 md:gap-12 lg:gap-16">
+      <div className="flex flex-col items-center justify-center gap-8 md:gap-12 lg:gap-16">
         <motion.h1
           initial="hidden"
           whileInView="visible"
@@ -37,7 +37,7 @@ export default function Section3() {
         >
           My Career
         </motion.h1>
-        <div className="flex w-full max-w-[1250px] flex-col items-center rounded-2xl border border-neutral-800/50 bg-gradient-to-br from-neutral-800 to-neutral-950 p-5 text-white md:p-14 lg:p-20">
+        <div className="flex w-full max-w-[1250px] flex-col items-center rounded-2xl border border-neutral-800/50 bg-gradient-to-br from-neutral-800 to-neutral-950 p-10 text-white md:p-14 lg:p-20">
           <div className="space-y-7 text-xs md:text-center md:text-base lg:text-lg">
             {careerText.map((paragraph, index) => (
               <motion.p

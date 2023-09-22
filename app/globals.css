@@ -22,6 +22,14 @@ body,
   }
 }
 
+input {
+  color-scheme: dark;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  margin: 0px;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

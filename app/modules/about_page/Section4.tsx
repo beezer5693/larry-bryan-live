@@ -6,7 +6,7 @@ import styles from "../../about/styles/styles.module.css";
 
 export default function Section4() {
   return (
-    <section className="overflow-x-hidden pt-20 md:pt-32 lg:pt-44">
+    <section className="pt-20 md:pt-32 lg:pt-44">
       <CarouselSlider slideDirection={styles.slideReverse}>
         <CarouselLayout2 imageData={imageData.carousel2} statSet={stats.set1} />
         <CarouselLayout2 imageData={imageData.carousel2} statSet={stats.set1} />

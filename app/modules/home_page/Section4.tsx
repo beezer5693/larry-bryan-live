@@ -27,7 +27,7 @@ const characteristicCards: CharacteristicCardProps[] = [
     title: "mindset",
     phonetic: "/’mīn(d), set/",
     description:
-      "A set of behaviors and actions, through self-example will influence, inspire, and motivate others to achieve a desired result.",
+      "A habitual or mental attitude that determines how you will interpret and respond to situations.",
     image: {
       src: mindset,
       alt: "mindset",
@@ -75,7 +75,7 @@ const characteristicCards: CharacteristicCardProps[] = [
     title: "leadership",
     phonetic: "/’lēdərˌSHip/",
     description:
-      "A set of behaviors used to help people align their direction,to execute strategic plans, and to continually renew a society, team, or organization.",
+      "A set of behaviors and actions that through self-example, will influence, inspire, and motivate others to achieve a desired result.",
     image: {
       src: leadership,
       alt: "leadership",

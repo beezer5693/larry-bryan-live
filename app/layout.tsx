@@ -1,8 +1,8 @@
 import { cn } from "@/lib/utils";
-import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
 import localFont from "next/font/local";
+import "./globals.css";
 
 const basementGrotesque = localFont({
   src: "../fonts/BasementGrotesque-Black.woff2",

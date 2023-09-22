@@ -6,7 +6,7 @@ import styles from "../../about/styles/styles.module.css";
 
 export default function Section6() {
   return (
-    <section className="overflow-x-hidden py-20 md:py-32 lg:py-44">
+    <section className="py-20 md:py-32 lg:py-44">
       <CarouselSlider slideDirection={styles.slide}>
         <CarouselLayout2 imageData={imageData.carousel3} statSet={stats.set2} />
         <CarouselLayout2 imageData={imageData.carousel3} statSet={stats.set2} />
