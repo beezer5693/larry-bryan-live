@@ -1,11 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import * as z from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { contactFormSchema } from "@/lib/validators/contact-form";
 import { Button } from "@/components/ui/button";
+import * as z from "zod";
 import {
   Form,
   FormControl,
@@ -16,10 +12,15 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Loader2 } from "lucide-react";
-import { cn } from "@/lib/utils";
 import { useToast } from "@/components/ui/use-toast";
-import { ToastAction } from "@radix-ui/react-toast";
+import { cn } from "@/lib/utils";
+import { contactFormSchema } from "@/lib/validators/contact-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { Loader2 } from "lucide-react";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import formatPhoneNumber from "@/utils/formatters/formatPhoneNumber";
+import formatDate from "@/utils/formatters/formatDate";
 
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -41,30 +42,10 @@ export default function ContactForm() {
 
   const { toast } = useToast();
 
-  function showToast() {
-    toast({
-      variant: "error",
-      title: "Uh oh! Something went wrong.",
-      description:
-        "There was a problem sending your message. Please try again.",
-    });
-  }
-
-  function formatDate(date: Date) {
-    const eventDate = new Date(date);
-    const dateFormatter = new Intl.DateTimeFormat("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-    const [{ value: month }, , { value: day }, , { value: year }] =
-      dateFormatter.formatToParts(eventDate);
-    return `${month} ${+day + 1}, ${year}`;
-  }
-
   async function onSubmit(values: z.infer<typeof contactFormSchema>) {
     const contactFormValues = {
       ...values,
+      phoneNumber: formatPhoneNumber(values.phoneNumber),
       eventDate: values.eventDate ? formatDate(new Date(values.eventDate)) : "",
     };
 
