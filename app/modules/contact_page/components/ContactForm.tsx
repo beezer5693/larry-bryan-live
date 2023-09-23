@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -15,8 +16,14 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Loader2 } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { useToast } from "@/components/ui/use-toast";
+import { ToastAction } from "@radix-ui/react-toast";
 
 export default function ContactForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const form = useForm<z.infer<typeof contactFormSchema>>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
@@ -32,6 +39,17 @@ export default function ContactForm() {
     },
   });
 
+  const { toast } = useToast();
+
+  function showToast() {
+    toast({
+      variant: "error",
+      title: "Uh oh! Something went wrong.",
+      description:
+        "There was a problem sending your message. Please try again.",
+    });
+  }
+
   function formatDate(date: Date) {
     const eventDate = new Date(date);
     const dateFormatter = new Intl.DateTimeFormat("en-US", {
@@ -41,7 +59,7 @@ export default function ContactForm() {
     });
     const [{ value: month }, , { value: day }, , { value: year }] =
       dateFormatter.formatToParts(eventDate);
-    return `${month} ${day}, ${year}`;
+    return `${month} ${+day + 1}, ${year}`;
   }
 
   async function onSubmit(values: z.infer<typeof contactFormSchema>) {
@@ -49,8 +67,34 @@ export default function ContactForm() {
       ...values,
       eventDate: values.eventDate ? formatDate(new Date(values.eventDate)) : "",
     };
-    console.log(contactFormValues);
-    form.reset();
+
+    setIsSubmitting(true);
+
+    try {
+      await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(contactFormValues),
+      });
+      form.reset();
+      toast({
+        title: "Message sent successfully!",
+        description: "I'll be in touch soon!",
+      });
+      setIsSubmitting(false);
+    } catch (error) {
+      toast({
+        variant: "error",
+        title: "Uh oh! Something went wrong.",
+        description:
+          "There was a problem sending your message. Please try again.",
+      });
+      setIsSubmitting(false);
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -69,7 +113,7 @@ export default function ContactForm() {
                   First Name<span className="text-red-500">*</span>
                 </FormLabel>
                 <FormControl>
-                  <Input {...field} />
+                  <Input disabled={isSubmitting} {...field} />
                 </FormControl>
                 <FormMessage className="ml-1" />
               </FormItem>
@@ -84,7 +128,7 @@ export default function ContactForm() {
                   Last Name<span className="text-red-500">*</span>
                 </FormLabel>
                 <FormControl>
-                  <Input {...field} />
+                  <Input disabled={isSubmitting} {...field} />
                 </FormControl>
                 <FormMessage className="ml-1" />
               </FormItem>
@@ -100,7 +144,7 @@ export default function ContactForm() {
                 Email<span className="text-red-500">*</span>
               </FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input disabled={isSubmitting} {...field} />
               </FormControl>
               <FormMessage className="ml-1" />
             </FormItem>
@@ -115,7 +159,7 @@ export default function ContactForm() {
                 Phone Number<span className="text-red-500">*</span>
               </FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input disabled={isSubmitting} {...field} />
               </FormControl>
               <FormMessage className="ml-1" />
             </FormItem>
@@ -130,7 +174,7 @@ export default function ContactForm() {
                 Company Name
               </FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input disabled={isSubmitting} {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -145,7 +189,7 @@ export default function ContactForm() {
                 Event Date
               </FormLabel>
               <FormControl>
-                <Input type="date" {...field} />
+                <Input disabled={isSubmitting} type="date" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -160,7 +204,7 @@ export default function ContactForm() {
                 Event Location
               </FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input disabled={isSubmitting} {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -175,7 +219,7 @@ export default function ContactForm() {
                 Estimated Speaker Budget
               </FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input disabled={isSubmitting} {...field} />
               </FormControl>
               <FormMessage className="ml-1" />
             </FormItem>
@@ -190,15 +234,24 @@ export default function ContactForm() {
                 {"Tell me about your event and audience"}
               </FormLabel>
               <FormControl>
-                <Textarea {...field} />
+                <Textarea disabled={isSubmitting} {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
         <div className="w-full pt-3">
-          <Button type="submit" className="h-12 w-full uppercase">
-            Send Message
+          <Button
+            disabled={isSubmitting}
+            type="submit"
+            className="h-12 w-full gap-4 uppercase"
+          >
+            <Loader2
+              className={cn("animate-spin", {
+                hidden: !isSubmitting,
+              })}
+            />
+            <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
           </Button>
         </div>
       </form>
