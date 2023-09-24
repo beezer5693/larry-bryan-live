@@ -9,8 +9,8 @@ import Link from "next/link";
 
 export default function Section3() {
   return (
-    <section className="relative flex flex-col items-center sm:px-10">
-      <div className="relative flex w-full max-w-screen-xl flex-col gap-5 px-5 sm:px-0 lg:items-center">
+    <section className="relative flex flex-col items-center">
+      <div className="relative flex w-full max-w-screen-xl flex-col items-center gap-5">
         <motion.p
           initial="hidden"
           whileInView="visible"

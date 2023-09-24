@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Section5() {
   return (
-    <section className="relative flex justify-center to-100% px-5 lg:px-10">
+    <section className="relative flex justify-center">
       <div className="relative flex w-full max-w-[1250px] flex-col items-center gap-8 lg:gap-12">
         <motion.p
           initial="hidden"

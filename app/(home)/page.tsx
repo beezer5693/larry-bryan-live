@@ -14,7 +14,7 @@ export default function Home() {
       <Header />
       <main>
         <Section1 />
-        <div className="space-y-20 overflow-hidden md:space-y-40 xl:space-y-52">
+        <div className="space-y-20 overflow-hidden px-7 md:space-y-40 xl:space-y-52">
           <Section2 />
           <Section3 />
           <Section4 />

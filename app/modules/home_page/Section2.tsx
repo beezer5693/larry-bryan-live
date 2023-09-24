@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Section2() {
   return (
-    <section className="relative flex flex-col items-center justify-center gap-8 px-5 pt-10 md:gap-14 md:pt-20 lg:px-10  xl:gap-20">
+    <section className="relative flex flex-col items-center justify-center gap-8 pt-10 md:gap-14 md:pt-20 xl:gap-20">
       <div className="absolute left-0 right-0 top-0 z-10 h-[20rem] bg-gradient-to-b from-black to-transparent"></div>
       <div className="flex flex-col items-center gap-5">
         <motion.h1

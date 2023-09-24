@@ -87,7 +87,7 @@ const characteristicCards: CharacteristicCardProps[] = [
 
 export default function Section4() {
   return (
-    <section className="relative flex flex-col items-center px-5 lg:px-10">
+    <section className="relative flex flex-col items-center">
       <div className="relative flex w-full max-w-[1250px] flex-col items-center gap-7 md:gap-14">
         <div className="flex flex-col items-center gap-5">
           <motion.h1
