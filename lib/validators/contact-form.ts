@@ -42,14 +42,14 @@ export const contactFormSchema: ZodType<ContactFormSchema> = z.object({
     .nonempty({
       message: "Phone number is required",
     })
-    .regex(/^[0-9]+$/, {
-      message: "Phone number must contain only numbers",
+    .regex(/^\(?(\d{3})\)?[-]?(\d{3})[-]?(\d{4})$/, {
+      message: "Please enter a valid phone number",
     })
-    .min(10, {
+    .min(14, {
       message:
         "The phone number you entered is less than 10 digits. Please enter a 10 digit phone number",
     })
-    .max(10, {
+    .max(14, {
       message:
         "The phone number you entered is more than 10 digits. Please enter a 10 digit phone number",
     }),

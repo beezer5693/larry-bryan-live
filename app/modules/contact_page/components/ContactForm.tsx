@@ -46,7 +46,6 @@ export default function ContactForm() {
   async function onSubmit(values: z.infer<typeof contactFormSchema>) {
     const contactFormValues = {
       ...values,
-      phoneNumber: formatPhoneNumber(values.phoneNumber),
       eventDate: values.eventDate ? formatDate(new Date(values.eventDate)) : "",
     };
 
@@ -141,7 +140,13 @@ export default function ContactForm() {
                 Phone Number<span className="text-red-500">*</span>
               </FormLabel>
               <FormControl>
-                <Input disabled={isSubmitting} {...field} />
+                <Input
+                  disabled={isSubmitting}
+                  {...field}
+                  onChange={(e) =>
+                    field.onChange(formatPhoneNumber(e.target.value))
+                  }
+                />
               </FormControl>
               <FormMessage className="ml-1" />
             </FormItem>
@@ -204,7 +209,6 @@ export default function ContactForm() {
                 <Input
                   disabled={isSubmitting}
                   {...field}
-                  placeholder="$0.00"
                   value={field.value ? `$${field.value}` : ""}
                   onChange={(e) =>
                     field.onChange(formatCurrency(e.target.value))

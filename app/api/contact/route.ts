@@ -35,7 +35,7 @@ export async function POST(request: Request) {
           <p><strong>Company Name:</strong> ${companyName}</p>
           <p><strong>Event Date:</strong> ${eventDate}</p>
           <p><strong>Event Location:</strong> ${eventLocation}</p>
-          <p><strong>Speaker Budget:</strong> ${speakerBudget}</p>
+          <p><strong>Speaker Budget:</strong> $${speakerBudget}</p>
           <p><strong>Event Description:</strong> ${eventDescription}</p>
         </body>
       </html>
