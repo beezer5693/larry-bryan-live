@@ -1,7 +1,12 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import formatPhoneNumber from "@/utils/formatters/formatPhoneNumber";
+import formatDate from "@/utils/formatters/formatDate";
 import * as z from "zod";
+import { contactFormSchema } from "@/lib/validators/contact-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
 import {
   Form,
   FormControl,
@@ -14,16 +19,14 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { cn } from "@/lib/utils";
-import { contactFormSchema } from "@/lib/validators/contact-form";
-import { zodResolver } from "@hookform/resolvers/zod";
+import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
-import { useState } from "react";
-import { useForm } from "react-hook-form";
-import formatPhoneNumber from "@/utils/formatters/formatPhoneNumber";
-import formatDate from "@/utils/formatters/formatDate";
+import formatCurrency from "@/utils/formatters/formatCurrency";
 
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const { toast } = useToast();
 
   const form = useForm<z.infer<typeof contactFormSchema>>({
     resolver: zodResolver(contactFormSchema),
@@ -39,8 +42,6 @@ export default function ContactForm() {
       eventDescription: "",
     },
   });
-
-  const { toast } = useToast();
 
   async function onSubmit(values: z.infer<typeof contactFormSchema>) {
     const contactFormValues = {
@@ -200,7 +201,15 @@ export default function ContactForm() {
                 Estimated Speaker Budget
               </FormLabel>
               <FormControl>
-                <Input disabled={isSubmitting} {...field} />
+                <Input
+                  disabled={isSubmitting}
+                  {...field}
+                  placeholder="$0.00"
+                  value={field.value ? `$${field.value}` : ""}
+                  onChange={(e) =>
+                    field.onChange(formatCurrency(e.target.value))
+                  }
+                />
               </FormControl>
               <FormMessage className="ml-1" />
             </FormItem>
