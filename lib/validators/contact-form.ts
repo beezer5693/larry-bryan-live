@@ -56,17 +56,6 @@ export const contactFormSchema: ZodType<ContactFormSchema> = z.object({
   companyName: z.string().optional(),
   eventDate: z.string().optional(),
   eventLocation: z.string().optional(),
-  speakerBudget: z
-    .string()
-    .optional()
-    .refine(
-      (val: string = "") => {
-        if (val === "") return true;
-        return /^[0-9]+$/.test(val);
-      },
-      {
-        message: "Speaker budget must contain only numbers",
-      },
-    ),
+  speakerBudget: z.string().optional(),
   eventDescription: z.string().optional(),
 });
