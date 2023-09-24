@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import formatPhoneNumber from "@/utils/formatters/formatPhoneNumber";
+import formatCurrency from "@/utils/formatters/formatCurrency";
 import formatDate from "@/utils/formatters/formatDate";
 import * as z from "zod";
 import { contactFormSchema } from "@/lib/validators/contact-form";
@@ -21,7 +22,6 @@ import { useToast } from "@/components/ui/use-toast";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
-import formatCurrency from "@/utils/formatters/formatCurrency";
 
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -238,7 +238,7 @@ export default function ContactForm() {
           <Button
             disabled={isSubmitting}
             type="submit"
-            className="h-12 w-full gap-4 uppercase"
+            className="h-12 w-full gap-4 uppercase transition duration-300 ease-in-out hover:opacity-80"
           >
             <Loader2
               className={cn("animate-spin", {

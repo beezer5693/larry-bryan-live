@@ -68,7 +68,10 @@ export default function Section5() {
               }}
               className="relative flex w-full justify-center gap-5 pt-5 md:gap-10 md:pt-10"
             >
-              <Button className="h-12 border bg-gradient-to-r from-transparent to-transparent text-xs uppercase transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-white hover:to-white hover:text-black hover:opacity-100 md:h-16 md:px-8 md:text-sm">
+              <Button
+                variant={"secondary"}
+                className="h-12 border text-xs uppercase md:h-16 md:px-8 md:text-sm"
+              >
                 my services
               </Button>
               <Button className="group h-12 pl-3.5 pr-2 text-xs uppercase transition-transform duration-300 ease-in-out md:h-16 md:pl-5 md:pr-2.5 md:text-sm">

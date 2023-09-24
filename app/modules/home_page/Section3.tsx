@@ -54,7 +54,10 @@ export default function Section3() {
         className="relative flex w-full justify-center gap-5 pt-14 md:gap-10 lg:pt-20"
       >
         <Link href="/services">
-          <Button className="h-12 border bg-gradient-to-r from-transparent to-transparent text-xs uppercase transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-white hover:to-white hover:text-black hover:opacity-100 md:h-16 md:px-8 md:text-sm">
+          <Button
+            variant={"secondary"}
+            className="h-12 border text-xs uppercase md:h-16 md:px-8 md:text-sm"
+          >
             my services
           </Button>
         </Link>
