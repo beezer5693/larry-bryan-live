@@ -22,11 +22,11 @@ export default function EventCard({ data, index }: EventCardProps) {
         visible: { opacity: 1, y: 0 },
         hidden: { opacity: 0, y: 75 },
       }}
-      className="flex w-full flex-col overflow-hidden rounded-2xl border border-neutral-700/50 bg-gradient-to-br from-neutral-700 to-neutral-950 md:flex-row"
+      className="flex w-full flex-col overflow-hidden rounded-2xl border border-neutral-800/50 bg-gradient-to-br from-neutral-700 to-neutral-950 md:flex-row"
     >
       <div
         className={cn(
-          "flex basis-2/5 items-center justify-center bg-gradient-to-b from-blue to-blue/30 py-5 shadow-lg shadow-black md:rounded-r-2xl md:p-24 lg:px-28 lg:py-32",
+          "flex basis-2/5 items-center justify-center bg-gradient-to-b from-[#021ff5] to-[#00073d] py-5 shadow-lg shadow-black md:rounded-r-2xl md:p-24 lg:px-28 lg:py-32",
         )}
       >
         <p className="w-full font-basement text-xl text-white md:text-2xl lg:text-4xl">
