@@ -3,7 +3,7 @@
 import RadialGradient from "@/components/shared/gradient/RadialGradient";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import figure from "@/public/assets/contact-new.png";
+import figure from "@/public/assets/contact.jpg";
 import ContactForm from "./components/ContactForm";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa6";

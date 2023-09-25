@@ -9,10 +9,10 @@ export default function Hero() {
   return (
     <div className="relative flex w-full max-w-[1250px] flex-col justify-between gap-8 pb-20 pt-32 sm:gap-12 md:py-32 xl:pt-60">
       <Image
-        className="absolute hidden self-end lg:-right-32 lg:top-[2.5rem] lg:block"
+        className="absolute hidden lg:-right-32 lg:bottom-0 lg:block"
         src={figure}
-        height={900}
-        width={700}
+        height={800}
+        width={600}
         alt=""
       />
       <div className="relative flex w-full flex-col items-center gap-3 sm:gap-8">

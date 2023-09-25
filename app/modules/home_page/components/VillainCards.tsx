@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 const cardText = [
   {
@@ -51,7 +52,9 @@ export default function VillainCards() {
             hidden: { opacity: 0, y: 75 },
           }}
           key={index}
-          className="relative col-span-1 flex flex-col gap-5 rounded-2xl border border-neutral-800/50 bg-gradient-to-br from-neutral-800 to-neutral-950 p-14 md:p-16 xl:gap-10 xl:p-20"
+          className={cn(
+            "relative col-span-1 flex flex-col gap-5 rounded-2xl border border-neutral-800/50 bg-gradient-to-br from-neutral-800 to-neutral-950 p-14 md:p-16 xl:gap-10 xl:p-20",
+          )}
         >
           <p className="font-basement text-2xl text-white xl:text-3xl">
             {card.label}
