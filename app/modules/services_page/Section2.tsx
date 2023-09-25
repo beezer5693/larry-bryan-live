@@ -49,7 +49,7 @@ export default function Section2() {
               visible: { opacity: 1, y: 0 },
               hidden: { opacity: 0, y: 75 },
             }}
-            className="text-sm text-white md:max-w-[90ch] md:text-base lg:text-lg"
+            className="text-sm text-amber-500 md:max-w-[90ch] md:text-base lg:text-lg"
           >
             {
               "You're planning out your event and you have a few key spots that you want to supercharge. Here are the 4 key components to selecting the best speaker and talk you can:"

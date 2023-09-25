@@ -34,7 +34,7 @@ export default function cardData() {
             visible: { opacity: 1, y: 0 },
             hidden: { opacity: 0, y: 75 },
           }}
-          className="text-sm text-white md:max-w-[90ch] md:text-base lg:text-lg"
+          className="text-sm text-amber-500 md:max-w-[90ch] md:text-base lg:text-lg"
         >
           {
             "The opening keynote sets the tone for the entire event. This means it's important to get it right so that we put the audience in a great mood and ready for your spectacular conference. I offer two signature keynote speeches that are fantastic openers."
@@ -186,7 +186,7 @@ export default function cardData() {
             visible: { opacity: 1, y: 0 },
             hidden: { opacity: 0, y: 75 },
           }}
-          className="text-sm text-white md:max-w-[90ch] md:text-base lg:text-lg"
+          className="text-sm text-amber-500 md:max-w-[90ch] md:text-base lg:text-lg"
         >
           {
             "Breakout sessions are a great way for audience members to explore in more detail one of my two Keynote speeches. I have two breakout sessions that pair nicely with my Keynotes."
