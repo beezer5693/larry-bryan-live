@@ -53,6 +53,7 @@ export default function cardData() {
           visible: { opacity: 1, y: 0 },
           hidden: { opacity: 0, y: 0 },
         }}
+        id="keynote1"
         className="flex w-full flex-col items-center gap-10 rounded-2xl border border-neutral-700/50 bg-gradient-to-br from-neutral-800 to-neutral-950 p-5 md:p-10"
       >
         <div className="relative w-full rounded-lg bg-gradient-to-r from-blue from-40% to-transparent p-[1px]">
@@ -111,6 +112,7 @@ export default function cardData() {
           visible: { opacity: 1, y: 0 },
           hidden: { opacity: 0, y: 0 },
         }}
+        id="keynote2"
         className="flex w-full flex-col items-center gap-10 rounded-2xl border border-neutral-700/50 bg-gradient-to-br from-neutral-800 to-neutral-950 p-5 md:p-10"
       >
         <div className="relative w-full rounded-lg bg-gradient-to-r from-blue from-40% to-transparent p-[1px]">
@@ -203,6 +205,7 @@ export default function cardData() {
           visible: { opacity: 1, y: 0 },
           hidden: { opacity: 0, y: 0 },
         }}
+        id="breakout1"
         className="flex w-full flex-col items-center gap-10 rounded-2xl border border-neutral-700/50 bg-gradient-to-br from-neutral-800 to-neutral-950 p-5 md:p-10"
       >
         <div className="relative w-full rounded-lg bg-gradient-to-r from-amber-600 from-40% to-transparent p-[1px]">
@@ -258,6 +261,7 @@ export default function cardData() {
           visible: { opacity: 1, y: 0 },
           hidden: { opacity: 0, y: 0 },
         }}
+        id="breakout2"
         className="flex w-full flex-col items-center gap-10 rounded-2xl border border-neutral-700/50 bg-gradient-to-br from-neutral-800 to-neutral-950 p-5 md:p-10"
       >
         <div className="relative w-full rounded-lg bg-gradient-to-r from-amber-600 from-40% to-transparent p-[1px]">
