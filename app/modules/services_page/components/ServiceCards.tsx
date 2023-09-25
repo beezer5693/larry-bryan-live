@@ -73,7 +73,8 @@ export default function cardData() {
             className="rounded-2xl object-cover"
             src={serviceCards[0].image.src}
             fill
-            alt=""
+            alt={serviceCards[0].image.alt}
+            sizes={serviceCards[0].image.sizes}
           />
         </div>
         <div className="w-full space-y-5 md:space-y-8 lg:space-y-10 lg:pt-5">
@@ -132,7 +133,8 @@ export default function cardData() {
             className="rounded-2xl object-cover"
             src={serviceCards[1].image.src}
             fill
-            alt=""
+            alt={serviceCards[1].image.alt}
+            sizes={serviceCards[1].image.sizes}
           />
         </div>
         <div className="w-full space-y-5 md:space-y-8 lg:space-y-10 lg:pt-5">
@@ -225,7 +227,8 @@ export default function cardData() {
             className="rounded-2xl object-cover"
             src={serviceCards[2].image.src}
             fill
-            alt=""
+            alt={serviceCards[2].image.alt}
+            sizes={serviceCards[2].image.sizes}
           />
         </div>
         <div className="w-full space-y-5 md:md:space-y-8 lg:space-y-10 lg:pt-5">
@@ -281,7 +284,8 @@ export default function cardData() {
             className="rounded-2xl object-cover"
             src={serviceCards[3].image.src}
             fill
-            alt=""
+            alt={serviceCards[3].image.alt}
+            sizes={serviceCards[3].image.sizes}
           />
         </div>
         <div className="w-full space-y-5 md:space-y-8 lg:space-y-10 lg:pt-5">

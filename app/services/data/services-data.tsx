@@ -19,7 +19,7 @@ export const serviceCards = [
       src: keynote1,
       alt: "keynote 1",
       sizes:
-        "(min-width: 1320px) 494px, (min-width: 1040px) 36.92vw, (min-width: 780px) calc(50vw - 96px), calc(100vw - 106px)",
+        "(min-width: 1380px) 1168px, (min-width: 780px) calc(90.69vw - 65px), calc(100vw - 98px)",
     },
   },
   {
@@ -38,7 +38,7 @@ export const serviceCards = [
       src: keynote2,
       alt: "keynote 1",
       sizes:
-        "(min-width: 1320px) 494px, (min-width: 1040px) 36.92vw, (min-width: 780px) calc(50vw - 96px), calc(100vw - 106px)",
+        "(min-width: 1380px) 1168px, (min-width: 780px) calc(90.69vw - 65px), calc(100vw - 98px)",
     },
   },
   {
@@ -53,7 +53,7 @@ export const serviceCards = [
       src: breakout1,
       alt: "keynote 1",
       sizes:
-        "(min-width: 1320px) 494px, (min-width: 1040px) 36.92vw, (min-width: 780px) calc(50vw - 96px), calc(100vw - 106px)",
+        "(min-width: 1380px) 1168px, (min-width: 780px) calc(90.69vw - 65px), calc(100vw - 98px)",
     },
   },
   {
@@ -66,7 +66,7 @@ export const serviceCards = [
       src: breakout2,
       alt: "keynote 1",
       sizes:
-        "(min-width: 1320px) 494px, (min-width: 1040px) 36.92vw, (min-width: 780px) calc(50vw - 96px), calc(100vw - 106px)",
+        "(min-width: 1380px) 1168px, (min-width: 780px) calc(90.69vw - 65px), calc(100vw - 98px)",
     },
   },
 ];
