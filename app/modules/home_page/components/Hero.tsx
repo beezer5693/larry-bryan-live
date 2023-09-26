@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { IoTriangle, IoTriangleOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
-import figure from "../../../../public/assets/larry.png";
+import figure from "@/public/assets/larry.png";
 
 export default function Hero() {
   return (
@@ -13,6 +13,7 @@ export default function Hero() {
         src={figure}
         height={800}
         width={600}
+        sizes="(min-width: 1280px) 566px, (min-width: 640px) 44.52vw, calc(100vw - 40px)"
         alt=""
       />
       <div className="relative flex w-full flex-col items-center gap-3 sm:gap-8">
