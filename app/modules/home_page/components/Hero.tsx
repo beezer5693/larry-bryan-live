@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { IoTriangle, IoTriangleOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
-import figure from "@/public/assets/larry.png";
+import figure from "@/public/assets/main-figure.png";
 
 export default function Hero() {
   return (
