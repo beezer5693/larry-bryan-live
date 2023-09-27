@@ -8,6 +8,11 @@ import Section5 from "../modules/about_page/Section5";
 import Footer from "@/components/shared/footer/Footer";
 import Section6 from "../modules/about_page/Section6";
 
+export const metadata = {
+  title: "About",
+  description: "Dare to think differently",
+};
+
 export default function page() {
   return (
     <div>

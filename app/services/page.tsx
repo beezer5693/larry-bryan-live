@@ -4,6 +4,11 @@ import Section1 from "../modules/services_page/Section1";
 import Section2 from "../modules/services_page/Section2";
 import Section3 from "../modules/services_page/Section3";
 
+export const metadata = {
+  title: "Services",
+  description: "Dare to think differently",
+};
+
 export default function page() {
   return (
     <div>
