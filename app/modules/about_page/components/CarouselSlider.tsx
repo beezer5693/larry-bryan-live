@@ -1,14 +1,13 @@
 import { cn } from "@/lib/utils";
-import styles from "../../../about/styles.module.css";
 
 type CarouselSliderProps = {
   children: React.ReactNode;
-  slideDirection: string;
+  styles?: string;
 };
 
 export default function CarouselSlider({
   children,
-  slideDirection,
+  styles,
 }: CarouselSliderProps) {
-  return <div className={cn("flex gap-5", slideDirection)}>{children}</div>;
+  return <div className={cn("slider flex gap-5", styles)}>{children}</div>;
 }

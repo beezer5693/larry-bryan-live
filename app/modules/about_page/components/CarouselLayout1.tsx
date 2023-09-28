@@ -1,6 +1,5 @@
 import CarouselImage from "./CarouselImage";
 import { cn } from "@/lib/utils";
-import styles from "../../../about/styles.module.css";
 import { StaticImageData } from "next/image";
 
 type Carousel1Props = {
@@ -18,7 +17,7 @@ type Carousel1Props = {
 
 export default function CarouselLayout1({ imageData }: Carousel1Props) {
   return (
-    <div className="flex gap-5">
+    <div className={cn("flex gap-5")}>
       <div className="space-y-5">
         <CarouselImage imageData={imageData[0]} variant={1} />
         <CarouselImage imageData={imageData[1]} variant={1} />

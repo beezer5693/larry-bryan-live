@@ -1,31 +1,48 @@
 @keyframes slide {
-  from {
-    transform: translateX(0);
-  }
   to {
-    transform: translateX(-3160px);
+    transform: translate(calc(-50% - 2.5rem));
   }
 }
 
 @keyframes slideReverse {
-  from {
-    transform: translateX(0);
-  }
   to {
-    transform: translateX(-3160px);
+    transform: translateX(calc(-50% + 2.5rem));
   }
 }
 
-.slide {
+.sliderContainer {
+  width: 100%;
+  overflow: hidden;
+  mask: linear-gradient(
+    to right,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+}
+
+.slider {
+  width: max-content;
   animation: slide 40s linear infinite;
 }
 
-.slide:hover {
+.slider:hover {
+  animation-play-state: paused;
+}
+
+.slider2 {
+  width: max-content;
+  animation: slide 55s linear infinite;
+}
+
+.slider2:hover {
   animation-play-state: paused;
 }
 
 .slideReverse {
-  animation: slideReverse 40s linear infinite reverse;
+  width: max-content;
+  animation: slideReverse 55s linear infinite reverse;
 }
 
 .slideReverse:hover {
