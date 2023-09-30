@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="relative flex w-full max-w-[1250px] flex-col border">
+    <div className="relative flex w-full max-w-[1250px] flex-col">
       <p className="self-start font-basement text-xl text-white sm:text-4xl md:text-5xl lg:text-6xl">
         HOUSE 4
       </p>
