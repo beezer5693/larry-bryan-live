@@ -7,7 +7,7 @@ export default function Section1() {
   return (
     <section className="relative flex w-full items-center justify-center overflow-hidden px-7">
       <Image
-        className="object-cover"
+        className="-z-30 object-cover blur-[6px]"
         src={mainBackground}
         sizes="100vw"
         quality={100}
@@ -15,8 +15,8 @@ export default function Section1() {
         priority
         alt=""
       />
-      <div className="absolute bottom-0 left-0 right-0 h-[36rem] bg-gradient-to-b from-transparent to-black"></div>
       <Hero />
+      <div className="absolute bottom-0 left-0 right-0 -z-10 h-[20rem] bg-gradient-to-b from-transparent to-black"></div>
     </section>
   );
 }

@@ -3,20 +3,21 @@
 import Image from "next/image";
 import { IoTriangle, IoTriangleOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
-import figure from "@/public/assets/main-figure.png";
+import figure from "@/public/assets/landing-larry.png";
 
 export default function Hero() {
   return (
     <div className="relative flex w-full max-w-[1250px] flex-col justify-between gap-8 pb-20 pt-32 sm:gap-12 md:py-32 xl:pt-60">
       <Image
-        className="absolute hidden lg:-right-32 lg:bottom-0 lg:block"
+        className="absolute -z-20 hidden object-cover lg:-bottom-52 lg:-right-[450px] lg:block"
         src={figure}
-        height={800}
-        width={600}
-        sizes="(min-width: 1280px) 566px, (min-width: 640px) 44.52vw, calc(100vw - 40px)"
+        height={2500}
+        width={2000}
+        quality={100}
+        sizes="(min-width: 1400px) 1250px, calc(78.24vw + 170px)"
         alt=""
       />
-      <div className="relative flex w-full flex-col items-center gap-3 sm:gap-8">
+      <div className="relative z-10 flex w-full flex-col items-center gap-3 sm:gap-8">
         <motion.div
           initial={{
             opacity: 0,

@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Squash as Hamburger } from "hamburger-react";
 import { ArrowRight } from "lucide-react";
-import logo from "@/public/assets/logo-w.png";
+import logo from "@/public/assets/logo-blue.png";
 import MobileMenu from "./MobileMenu";
 
 export default function Header() {
