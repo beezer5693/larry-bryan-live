@@ -8,8 +8,8 @@ const tabs = [
   { id: "home", label: "HOME", url: "/" },
   { id: "about", label: "ABOUT", url: "/about" },
   { id: "services", label: "SERVICES", url: "/services" },
-  { id: "contact", label: "CONTACT", url: "/contact" },
   { id: "podcast", label: "PODCAST", url: "/podcast" },
+  { id: "contact", label: "CONTACT", url: "/contact" },
 ];
 
 export default function NavTabs() {
