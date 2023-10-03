@@ -20,10 +20,10 @@ export default function Section3() {
             visible: { opacity: 1, y: 0 },
             hidden: { opacity: 0, y: 75 },
           }}
-          className="inline-flex max-w-[18ch] flex-col items-center gap-1 text-left font-basement text-3xl uppercase text-white sm:max-w-[100ch] md:text-4xl lg:text-center lg:text-5xl"
+          className="inline-flex flex-col items-center gap-1 text-left font-basement text-3xl uppercase text-white sm:max-w-[100ch] md:text-4xl lg:text-center lg:text-5xl"
         >
           <span>harness the immense potential</span>
-          <span className="font-basement text-2xl uppercase text-white md:text-3xl lg:text-4xl">
+          <span className="text-2xl uppercase text-white md:text-3xl lg:text-4xl">
             within your mind and create lasting change
           </span>
         </motion.p>
@@ -36,7 +36,7 @@ export default function Section3() {
             visible: { opacity: 1, y: 0 },
             hidden: { opacity: 0, y: 75 },
           }}
-          className="w-full max-w-[30ch] text-left text-lg italic text-amber-500 sm:max-w-[100ch] md:text-2xl lg:text-center"
+          className="w-full text-left text-lg italic text-amber-500 sm:max-w-[100ch] md:text-2xl lg:text-center"
         >
           {"It's time for you to become the superhero of your own life."}
         </motion.p>

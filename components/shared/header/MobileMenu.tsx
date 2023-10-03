@@ -14,15 +14,15 @@ const tabs = [
   { id: "home", label: "HOME", url: "/" },
   { id: "about", label: "ABOUT", url: "/about" },
   { id: "services", label: "SERVICES", url: "/services" },
-  { id: "contact", label: "CONTACT", url: "/contact" },
   { id: "podcast", label: "PODCAST", url: "/podcast" },
+  { id: "contact", label: "CONTACT", url: "/contact" },
 ];
 
 export default function MobileMenu({ isMenuOpen, closeMenu }: Props) {
   return (
     <div
       className={cn(
-        `fixed right-0 top-0 z-[100] flex h-screen w-full flex-col bg-gradient-to-b from-black from-60% to-blue transition-transform duration-500 ease-in-out lg:hidden ${
+        `fixed right-0 top-0 z-[100] flex h-screen w-full flex-col bg-gradient-to-b from-black from-70% to-blue transition-transform duration-500 ease-in-out lg:hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`,
       )}
