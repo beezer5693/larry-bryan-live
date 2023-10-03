@@ -13,9 +13,9 @@ export default function Hero() {
         src={figure}
         height={2500}
         width={2000}
-        quality={100}
+        quality={65}
         sizes="(min-width: 1400px) 1250px, calc(78.24vw + 170px)"
-        alt=""
+        alt="larry bryan"
       />
       <div className="relative z-10 flex w-full flex-col items-center gap-3 sm:gap-8">
         <motion.div

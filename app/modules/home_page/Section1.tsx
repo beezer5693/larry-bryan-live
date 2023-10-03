@@ -10,10 +10,10 @@ export default function Section1() {
         className="-z-30 object-cover blur-[6px]"
         src={mainBackground}
         sizes="100vw"
-        quality={100}
         fill
+        quality={65}
         priority
-        alt=""
+        alt="larry speaking in front of a crowd"
       />
       <Hero />
       <div className="absolute bottom-0 left-0 right-0 -z-10 h-[20rem] bg-gradient-to-b from-transparent to-black"></div>
