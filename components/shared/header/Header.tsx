@@ -6,8 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Squash as Hamburger } from "hamburger-react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Menu } from "lucide-react";
 import logo from "@/public/assets/logo-blue.png";
 import MobileMenu from "./MobileMenu";
 
@@ -70,16 +69,9 @@ export default function Header() {
         </Link>
         <div
           onClick={() => setIsMenuOpen((prev) => !prev)}
-          className="-mr-3.5 lg:hidden"
+          className="cursor-pointer lg:hidden"
         >
-          <Hamburger
-            hideOutline={true}
-            toggled={isMenuOpen}
-            rounded
-            easing="ease-in"
-            size={22}
-            color="#ffffff"
-          />
+          <Menu className="text-white" />
         </div>
       </div>
       <MobileMenu isMenuOpen={isMenuOpen} closeMenu={closeMobileMenu} />
