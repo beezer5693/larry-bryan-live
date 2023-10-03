@@ -31,6 +31,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="TxQAKGx0gs62X-L_P4fCBEbW5LkpvQPOb38Y-4wuT-c"
+        />
+      </head>
       <body
         className={cn(
           `${roboto.className} ${basementGrotesque.variable} scroll-smooth bg-black`,
