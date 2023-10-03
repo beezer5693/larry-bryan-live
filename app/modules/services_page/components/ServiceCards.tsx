@@ -37,7 +37,7 @@ export default function cardData() {
           className="text-sm text-amber-500 md:max-w-[90ch] md:text-base lg:text-lg"
         >
           {
-            "The Opening Keynote sets the tone for the entire event. This means it's important to get it right so that we put the audience in a great mood and ready for your spectacular conference. The Closing Keynote is also important as it must leave the audience highly motivated and ready to take action on everything they have learned. I offer two signature keynote speeches that will leave your audience inspired and ready to go."
+            "The Opening Keynote establishes the event's ambiance and is crucial for setting a positive tone, priming the audience for an exceptional conference. Similarly, the Closing Keynote carries significant importance as it should leave the audience deeply motivated and poised to act upon the knowledge acquired. I provide two distinctive keynote speeches designed to inspire and prepare your audience for action."
           }
         </motion.p>
       </div>
