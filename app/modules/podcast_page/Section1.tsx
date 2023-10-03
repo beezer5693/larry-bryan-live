@@ -10,7 +10,7 @@ export default function Section1() {
         src={podcastHeroImage}
         alt="Podcast Hero Image"
         sizes="100vw"
-        quality={100}
+        quality={65}
         fill
         priority
       />
