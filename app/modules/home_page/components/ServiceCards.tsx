@@ -26,7 +26,7 @@ type ServiceCardProps = {
 
 const serviceCards: ServiceCardProps[] = [
   {
-    title: "Opening Keynote",
+    title: "Keynote",
     number: 1,
     description: "Turning Your Inner Villains Into Your Own Superhero",
     url: "/services/#keynote1",
@@ -38,7 +38,7 @@ const serviceCards: ServiceCardProps[] = [
     },
   },
   {
-    title: "Opening Keynote",
+    title: "Keynote",
     number: 2,
     description: "The Mindset and Behaviors of Supersales People",
     url: "/services/#keynote2",

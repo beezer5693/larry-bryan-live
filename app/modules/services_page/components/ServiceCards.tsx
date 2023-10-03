@@ -37,7 +37,7 @@ export default function cardData() {
           className="text-sm text-amber-500 md:max-w-[90ch] md:text-base lg:text-lg"
         >
           {
-            "The opening keynote sets the tone for the entire event. This means it's important to get it right so that we put the audience in a great mood and ready for your spectacular conference. I offer two signature keynote speeches that are fantastic openers."
+            "The Opening Keynote sets the tone for the entire event. This means it's important to get it right so that we put the audience in a great mood and ready for your spectacular conference. The Closing Keynote is also important as it must leave the audience highly motivated and ready to take action on everything they have learned. I offer two signature keynote speeches that will leave your audience inspired and ready to go."
           }
         </motion.p>
       </div>

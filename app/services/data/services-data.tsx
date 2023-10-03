@@ -5,7 +5,7 @@ import breakout2 from "@/public/assets/services/breakout2.png";
 
 export const serviceCards = [
   {
-    title: "Opening Keynote",
+    title: "Keynote",
     number: 1,
     description: "Turning Your Inner Villains Into Your Own Superhero",
     paragraph1:
@@ -23,7 +23,7 @@ export const serviceCards = [
     },
   },
   {
-    title: "Opening Keynote",
+    title: "Keynote",
     number: 2,
     description: "The Mindset and Behaviors of Supersales People",
     paragraph1:
