@@ -32,42 +32,47 @@ export default function Footer() {
             </p>
           </div>
           <div className="space-y-5 text-center">
-            <p className="text-lg uppercase">connect with larry</p>
+            <Link
+              className="text-lg uppercase hover:underline"
+              href={"mailto:larry@larrybryanlive.com"}
+            >
+              connect with larry
+            </Link>
             <div className="flex items-center justify-center gap-3">
               <Link
                 className="group"
                 href="https://www.facebook.com/larrybryanmotivates/"
                 target="_blank"
               >
-                <FaFacebookF className="h-5 w-5 fill-neutral-200/90 group-hover:fill-white" />
+                <FaFacebookF className="h-5 w-5 fill-neutral-200/90 group-hover:fill-blue" />
               </Link>
               <Link
                 className="group"
                 href="https://www.instagram.com/lblmotivates/"
                 target="_blank"
               >
-                <FaInstagram className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-white" />
+                <FaInstagram className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-blue" />
               </Link>
               <Link
                 className="group"
                 href="https://www.linkedin.com/in/larry-bryan-0618a986/"
                 target="_blank"
               >
-                <FaLinkedinIn className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-white" />
+                <FaLinkedinIn className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-blue" />
               </Link>
               <Link
                 className="group"
                 href="https://twitter.com/larry_motivates"
                 target="_blank"
               >
-                <FaXTwitter className="h-5 w-5 fill-neutral-200/90 text-lg group-hover:fill-white" />
+                <FaXTwitter className="h-5 w-5 fill-neutral-200/90 text-lg group-hover:fill-blue" />
               </Link>
               <Link
                 className="group"
                 href="https://www.youtube.com/@lblmotivates/videos"
                 target="_blank"
               >
-                <FaYoutube className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-white" />
+                <FaYoutube className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-blue" />
               </Link>
             </div>
           </div>
