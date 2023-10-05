@@ -44,35 +44,35 @@ export default function Footer() {
                 href="https://www.facebook.com/larrybryanmotivates/"
                 target="_blank"
               >
-                <FaFacebookF className="h-5 w-5 fill-neutral-200/90 group-hover:fill-blue" />
+                <FaFacebookF className="h-5 w-5 fill-neutral-200/90 group-hover:fill-amber-400" />
               </Link>
               <Link
                 className="group"
                 href="https://www.instagram.com/lblmotivates/"
                 target="_blank"
               >
-                <FaInstagram className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-blue" />
+                <FaInstagram className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-amber-400" />
               </Link>
               <Link
                 className="group"
                 href="https://www.linkedin.com/in/larry-bryan-0618a986/"
                 target="_blank"
               >
-                <FaLinkedinIn className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-blue" />
+                <FaLinkedinIn className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-amber-400" />
               </Link>
               <Link
                 className="group"
                 href="https://twitter.com/larry_motivates"
                 target="_blank"
               >
-                <FaXTwitter className="h-5 w-5 fill-neutral-200/90 text-lg group-hover:fill-blue" />
+                <FaXTwitter className="h-5 w-5 fill-neutral-200/90 text-lg group-hover:fill-amber-400" />
               </Link>
               <Link
                 className="group"
                 href="https://www.youtube.com/@lblmotivates/videos"
                 target="_blank"
               >
-                <FaYoutube className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-blue" />
+                <FaYoutube className="h-6 w-6 fill-neutral-200/90 text-lg group-hover:fill-amber-400" />
               </Link>
             </div>
           </div>
