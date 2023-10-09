@@ -13,7 +13,7 @@ export default function page() {
   return (
     <div>
       <Header />
-      <div className="overflow-x-hidden px-7 pb-20 md:pb-32 lg:pb-44">
+      <div className="overflow-x-hidden pb-20 md:pb-32 lg:pb-44">
         <Section1 />
         <Section2 />
         <Section3 />

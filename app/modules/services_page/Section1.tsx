@@ -1,11 +1,26 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
+import heroImage from "@/public/assets/services-bg.jpeg";
 
 export default function Section1() {
   return (
-    <section className="flex items-center justify-center pb-20 pt-32 md:pt-48">
-      <div className="flex w-full max-w-[1250px] flex-col items-center space-y-6 text-center md:space-y-14">
+    <section className="relative mb-10 flex items-center justify-center px-7 py-40 lg:mb-20 lg:py-72">
+      <div className="absolute left-0 right-0 top-0 h-40 bg-gradient-to-b from-black to-transparent"></div>
+      <div className="absolute inset-0 -z-10">
+        <Image
+          className="object-cover object-top"
+          src={heroImage}
+          quality={65}
+          sizes="100vw"
+          alt=""
+          fill
+        />
+      </div>
+      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent"></div>
+      <div className="relative flex w-full max-w-[1250px] flex-col items-center space-y-6 text-center md:space-y-14">
         <motion.h1
           initial="hidden"
           whileInView="visible"
@@ -28,15 +43,12 @@ export default function Section1() {
             visible: { opacity: 1, y: 0 },
             hidden: { opacity: 0, y: 75 },
           }}
-          className="text-sm text-amber-500 md:max-w-[95ch] md:text-base lg:text-lg"
+          className="font-semibold text-white md:max-w-[95ch] md:text-2xl lg:text-3xl"
         >
-          Embark on a journey of personal growth and empowerment with my
-          exceptional range of services designed to help you and your team
-          harness your innate power. My keynote speeches and immersive breakout
-          sessions are meticulously crafted to guide you in conquering your
-          inner villains - those self-limiting thoughts, destructive habits, and
-          dormant character traits - and unleash the true superhero that resides
-          within you.
+          Experience personal growth and empowerment through my tailored
+          services, including keynote speeches and immersive breakout sessions,
+          designed to help you overcome self-limiting thoughts, destructive
+          habits, and unlock your inner superhero.
         </motion.p>
       </div>
     </section>

@@ -24,7 +24,7 @@ const eventCards = [
 
 export default function Section2() {
   return (
-    <section className="flex flex-col items-center justify-center pb-20 md:pt-20">
+    <section className="flex flex-col items-center justify-center px-7 pb-20 md:pt-20">
       <div className="flex w-full max-w-[1250px] flex-col items-center space-y-10 text-center md:space-y-14">
         <div className="flex flex-col items-center gap-7 text-center">
           <motion.h1

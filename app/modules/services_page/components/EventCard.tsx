@@ -26,7 +26,7 @@ export default function EventCard({ data, index }: EventCardProps) {
     >
       <div
         className={cn(
-          "flex basis-2/5 items-center justify-center bg-gradient-to-b from-[#021ff5] to-[#00073d] py-5 shadow-lg shadow-black md:rounded-r-2xl md:p-24 lg:px-28 lg:py-32",
+          "flex basis-2/5 items-center justify-center bg-gradient-to-b from-blue to-[#00073d] py-5 shadow-lg shadow-black md:rounded-r-2xl md:p-24 lg:px-28 lg:py-32",
         )}
       >
         <p className="w-full font-basement text-xl text-white md:text-2xl lg:text-4xl">
