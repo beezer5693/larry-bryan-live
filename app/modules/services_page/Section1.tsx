@@ -43,7 +43,7 @@ export default function Section1() {
             visible: { opacity: 1, y: 0 },
             hidden: { opacity: 0, y: 75 },
           }}
-          className="font-semibold text-white md:max-w-[95ch] md:text-2xl lg:text-3xl"
+          className="text-sm text-amber-500 md:max-w-[95ch] md:text-base lg:text-lg"
         >
           Experience personal growth and empowerment through my tailored
           services, including keynote speeches and immersive breakout sessions,
