@@ -62,10 +62,10 @@ export default function Section5() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: "all" }}
-              transition={{ duration: 0.5, delay: 0.05 }}
+              transition={{ duration: 1, delay: 0.05 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: 60 },
+                hidden: { opacity: 0, y: 0 },
               }}
               className="relative flex w-full justify-center gap-5 pt-5 md:gap-10 md:pt-10"
             >

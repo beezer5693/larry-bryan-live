@@ -13,13 +13,6 @@
 .sliderContainer {
   width: 100%;
   overflow: hidden;
-  mask: linear-gradient(
-    to right,
-    transparent 0%,
-    black 20%,
-    black 80%,
-    transparent 100%
-  );
 }
 
 .slider {
